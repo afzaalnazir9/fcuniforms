@@ -1,0 +1,1041 @@
+  <style>
+        
+        .popup {
+            display: none; 
+            position: fixed; 
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4); 
+            padding-top: 60px;
+        }
+        
+    
+        .popup-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+    
+        
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+       .product-item-list {
+        padding: 0;
+            }
+        .product-item-list li.product-item {
+        display: inline-block;
+        list-style: none;
+        border: 1px solid;
+        margin: 5px;
+        background-color: #000033 !important;
+        padding-bottom: 15px;
+        width: 18%;
+        }
+        @media (min-width: 1200px) {
+         .product-item-list li.product-item {
+                    width: 18%;
+                }
+        }
+        @media (min-width: 992px) and (max-width: 1199px) {
+         .product-item-list li.product-item {
+            width: 23%;
+        }
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+        .product-item-list li.product-item {
+            width: 30%;
+        }
+        }
+        @media (max-width: 480px) {
+        .product-item-list li.product-item {
+            width: 100%;
+        }
+        }
+        .product-img{
+        width:100%
+        }
+        .product-item-list li.product-item .name {
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 16px;
+        margin-top: 10px;
+        font-weight: bold;
+        }
+        .product-item-list li.product-item p.lowestPrice {
+        color: red;
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        }
+        .product-item-list li.product-item .color {
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 14px;
+        margin: 0;
+        }
+        .product-item-list li.product-item .dimensions {
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 14px;
+        margin: 0;
+        }
+        .product-item a {
+            text-decoration: none;
+        }
+        .modal-title {
+        border-bottom: 1px solid #c1c1c1;
+        font-weight: 300;
+        padding-bottom: 10px;
+        font-size: 26px;
+        margin-bottom: 0;
+        min-height: 1em;
+        word-wrap: break-word;
+        width: fit-content;
+        }
+        pre {
+        overflow: auto;
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: transparent;
+        text-align: center;
+        white-space: pre;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        color: white;
+        }
+    </style>
+<!-- Button to open the popup -->
+<button onclick="openPopup()">LOAD NEW BADGE</button>
+<div id="myPopup" class="popup">
+    <div class="popup-content">      
+        <span class="close" onclick="closePopup()">&times;</span>
+        <p class="modal-title">Select a product to customize.</p>
+        {% assign targetCollectionId = product.collections[0].handle %}
+
+        <ul class="product-item-list">  
+          {% for product in collections[targetCollectionId].products %}
+
+            {% assign badgesDetail = product.metafields.custom.custom_details.value.badges %}
+   
+<script>
+  console.log({{ product | json }})
+  console.log("hghffhfh :>> ", {{ product.metafields.custom.custom_details.value.badges  }})
+</script>
+            <li class="product-item">
+                <a href="{{ product.url }}" data-product-id="{{ product.id }}">
+                    <div class="product-info">
+                        <div class="img">
+                        <img class="product-img" src="{{ product.featured_image | img_url }}" alt="PB-01">
+                        </div>
+                        <div class="name">{{ product.title }}</div>
+                  
+                      <div class="color">{{ badgesDetail.first.title }}</div>
+                      <div class="dimensions">{{ product.metafields.custom.badge_full_size_dimensions }}</div>
+                    
+                        <p class="lowestPrice">As Low As {{ product.price | money }}</p>
+                    </div>
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<script>
+
+function openPopup() {
+    document.getElementById("myPopup").style.display = "block";
+}
+
+function closePopup() {
+    document.getElementById("myPopup").style.display = "none";
+}
+
+window.onload = function() {
+    openPopup();
+};
+
+window.onclick = function(event) {
+    var popup = document.getElementById("myPopup");
+    if (event.target == popup) {
+        closePopup();
+    }
+};
+</script>
+
+<section
+  id="MainProduct-{{ section.id }}"
+  class="u4a-single-product u4a-custom-badge page-width"
+  data-section="{{ section.id }}"
+>
+  {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
+  {{ 'component-price.css' | asset_url | stylesheet_tag }}
+  {{ 'component-rte.css' | asset_url | stylesheet_tag }}
+  {{ 'component-slider.css' | asset_url | stylesheet_tag }}
+  {{ 'component-rating.css' | asset_url | stylesheet_tag }}
+  {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
+  {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+  {{ 'custom-badges.css' | asset_url | stylesheet_tag }}
+
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+
+  <div class="t4s-container t4s-main-product__content is--layout_{{ se_stts.pr_layout }} t4s-product-media__{{ media_layout }} t4s-product-thumb-size__{{ se_stts.thumb_lr_size }}">
+  <div class="t4s-row">
+    <div class="t4s-col-item t4s-col-12 t4s-main-area">
+      <div class="t4s-product__no_media t4s-pr custom-badge-media-holder">
+        <div style="padding-top:30px">
+          <svg
+            width="320"
+            height="486"
+            version="1.1"
+            id="badges-svg"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            class="hidden"
+            style="position:absolute;display:none"
+          >
+            <defs>
+              
+              {% assign svgDefsPaths = product.metafields.custom.custom_details.value['svg-defs-paths'] %}
+              {% for property in svgDefsPaths -%}
+                <path id="panel{{ forloop.index }}" d="{{ property.path }}" data-size="{{ property.font_size }}"></path>
+              {%- endfor %}
+            </defs>
+
+            {% assign badgesDetails = product.metafields.custom.custom_details.value.badges %}
+           
+            {% for property in badgesDetails -%}
+              <image class="custom-badge-image {{ property.title | handle }} {% if forloop.index != 1 %}hidden{% endif %}" x="0" y="0" width="100%" height="100%" xlink:href="{{ property.actual_image }}" />
+            {%- endfor %}
+
+            {% for property in svgDefsPaths -%}
+               <text font-family="Impact, Charcoal, sans-serif" font-size="{{ property.font_size }}" font-weight="bold" fill="#000000" text-anchor="middle">
+                {% if forloop.index != svgDefsPaths.size %}
+                 <textPath id="text-panel{{ forloop.index }}" class="panel-text-path" xlink:href="#panel{{ forloop.index }}" startOffset="50%"></textPath>
+                 {% else %}
+                  <textPath id="text-panel-last" class="panel-text-path" xlink:href="#panel{{ forloop.index }}" startOffset="50%"></textPath>
+                {% endif %}
+               </text>
+             {%- endfor %}
+            {% assign sealPosition = product.metafields.custom.custom_details.value.seal_position %}
+            <foreignObject x="{{ sealPosition.x }}" y="{{ sealPosition.y }}" width="{{ sealPosition.width }}" height="{{ sealPosition.height }}">
+              <img class="custom-badge-seal-style hidden" width="{{ sealPosition.width }}" height="{{ sealPosition.height }}" src="" loading="lazy" />
+            </foreignObject>
+          </svg>
+
+          <img
+            id="canvas-image-placeholder"
+            class="hidden"
+            width="320"
+            height="486"
+            src="https://www.uniformswarehouse.com/media/catalog/product/m/a/main-placeholder_1_1.jpg"
+            loading="lazy"
+          >
+          <div id="custom-badge-image-container" style="position:absolute;top:0"></div>
+        </div>
+      </div>
+    </div>
+
+        <div data-t4s-zoom-info class="t4s-{{ class_info }} t4s-col-12 t4s-col-item t4s-product__info-wrapper t4s-pr">
+                
+      <div
+        id="ProductInfo-{{ section.id }}"
+        class="product__info-container product__info-container--sticky" style="float:right;margin-top:-470px"
+      >
+        {%- assign product_form_id = 'product-form-' | append: section.id -%}
+
+        <div class="form-header">
+          <div class="badge-placeholder">
+            {% for property in badgesDetails -%}
+              <img
+                src="{{ property.placeholder_image }}"
+                width="90"
+                height="136"
+                loading="lazy"
+                class="{{ property.title | handle }} {% if forloop.index != 1 %}hidden{% endif %}"
+              >
+            {%- endfor %}
+          </div>
+          <div class="badge-details">
+            <div class="badge-title">
+              <div>Design: {{ product.title | escape }}</div>
+            </div>
+            <div class="badge-color">
+              <div>Color: {{ badgesDetails.first.title }}</div>
+            </div>
+            <div class="badge-dimensions">
+              <div>
+                Dimensions:
+                <span class="badge-full-size-dimension">
+                  {{- product.metafields.custom.badge_full_size_dimensions -}}
+                </span>
+                <span class="badge-mini-dimension hidden">
+                  {{- product.metafields.custom.badge_miniature_dimensions -}}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <product-form class="product-form">
+            <div class="product-form__error-message-wrapper" role="alert" hidden>
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                role="presentation"
+                class="icon icon-error"
+                viewBox="0 0 13 13"
+              >
+                <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
+                <circle cx="6.5" cy="6.5" r="5.5" fill="#EB001B" stroke="#EB001B" stroke-width="0.7"/>
+                <path d="M5.87413 3.52832L5.97439 7.57216H7.02713L7.12739 3.52832H5.87413ZM6.50076 9.66091C6.88091 9.66091 7.18169 9.37267 7.18169 9.00504C7.18169 8.63742 6.88091 8.34917 6.50076 8.34917C6.12061 8.34917 5.81982 8.63742 5.81982 9.00504C5.81982 9.37267 6.12061 9.66091 6.50076 9.66091Z" fill="white"/>
+                <path d="M5.87413 3.17832H5.51535L5.52424 3.537L5.6245 7.58083L5.63296 7.92216H5.97439H7.02713H7.36856L7.37702 7.58083L7.47728 3.537L7.48617 3.17832H7.12739H5.87413ZM6.50076 10.0109C7.06121 10.0109 7.5317 9.57872 7.5317 9.00504C7.5317 8.43137 7.06121 7.99918 6.50076 7.99918C5.94031 7.99918 5.46982 8.43137 5.46982 9.00504C5.46982 9.57872 5.94031 10.0109 6.50076 10.0109Z" fill="white" stroke="#EB001B" stroke-width="0.7">
+              </svg>
+              <span class="product-form__error-message"></span>
+            </div>
+
+            {%- form 'product',
+              product,
+              id: product_form_id,
+              class: 'form u4a-custom-badges-form',
+              novalidate: 'novalidate',
+              data-type: 'add-to-cart-form'
+            -%}
+              <input
+                type="hidden"
+                name="id"
+                value="{{ product.selected_or_first_available_variant.id }}"
+                disabled
+              >
+              <input
+                type="hidden"
+                name="variantPrice"
+                id="u4a-variant-price"
+                value="{{ product.selected_or_first_available_variant.price }}"
+                disabled
+              >
+
+              {% render 'custom-badge-properties' %}
+
+              <div class="badge-quantity-pricing" data-pricing-json="">
+                {% for property in badgesDetails -%}
+                  {% assign badgePrice = property.quantity_pricing %}
+                  <table
+                    class="table {{ property.title | handle }}{% if forloop.index != 1 %} hidden{% endif %}"
+                    border="1"
+                  >
+                    <thead>
+                      <tr>
+                        <th>Quantity</th>
+                        {% for price in badgePrice -%}
+                          <td>{{ price.quantity }}</td>
+                        {%- endfor %}
+                        <th>Size</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th>Unit Price</th>
+                        {% for price in badgePrice -%}
+                          <td
+                            class="badge-per-price"
+                            data-quantity="{{ price.quantity }}"
+                            data-full-price="{{ price.full_price }}"
+                            data-mini-price="{{ price.mini_price }}"
+                          >
+                            {{ price.full_price }}
+                          </td>
+                        {%- endfor %}
+                        <th class="badge-size">Full size</th>
+                      </tr>
+                    </tbody>
+                  </table>
+                {%- endfor %}
+              </div>
+
+              <div class="badge-turnaround-time">
+                Turnaround time for custom badge orders is approximately 3 to 4 months. Expedited Shipping does not
+                apply to production time. For custom badge molds, please <a href="/pages/contact">contact us</a>.
+              </div>
+
+              <div class="form-footer">
+                <div class="product-form__input product-form__quantity">
+                  <label class="form__label" for="Quantity-{{ section.id }}">
+                    {{ 'products.product.quantity.label' | t }}
+                  </label>
+
+                  <quantity-input class="quantity">
+                    <button class="quantity__button no-js-hidden" name="minus" type="button">
+                      <span class="visually-hidden">
+                        {{- 'products.product.quantity.decrease' | t: product: product.title | escape -}}
+                      </span>
+                      {% render 'icon-minus' %}
+                    </button>
+                    <input
+                      class="quantity__input"
+                      type="number"
+                      name="quantity"
+                      id="Quantity-{{ section.id }}"
+                      min="1"
+                      value="1"
+                      form="{{ product_form_id }}"
+                    >
+                    <button class="quantity__button no-js-hidden" name="plus" type="button">
+                      <span class="visually-hidden">
+                        {{- 'products.product.quantity.increase' | t: product: product.title | escape -}}
+                      </span>
+                      {% render 'icon-plus' %}
+                    </button>
+                  </quantity-input>
+                </div>
+                <div class="product-form__buttons">
+                  <button
+                    type="submit"
+                    name="add"
+                    class="product-form__submit button button--full-width button--primary"
+                    {% if product.selected_or_first_available_variant.available == false %}
+                      disabled
+                    {% endif %}
+                  >
+                    <span>
+                      {%- if product.selected_or_first_available_variant.available -%}
+                        {{ 'products.product.add_to_cart' | t }}
+                      {%- else -%}
+                        {{ 'products.product.sold_out' | t }}
+                      {%- endif -%}
+                    </span>
+                    <div class="loading-overlay__spinner hidden">
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        role="presentation"
+                        class="spinner"
+                        viewBox="0 0 66 66"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+
+                {% if customer.email == 'designer1@uniforms4all.com' and customer %}
+                  <p>
+                    Welcome back, {{ customer.first_name }}
+                    {{ customer.last_name }}!
+                  </p>
+                  <div class="get-production-template">
+                    <div class="line-item-property__field">
+                      <label for="prod-temp-name">Name:</label>
+                      <input type="text" id="prod-temp-name" class="badge-text-panel" autocomplete="off">
+                    </div>
+                    <div class="line-item-property__field">
+                      <label for="prod-temp-date">Date:</label>
+                      <input type="text" id="prod-temp-date" class="badge-text-panel" autocomplete="off">
+                    </div>
+                    <div class="line-item-property__field">
+                      <label for="prod-temp-invoice-number">Invoice:</label>
+                      <input type="text" id="prod-temp-invoice-number" class="badge-text-panel" autocomplete="off">
+                    </div>
+                    <div class="line-item-property__field">
+                      <label for="prod-temp-design-sku">Design SKU:</label>
+                      <input
+                        type="text"
+                        id="prod-temp-design-sku"
+                        class="badge-text-panel"
+                        autocomplete="off"
+                        value="{{ product.title | escape }}"
+                      >
+                    </div>
+                    <div class="line-item-property__field">
+                      <label for="prod-temp-total-orders">Total:</label>
+                      <input type="text" id="prod-temp-total-orders" class="badge-text-panel" autocomplete="off">
+                    </div>
+                    <div class="line-item-property__field">
+                      <label for="prod-temp-additional">Additional:</label>
+                      <textarea
+                        id="prod-temp-additional"
+                        class="badge-text-panel"
+                      ></textarea>
+                    </div>
+                    <a href="#" class="button" id="getProductionTemplate">Get Template</a>
+                  </div>
+                {% endif %}
+
+                <div class="badge-price">
+                  <div class="custom-seal-price hidden" data-price="0"></div>
+                  <div class="price-per-quantity">
+                    Price Per Unit: $<span>
+                      {{- badgesDetails.first.quantity_pricing.first.full_price -}}
+                    </span>
+                    USD
+                  </div>
+                  <div
+                    class="total-price"
+                    data-price="{{- badgesDetails.first.quantity_pricing.first.full_price -}}"
+                  >
+                    Total: $<span>
+                      {{- badgesDetails.first.quantity_pricing.first.full_price -}}
+                    </span>
+                    USD
+                  </div>
+                </div>
+              </div>
+            {%- endform -%}
+          </product-form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="getProductionTemplateHolder" class="hidden">
+    <div class="prod-temp-header row">
+      <div class="col1">
+        <div class="logo">
+          <img data-wpsob="1" data-wpsob-height="1" height="1" data-wpsob-lazy="1" loading="lazy" src="http://cdn.shopify.com/s/files/1/0597/2452/9838/files/MicrosoftTeams-image.png?v=1642534770&width=500">
+        </div>
+      </div>
+      <div class="col2">
+        <div class="client-name">&nbsp;</div>
+        <div class="date-purchase-order">
+          <div class="date-purchase-order-container">
+            <div>date of order</div>
+            <div class="order-date">&nbsp;</div>
+            <div>Purchase order#</div>
+            <div class="invoice-numb">&nbsp;</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="prod-temp-below-header row">
+      <div class="col1 text-center">
+        Manufacturer & wholesale of<br>
+        security uniforms & accessories
+      </div>
+      <div class="col2">Custom Badge Order</div>
+    </div>
+    <div class="prod-temp-body row">
+      <div class="col1">
+        <div class="text-uc text-center">custom badge order artwork</div>
+        <div class="box design">
+          design#<br>
+          <span class="design-sku">&nbsp;</span>
+        </div>
+        <div class="box details">
+          <div><span>Center Seal:</span> <span class="seal-name">&nbsp;</span></div>
+          <div class="font-color-holder"><span>Text Color:</span> <span class="font-color">&nbsp;</span></div>
+          <div><span>Badge Backing:</span> <span class="badge-packing">&nbsp;</span></div>
+          <div><span>Quantity:</span> <span class="quant">&nbsp;</span></div>
+        </div>
+        <div class="order-total">02 Total</div>
+        <div class="order-process-note">
+          this badge order<br>
+          will not be processed<br>
+          unless you reply<br>
+          to this email
+        </div>
+      </div>
+      <div class="col2 text-center">
+        <div><span>Curvature:</span> <span class="curvature">&nbsp;</span></div>
+        <img data-wpsob="1" data-wpsob-height="1" height="1" data-wpsob-width="1" width="1" data-wpsob-lazy="1" loading="lazy" src="{{ 'pb61r-silver-ph.jpg' | file_url }}" class="badge-image">
+        <div class="additional-text">Rush</div>
+      </div>
+    </div>
+  </div>
+                </div>
+                  
+
+  <script src="{{ 'u4a-custom-badges.js' | asset_url }}" defer="defer"></script>
+</section>
+
+
+
+{% schema %}
+{
+  "name": "t:sections.main-product.name",
+  "tag": "section",
+  "class": "section",
+  "blocks": [
+    {
+      "type": "@app"
+    },
+    {
+      "type": "text",
+      "name": "t:sections.main-product.blocks.text.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Text block",
+          "label": "t:sections.main-product.blocks.text.settings.text.label"
+        },
+        {
+          "type": "select",
+          "id": "text_style",
+          "options": [
+            {
+              "value": "body",
+              "label": "t:sections.main-product.blocks.text.settings.text_style.options__1.label"
+            },
+            {
+              "value": "subtitle",
+              "label": "t:sections.main-product.blocks.text.settings.text_style.options__2.label"
+            },
+            {
+              "value": "uppercase",
+              "label": "t:sections.main-product.blocks.text.settings.text_style.options__3.label"
+            }
+          ],
+          "default": "body",
+          "label": "t:sections.main-product.blocks.text.settings.text_style.label"
+        }
+      ]
+    },
+    {
+      "type": "title",
+      "name": "t:sections.main-product.blocks.title.name",
+      "limit": 1
+    },
+    {
+      "type": "price",
+      "name": "t:sections.main-product.blocks.price.name",
+      "limit": 1
+    },
+    {
+      "type": "quantity_selector",
+      "name": "t:sections.main-product.blocks.quantity_selector.name",
+      "limit": 1
+    },
+    {
+      "type": "variant_picker",
+      "name": "t:sections.main-product.blocks.variant_picker.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "select",
+          "id": "picker_type",
+          "options": [
+            {
+              "value": "button",
+              "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.options__2.label"
+            }
+          ],
+          "default": "button",
+          "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.label"
+        }
+      ]
+    },
+    {
+      "type": "buy_buttons",
+      "name": "t:sections.main-product.blocks.buy_buttons.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_dynamic_checkout",
+          "default": true,
+          "label": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.label",
+          "info": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.info"
+        }
+      ]
+    },
+    {
+      "type": "description",
+      "name": "t:sections.main-product.blocks.description.name",
+      "limit": 1
+    },
+    {
+      "type": "share",
+      "name": "t:sections.main-product.blocks.share.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "share_label",
+          "label": "t:sections.main-product.blocks.share.settings.text.label",
+          "default": "Share"
+        },
+        {
+          "type": "paragraph",
+          "content": "t:sections.main-product.blocks.share.settings.featured_image_info.content"
+        },
+        {
+          "type": "paragraph",
+          "content": "t:sections.main-product.blocks.share.settings.title_info.content"
+        }
+      ]
+    },
+    {
+      "type": "custom_liquid",
+      "name": "t:sections.main-product.blocks.custom_liquid.name",
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "custom_liquid",
+          "label": "t:sections.main-product.blocks.custom_liquid.settings.custom_liquid.label",
+          "info": "t:sections.main-product.blocks.custom_liquid.settings.custom_liquid.info"
+        }
+      ]
+    },
+    {
+      "type": "collapsible_tab",
+      "name": "t:sections.main-product.blocks.collapsible_tab.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Collapsible row",
+          "info": "t:sections.main-product.blocks.collapsible_tab.settings.heading.info",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.heading.label"
+        },
+        {
+          "type": "select",
+          "id": "icon",
+          "options": [
+            {
+              "value": "none",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__1.label"
+            },
+            {
+              "value": "apple",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__2.label"
+            },
+            {
+              "value": "banana",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__3.label"
+            },
+            {
+              "value": "bottle",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__4.label"
+            },
+            {
+              "value": "box",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__5.label"
+            },
+            {
+              "value": "carrot",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__6.label"
+            },
+            {
+              "value": "chat_bubble",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__7.label"
+            },
+            {
+              "value": "check_mark",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__8.label"
+            },
+            {
+              "value": "clipboard",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__9.label"
+            },
+            {
+              "value": "dairy",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__10.label"
+            },
+            {
+              "value": "dairy_free",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__11.label"
+            },
+            {
+              "value": "dryer",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__12.label"
+            },
+            {
+              "value": "eye",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__13.label"
+            },
+            {
+              "value": "fire",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__14.label"
+            },
+            {
+              "value": "gluten_free",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__15.label"
+            },
+            {
+              "value": "heart",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__16.label"
+            },
+            {
+              "value": "iron",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__17.label"
+            },
+            {
+              "value": "leaf",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__18.label"
+            },
+            {
+              "value": "leather",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__19.label"
+            },
+            {
+              "value": "lightning_bolt",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__20.label"
+            },
+            {
+              "value": "lipstick",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__21.label"
+            },
+            {
+              "value": "lock",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__22.label"
+            },
+            {
+              "value": "map_pin",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__23.label"
+            },
+            {
+              "value": "nut_free",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__24.label"
+            },
+            {
+              "value": "pants",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__25.label"
+            },
+            {
+              "value": "paw_print",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__26.label"
+            },
+            {
+              "value": "pepper",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__27.label"
+            },
+            {
+              "value": "perfume",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__28.label"
+            },
+            {
+              "value": "plane",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__29.label"
+            },
+            {
+              "value": "plant",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__30.label"
+            },
+            {
+              "value": "price_tag",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__31.label"
+            },
+            {
+              "value": "question_mark",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__32.label"
+            },
+            {
+              "value": "recycle",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__33.label"
+            },
+            {
+              "value": "return",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__34.label"
+            },
+            {
+              "value": "ruler",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__35.label"
+            },
+            {
+              "value": "serving_dish",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__36.label"
+            },
+            {
+              "value": "shirt",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__37.label"
+            },
+            {
+              "value": "shoe",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__38.label"
+            },
+            {
+              "value": "silhouette",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__39.label"
+            },
+            {
+              "value": "snowflake",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__40.label"
+            },
+            {
+              "value": "star",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__41.label"
+            },
+            {
+              "value": "stopwatch",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__42.label"
+            },
+            {
+              "value": "truck",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__43.label"
+            },
+            {
+              "value": "washing",
+              "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.options__44.label"
+            }
+          ],
+          "default": "check_mark",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.label"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.content.label"
+        },
+        {
+          "type": "page",
+          "id": "page",
+          "label": "t:sections.main-product.blocks.collapsible_tab.settings.page.label"
+        }
+      ]
+    },
+    {
+      "type": "popup",
+      "name": "t:sections.main-product.blocks.popup.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "default": "Pop-up link text",
+          "label": "t:sections.main-product.blocks.popup.settings.link_label.label"
+        },
+        {
+          "id": "page",
+          "type": "page",
+          "label": "t:sections.main-product.blocks.popup.settings.page.label"
+        }
+      ]
+    },
+    {
+      "type": "rating",
+      "name": "t:sections.main-product.blocks.rating.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "t:sections.main-product.blocks.rating.settings.paragraph.content"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "enable_sticky_info",
+      "default": true,
+      "label": "t:sections.main-product.settings.enable_sticky_info.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-product.settings.header.content",
+      "info": "t:sections.main-product.settings.header.info"
+    },
+    {
+      "type": "select",
+      "id": "gallery_layout",
+      "options": [
+        {
+          "value": "stacked",
+          "label": "t:sections.main-product.settings.gallery_layout.options__1.label"
+        },
+        {
+          "value": "thumbnail",
+          "label": "t:sections.main-product.settings.gallery_layout.options__2.label"
+        },
+        {
+          "value": "thumbnail_slider",
+          "label": "t:sections.main-product.settings.gallery_layout.options__3.label"
+        }
+      ],
+      "default": "stacked",
+      "label": "t:sections.main-product.settings.gallery_layout.label"
+    },
+    {
+      "type": "select",
+      "id": "media_size",
+      "options": [
+        {
+          "value": "small",
+          "label": "t:sections.main-product.settings.media_size.options__1.label"
+        },
+        {
+          "value": "medium",
+          "label": "t:sections.main-product.settings.media_size.options__2.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.main-product.settings.media_size.options__3.label"
+        }
+      ],
+      "default": "large",
+      "label": "t:sections.main-product.settings.media_size.label",
+      "info": "t:sections.main-product.settings.media_size.info"
+    },
+    {
+      "type": "select",
+      "id": "mobile_thumbnails",
+      "options": [
+        {
+          "value": "show",
+          "label": "t:sections.main-product.settings.mobile_thumbnails.options__1.label"
+        },
+        {
+          "value": "hide",
+          "label": "t:sections.main-product.settings.mobile_thumbnails.options__2.label"
+        }
+      ],
+      "default": "hide",
+      "label": "t:sections.main-product.settings.mobile_thumbnails.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_variants",
+      "default": false,
+      "label": "t:sections.main-product.settings.hide_variants.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_video_looping",
+      "default": false,
+      "label": "t:sections.main-product.settings.enable_video_looping.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,3199 @@
+{
+  "current": {
+    "purchase_code": "351251e7-5a34-41b0-8bf6-0fc428f70980",
+    "general_layout": "custom",
+    "cus_w_bd": 1440,
+    "body_bg": "#fff",
+    "body_bg_image": "shopify:\/\/shop_images\/Background-Image_1950x_de95ac1e-c6be-4b9e-98f7-414c8457fda3.jpg",
+    "home_keywords": "First Class Uniforms, Wholesale Uniforms, Wholesale Security Uniforms, Wholesale Law Enforcement Uniforms, Sheriff Uniforms",
+    "shop_author": "First Class Uniforms",
+    "checkbox_mail": false,
+    "header_design": "categories",
+    "logo_svg": "",
+    "logo": "shopify:\/\/shop_images\/fc-logo-b.png",
+    "logo_width": 130,
+    "logos_width": 130,
+    "logo_mb": "shopify:\/\/shop_images\/kalles-white_2x_140x_7aec4aea-12dd-4ad7-8d09-e5b7c8526801.png",
+    "logo_mb_width": 120,
+    "logo_tr_width": 130,
+    "heading_color": "#000000",
+    "text_color": "#8c8c8c",
+    "accent_color": "#0078b2",
+    "secondary_color": "#0083c1",
+    "border_color": "#dddddd",
+    "price_secondary": "#8c8c8c",
+    "link_color": "#8c8c8c",
+    "link_color_hover": "#0078b2",
+    "cl_lazyload": "#0078b2",
+    "font_source": "2",
+    "fnt_fm_gg3": "Poppins",
+    "bd_lheight": 2,
+    "bd_lspacing": 0,
+    "hd_fweight": 500,
+    "hd_lspacing": 0,
+    "wishlist_mode": "0",
+    "enable_compe": false,
+    "app_review": "1",
+    "badge_shape": "3",
+    "use_sale_badge": true,
+    "label_sale_style": "2",
+    "use_new_badge": false,
+    "new_badge_color": "#14d0e1",
+    "enable_quickview": false,
+    "enable_quickshop": false,
+    "show_qty": true,
+    "show_color_type": "1",
+    "sw_num": 5,
+    "enable_pr_size": false,
+    "enable_shadow_round_img": false,
+    "use_change_variant_by_img": false,
+    "gift_wrap_pr": "gift-wrap",
+    "btn_arrow": "short_arrow",
+    "filter_type_search": true,
+    "show_search_suggest": true,
+    "search_prs_suggest": "frontpage",
+    "show_search_hotkey": true,
+    "size_currency": "sm",
+    "notify_currency": false,
+    "colors_css": true,
+    "custom_css_t4s": true,
+    "global_css": "#shopify-section-template--15984653140133__73ad2a26-cce9-4969-a1c3-53c9b2561a12 .t4s-banner-item,\n#shopify-section-template--15984653140133__ccb8413e-86fd-42ab-acae-6730846218b2 .t4s-banner-item, #shopify-section-template--15984653140133__ccb8413e-86fd-42ab-acae-6730846218b3 .t4s-banner-item {border-radius: 8px;}\n.t4s-flicky-slider .flickityt4s-page-dots .dot:not(.is-selected) {background-color : #D9D9D9; opacity:1;}\n.t4s-header__design2 .t4s-search-header__form, .t4s-header__design2 .t4s-search-header__form .t4s-search-header__submit {border-radius: 8px; display: flex; align-items: center;} .t4s-header__design2 .t4s-search-header__submit-icon{display: flex;} .t4s-search-header__input {height: 44px;}\n#t4s-nav-categories > li > a {font-weight: 500;\nfont-size: 14px;\nline-height: 22px;padding: 12px 20px; color: #000;}  #t4s-nav-categories > li >a > i {color: #8C8C8C;}\n.t4s-header__design2 .t4s-section-header__bot .t4s-h-cat >h5 {padding: 0 18px;}  .t4s-search-header__type select {font-weight: 500;} .t4s-search-header__input {font-size: 14px;} .t4s-tabs-se .t4s-tabs-ul li a {font-size: 14px;line-height:22px;} .t4s-section-header__bot .t4s-h-cat:hover {background-color: var(--shopify-editor-section-header-categories-menu-setting-bgcategory);} .t4s_lb_nav {padding-top: 1px;}",
+    "desktop_css": "#shopify-section-template--15984653140133__3f5cbe46-1629-41ac-9543-83d5322a33a9 .t4s-flicky-slider.t4s-dots-bottom_left .flickityt4s-page-dots{padding: 0 13.10%;}\n#shopify-section-template--15984653140133__16475039483d7cf9c3 #b_164750394892a055b6-0 {--item-rd: 8px 0 0 0;}\n#shopify-section-template--15984653140133__16475039483d7cf9c3 #b_7b6b0a2f-2d61-4e26-8415-3478c867fb84 {--item-rd: 0 8px 0 0;}\n#shopify-section-template--15984653140133__16475039483d7cf9c3 #b_7f4be6cc-fced-4b5a-b52b-be9d7a6be19f {--item-rd: 0 0 0 8px;}\n#shopify-section-template--15984653140133__16475039483d7cf9c3 #b_5548accf-34a9-4152-a9bd-9b9f50237d6c {--item-rd: 0 0 8px 0;}\n.t4s-nav__ul>li> a {padding: 5px 24px;} .t4s-slideshow .flickityt4s-page-dots {bottom: 88px; } .t4s-section-header [data-header-height2] .t4s-navigation {--ts-gutter-x: 30px;}",
+    "tablet_mobile_css": ".t4s-section-header [data-header-height2] .t4s-navigation {--ts-gutter-x: 15px;} #shopify-section-template--15984653140133__3f5cbe46-1629-41ac-9543-83d5322a33a9 .t4s-flicky-slider.t4s-dots-bottom_left .flickityt4s-page-dots{padding: 0 15px;  #shopify-section-template--15984653140133__a0cb7f9e-1b9f-4d47-a32a-b4cdc7289295 div#b_template--15984653140133__a0cb7f9e-1b9f-4d47-a32a-b4cdc7289295-16753293455241bfa3-1 > span {justify-content : center;}",
+    "tablet_css": "#shopify-section-template--15984653140133__a0cb7f9e-1b9f-4d47-a32a-b4cdc7289295 div#b_template--15984653140133__a0cb7f9e-1b9f-4d47-a32a-b4cdc7289295-16753293455241bfa3-1 > span {justify-content : center;}",
+    "mobile_css": "#shopify-section-template--15984653140133__a0cb7f9e-1b9f-4d47-a32a-b4cdc7289295 div#b_template--15984653140133__a0cb7f9e-1b9f-4d47-a32a-b4cdc7289295-16753293455241bfa3-1 > span {justify-content : center;}",
+    "t4s_custom_js": true,
+    "share_tumblr": true,
+    "share_telegram": false,
+    "share_whatsapp": false,
+    "social_facebook_link": "#",
+    "social_twitter_link": "#",
+    "social_instagram_link": "#",
+    "social_dribbble_link": "",
+    "social_linkedin_link": "#",
+    "social_pinterest_link": "#",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "social_behance_link": "",
+    "social_soundcloud_link": "",
+    "social_tiktok_link": "",
+    "favicon": "shopify:\/\/shop_images\/fc-logo-b-sq.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/fc-logo-b.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "large",
+    "pr_btn_round": 40,
+    "sections": {
+      "title_config": {
+        "type": "title_config",
+        "blocks": {
+          "title_config-0": {
+            "type": "title",
+            "settings": {
+              "color": "#000000",
+              "family": "2",
+              "size": 24,
+              "weight": 500,
+              "lh": 32,
+              "ls": 0,
+              "space": 0,
+              "size_mb": 24,
+              "lh_mb": 32,
+              "ls_mb": 0,
+              "space_mb": 10
+            }
+          },
+          "title_config-1": {
+            "type": "subtitle",
+            "settings": {
+              "italic": true,
+              "color": "#878787",
+              "family": "3",
+              "size": 14,
+              "weight": 400,
+              "lh": 0,
+              "ls": 0,
+              "space": 0,
+              "size_mb": 14,
+              "lh_mb": 0,
+              "ls_mb": 0,
+              "space_mb": 0
+            }
+          }
+        },
+        "block_order": [
+          "title_config-0",
+          "title_config-1"
+        ],
+        "settings": {
+          "design_heading": "1",
+          "heading_align": "t4s-text-center",
+          "top_heading": "BEST SELLER",
+          "icon_heading": "las la-gem",
+          "top_subheading": "Top sale in this week",
+          "tophead_mb": 30
+        }
+      },
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "announcement-bar-0": {
+            "type": "announcement",
+            "settings": {
+              "link": "",
+              "content": "<p>Free shipping on all orders (restrictions apply)<\/p>",
+              "adding_border": false,
+              "countdown": "2022\/04\/19",
+              "txt_day": "days",
+              "dayx": 0
+            }
+          }
+        },
+        "block_order": [
+          "announcement-bar-0"
+        ],
+        "settings": {
+          "show_announcement": false,
+          "effect": "1",
+          "au_time": 3.5,
+          "height": 41,
+          "fontsize": 14,
+          "cl": "#ffffff",
+          "bg": "#0078b2",
+          "bg_op": 100,
+          "close": "0",
+          "cl_btn": "#ffffff",
+          "version": "1",
+          "date": 60
+        }
+      },
+      "top-bar": {
+        "type": "top-bar",
+        "blocks": {
+          "078526dd-15ce-4b11-9909-f96363b07219": {
+            "type": "html",
+            "disabled": true,
+            "settings": {
+              "html": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"16\" height=\"16\" viewbox=\"0 0 32 32\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\">\n   <path d=\"M23.407 30.394c-2.431 0-8.341-3.109-13.303-9.783-4.641-6.242-6.898-10.751-6.898-13.785 0-2.389 1.65-3.529 2.536-4.142l0.219-0.153c0.979-0.7 2.502-0.927 3.086-0.927 1.024 0 1.455 0.599 1.716 1.121 0.222 0.442 2.061 4.39 2.247 4.881 0.286 0.755 0.192 1.855-0.692 2.488l-0.155 0.108c-0.439 0.304-1.255 0.869-1.368 1.557-0.055 0.334 0.057 0.684 0.342 1.068 1.423 1.918 5.968 7.55 6.787 8.314 0.642 0.6 1.455 0.685 2.009 0.218 0.573-0.483 0.828-0.768 0.83-0.772l0.059-0.057c0.048-0.041 0.496-0.396 1.228-0.396 0.528 0 1.065 0.182 1.596 0.541 1.378 0.931 4.487 3.011 4.487 3.011l0.050 0.038c0.398 0.341 0.973 1.323 0.302 2.601-0.695 1.327-2.85 4.066-5.079 4.066zM9.046 2.672c-0.505 0-1.746 0.213-2.466 0.728l-0.232 0.162c-0.827 0.572-2.076 1.435-2.076 3.265 0 2.797 2.188 7.098 6.687 13.149 4.914 6.609 10.532 9.353 12.447 9.353 1.629 0 3.497-2.276 4.135-3.494 0.392-0.748 0.071-1.17-0.040-1.284-0.36-0.241-3.164-2.117-4.453-2.988-0.351-0.238-0.688-0.358-0.999-0.358-0.283 0-0.469 0.1-0.532 0.14-0.104 0.111-0.39 0.405-0.899 0.833-0.951 0.801-2.398 0.704-3.424-0.254-0.923-0.862-5.585-6.666-6.916-8.459-0.46-0.62-0.641-1.252-0.538-1.877 0.187-1.133 1.245-1.866 1.813-2.26l0.142-0.099c0.508-0.363 0.4-1.020 0.316-1.242-0.157-0.414-1.973-4.322-2.203-4.781-0.188-0.376-0.336-0.533-0.764-0.533z\" fill=\"currentColor\"><\/path>\n<\/svg>\n<a class=\"t4s-ct\" href=\"tel:8777010020\"> 877-701-0020<\/a> \n<svg class=\"ml__15\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"16\" height=\"16\" viewbox=\"0 0 32 32\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink \">\n   <path d=\"M28.244 7.47h-25.572v17.060h26.656v-17.060h-1.084zM27.177 8.536l-10.298 10.298c-0.47 0.47-1.289 0.47-1.759 0l-10.3-10.298h22.356zM3.738 8.961l6.923 6.922-6.923 6.923v-13.846zM4.589 23.464l6.827-6.826 2.951 2.95c0.436 0.436 1.016 0.677 1.633 0.677s1.197-0.241 1.633-0.677l2.951-2.951 6.826 6.826h-22.822zM28.262 22.807l-6.923-6.924 6.923-6.924v13.848z\" fill=\"currentColor\"><\/path>\n<\/svg> \n<a class=\"t4s-ct\" href=\"mailto:info@fcuniforms.com\">info@fcuniforms.com<\/a>",
+              "hide": false,
+              "text_align": "start",
+              "col": "4"
+            }
+          },
+          "dbd29f68-7494-4832-9849-d8b131d8bc39": {
+            "type": "html",
+            "disabled": true,
+            "settings": {
+              "html": "",
+              "hide": false,
+              "text_align": "start",
+              "col": "4"
+            }
+          },
+          "5a3ceb41-4dc2-49c5-b7cd-03358d4095e4": {
+            "type": "html",
+            "settings": {
+              "html": "FREE SHIPPING ON ALL ORDERS (RESTRICTIONS APPLY)",
+              "hide": false,
+              "text_align": "center",
+              "col": "12"
+            }
+          }
+        },
+        "block_order": [
+          "078526dd-15ce-4b11-9909-f96363b07219",
+          "dbd29f68-7494-4832-9849-d8b131d8bc39",
+          "5a3ceb41-4dc2-49c5-b7cd-03358d4095e4"
+        ],
+        "custom_css": [
+          ".t4s-top-bar__wrap {padding: 0px;}"
+        ],
+        "settings": {
+          "show_topbar": true,
+          "topbar_transparent": false,
+          "height": 30,
+          "fontsize": 14,
+          "cl": "#0078b2",
+          "cl_a_hover": "#0083c1",
+          "bg": "#f2f2f2",
+          "bg_op": 100,
+          "show_border": false,
+          "bd_cl": "#0078b2",
+          "cl_tr": "#ffffff",
+          "cl_a_hover_tr": "#56cfe1",
+          "bg_tr": "#000000",
+          "bg_op_tr": 10,
+          "show_border_tr": false,
+          "bd_cl_tr": "#b3b3b3"
+        }
+      },
+      "pr_item_config": {
+        "type": "pr_item_config",
+        "blocks": {
+          "pr_item_config-0": {
+            "type": "1",
+            "settings": {
+              "heading": "Product desgin 01",
+              "addtocart_color": "#000000",
+              "addtocart_color_hover": "#222222",
+              "quickview_color": "#000000",
+              "quickview_color_hover": "#222222",
+              "wishlist_color": "#696969",
+              "wishlist_color_hover": "#56cfe1",
+              "wishlist_color_active": "#e81e63",
+              "compare_color": "#ffffff",
+              "compare_color_hover": "#222222",
+              "size_list_color": "#ffffff"
+            }
+          },
+          "pr_item_config-1": {
+            "type": "2",
+            "settings": {
+              "heading": "Product desgin 02",
+              "addtocart_color": "#ffffff",
+              "addtocart_color_hover": "#222222",
+              "quickview_color": "#ffffff",
+              "quickview_color_hover": "#222222",
+              "wishlist_color": "#ffffff",
+              "wishlist_color_hover": "#222222",
+              "wishlist_color_active": "#e81e63",
+              "compare_color": "#ffffff",
+              "compare_color_hover": "#222222",
+              "size_list_color": "#ffffff"
+            }
+          },
+          "2d440fe4-21d6-435e-80f4-4566e558d149": {
+            "type": "3",
+            "settings": {
+              "heading": "Product desgin 03",
+              "addtocart_color": "#ffffff",
+              "addtocart_color_hover": "#222222",
+              "quickview_color": "#ffffff",
+              "quickview_color_hover": "#222222",
+              "wishlist_color": "#ffffff",
+              "wishlist_color_hover": "#222222",
+              "wishlist_color_active": "#e81e63",
+              "compare_color": "#ffffff",
+              "compare_color_hover": "#222222",
+              "size_list_color": "#ffffff"
+            }
+          },
+          "5ffde619-43c1-4298-a7b5-e084f4ac9a6f": {
+            "type": "4",
+            "settings": {
+              "heading": "Product desgin 04",
+              "addtocart_color": "#ffffff",
+              "addtocart_color_hover": "#222222",
+              "quickview_color": "#ffffff",
+              "quickview_color_hover": "#222222",
+              "wishlist_color": "#ffffff",
+              "wishlist_color_hover": "#222222",
+              "wishlist_color_active": "#e81e63",
+              "compare_color": "#ffffff",
+              "compare_color_hover": "#222222",
+              "pr_btn_round": 0,
+              "size_list_color": "#ffffff"
+            }
+          },
+          "6aaf3ad4-6cce-439a-8b6e-bbc9ecb76afb": {
+            "type": "5",
+            "settings": {
+              "heading": "Product desgin 05",
+              "addtocart_color": "#ffffff",
+              "addtocart_color_hover": "#222222",
+              "quickview_color": "#ffffff",
+              "quickview_color_hover": "#222222",
+              "wishlist_color": "#ffffff",
+              "wishlist_color_hover": "#222222",
+              "wishlist_color_active": "#e81e63",
+              "compare_color": "#ffffff",
+              "compare_color_hover": "#222222",
+              "size_list_color": "#ffffff"
+            }
+          },
+          "cfa92121-b4a8-4f0a-839e-71732cb04a38": {
+            "type": "6",
+            "settings": {
+              "heading": "Product desgin 06",
+              "atc_style": "default",
+              "addtocart_color": "#222222",
+              "addtocart_color_hover": "#56cfe1",
+              "quickview_color": "#ffffff",
+              "quickview_color_hover": "#222222",
+              "wishlist_color": "#ffffff",
+              "wishlist_color_hover": "#222222",
+              "wishlist_color_active": "#e81e63",
+              "compare_color": "#ffffff",
+              "compare_color_hover": "#222222",
+              "size_list_color": "#ffffff"
+            }
+          },
+          "874bf26d-6292-4c95-95ec-4fbe4bf90909": {
+            "type": "7",
+            "settings": {
+              "heading": "Product design 07",
+              "atc_style": "default",
+              "addtocart_color": "#2453d3",
+              "addtocart_color_hover": "#2453d3",
+              "quickview_color": "#000000",
+              "quickview_color_hover": "#2453d3",
+              "wishlist_color": "#000000",
+              "wishlist_color_hover": "#2453d3",
+              "wishlist_color_active": "#e81e63",
+              "compare_color": "#000000",
+              "compare_color_hover": "#2453d3",
+              "size_list_color": "#ffffff"
+            }
+          },
+          "d14c2101-cc64-44c9-984e-c26c67cea653": {
+            "type": "list",
+            "settings": {
+              "heading": "Product list",
+              "content_color": "#878787",
+              "addtocart_color": "#2453d3",
+              "addtocart_color_hover": "#222222",
+              "quickview_color": "#2453d3",
+              "quickview_color_hover": "#222222",
+              "wishlist_color": "#ffffff",
+              "wishlist_color_hover": "#222222",
+              "wishlist_color_active": "#e81e63",
+              "compare_color": "#ffffff",
+              "compare_color_hover": "#222222",
+              "size_list_color": "#ffffff"
+            }
+          },
+          "a0316aa9-42b3-45b6-9283-f39533dfeceb": {
+            "type": "packery",
+            "settings": {
+              "heading": "Product packery",
+              "pr_title_color": "#ffffff",
+              "pr_title_color_hover": "#56cfe1",
+              "price_color": "#696969",
+              "price_color_second": "#696969",
+              "price_sale_color": "#ec0101",
+              "addtocart_color": "#ffffff",
+              "addtocart_color_hover": "#222222",
+              "quickview_color": "#ffffff",
+              "quickview_color_hover": "#222222",
+              "wishlist_color": "#ffffff",
+              "wishlist_color_hover": "#222222",
+              "wishlist_color_active": "#e81e63",
+              "compare_color": "#ffffff",
+              "compare_color_hover": "#222222",
+              "size_list_color": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "pr_item_config-0",
+          "pr_item_config-1",
+          "2d440fe4-21d6-435e-80f4-4566e558d149",
+          "5ffde619-43c1-4298-a7b5-e084f4ac9a6f",
+          "6aaf3ad4-6cce-439a-8b6e-bbc9ecb76afb",
+          "cfa92121-b4a8-4f0a-839e-71732cb04a38",
+          "874bf26d-6292-4c95-95ec-4fbe4bf90909",
+          "d14c2101-cc64-44c9-984e-c26c67cea653",
+          "a0316aa9-42b3-45b6-9283-f39533dfeceb"
+        ],
+        "settings": {
+          "txt_tr_pr": "none",
+          "fnt_df_pr": "1",
+          "size_pr": 16,
+          "fw_pr": 500,
+          "lh_pr": 24,
+          "ls_pr": 0,
+          "size_price_pr": 14,
+          "fw_price_pr": 400,
+          "space_img_content": 8,
+          "space_elements": 0,
+          "swatch_color_size": 16,
+          "swatch_color_size_mb": 20,
+          "pr_btn_round": 8,
+          "pr_title_color": "#000000",
+          "pr_title_color_hover": "#2453d3",
+          "price_color": "#000000",
+          "price_color_second": "#8c8c8c",
+          "price_sale_color": "#d32424",
+          "vendors_color": "#8c8c8c",
+          "vendors_color_hover": "#2453d3",
+          "countdown_color": "#ffffff",
+          "countdown_overlay": 10,
+          "pr_bg_overlay": "#000000",
+          "pr_overlay": 10
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "80ba7668-2222-4447-acf6-e64f40078fa3": {
+            "type": "bl_col",
+            "settings": {
+              "col_heading": "",
+              "menu": "",
+              "menu_style": "1",
+              "col_border": "none",
+              "col_dk": "15",
+              "col_tb": "6",
+              "col_mb": "12",
+              "content_align": "t4s-text-lg-center",
+              "padding_inner": "",
+              "content_align_tb": "t4s-text-md-start",
+              "padding_inner_tb": "",
+              "col_heading_mobile": "",
+              "content_align_mb": "t4s-text-start",
+              "padding_inner_mb": ""
+            }
+          },
+          "46bf4874-8ec5-4142-8401-fc313db27782": {
+            "type": "image",
+            "settings": {
+              "image_child": "shopify:\/\/shop_images\/fc-logo-b.png",
+              "link_img": "",
+              "img_width": 180,
+              "img_width_mb": 120,
+              "mgb": 20,
+              "mgb_mb": 20
+            }
+          },
+          "8fe37237-5336-4c61-b82c-200f5182b597": {
+            "type": "custom_text",
+            "settings": {
+              "text": "The leader in wholesale and retail security and law enforcement uniforms",
+              "remove_br_tag": false,
+              "tag": "p",
+              "fontf": "inherit",
+              "text_cl": "#ffffff",
+              "text_fs": 14,
+              "text_lh": 17,
+              "text_fw": 400,
+              "text_ls": 0,
+              "font_italic": true,
+              "text_shadow": false,
+              "text_mgb": 15,
+              "hidden_mobile": false,
+              "text_fs_mb": 16,
+              "text_lh_mb": 0,
+              "text_ls_mb": 0,
+              "text_mgb_mobile": 10
+            }
+          },
+          "72cea036-6bf1-4046-9513-20b839c8ae88": {
+            "type": "bl_col",
+            "settings": {
+              "col_heading": "Helpful Links",
+              "menu": "",
+              "menu_style": "1",
+              "col_border": "none",
+              "col_dk": "15",
+              "col_tb": "6",
+              "col_mb": "12",
+              "content_align": "t4s-text-lg-start",
+              "padding_inner": ",,,40px",
+              "content_align_tb": "t4s-text-md-start",
+              "padding_inner_tb": "",
+              "col_heading_mobile": "",
+              "content_align_mb": "t4s-text-start",
+              "padding_inner_mb": ""
+            }
+          },
+          "eece89bf-3580-499e-a104-e6fee5a386c1": {
+            "type": "cus_menu",
+            "settings": {
+              "menu": "footer-links",
+              "menu_style": "1"
+            }
+          },
+          "4c94e3a5-b6d5-4262-8e89-12582a2d8f64": {
+            "type": "bl_col",
+            "settings": {
+              "col_heading": "Contact Information",
+              "menu": "",
+              "menu_style": "1",
+              "col_border": "none",
+              "col_dk": "3",
+              "col_tb": "6",
+              "col_mb": "12",
+              "content_align": "t4s-text-md-start",
+              "padding_inner": "",
+              "content_align_tb": "t4s-text-md-start",
+              "padding_inner_tb": "",
+              "col_heading_mobile": "",
+              "content_align_mb": "t4s-text-start",
+              "padding_inner_mb": ""
+            }
+          },
+          "b9a1b8fa-d109-4e5e-9434-a5ed5dabe691": {
+            "type": "html",
+            "settings": {
+              "html_content": "<p>\n<strong>Address:<\/strong><br>8928 Fullbright Avenue<br>Chatsworth, CA 91311\n<\/p>\n<p>\n<strong>Phone:<\/strong><br>877-701-0020\n<\/p>\n<p>\n<strong>Email:<\/strong><br>info@fcuniforms.com\n<\/p>\n<p>\n<strong>Working Days\/Hours:<\/strong><br>Mon - Fri \/ 9:00AM - 5:00PM\n<\/p>",
+              "hidden_mobile": false
+            }
+          },
+          "b7e36c45-7b4e-4e59-a144-7d37d539aeea": {
+            "type": "bl_col",
+            "settings": {
+              "col_heading": "Be the first to know",
+              "menu": "",
+              "menu_style": "1",
+              "col_border": "none",
+              "col_dk": "4",
+              "col_tb": "6",
+              "col_mb": "12",
+              "content_align": "t4s-text-md-start",
+              "padding_inner": "",
+              "content_align_tb": "t4s-text-md-start",
+              "padding_inner_tb": "",
+              "col_heading_mobile": "",
+              "content_align_mb": "t4s-text-start",
+              "padding_inner_mb": ""
+            }
+          },
+          "13b316fe-52c0-4108-8f9d-39f59ba60a2c": {
+            "type": "custom_text",
+            "settings": {
+              "text": "Get all the latest information on Events,\nSales and Offers. Sign up for the First Class Uniforms newsletter today.\n<p>Enter your email address<\/p>",
+              "remove_br_tag": false,
+              "tag": "p",
+              "fontf": "inherit",
+              "text_cl": "#777777",
+              "text_fs": 15,
+              "text_lh": 18,
+              "text_fw": 400,
+              "text_ls": 0,
+              "font_italic": false,
+              "text_shadow": false,
+              "text_mgb": 15,
+              "hidden_mobile": false,
+              "text_fs_mb": 16,
+              "text_lh_mb": 0,
+              "text_ls_mb": 0,
+              "text_mgb_mobile": 10
+            }
+          },
+          "5b8261a7-a5bc-404b-aad8-3f338e7938b7": {
+            "type": "newsletter",
+            "settings": {
+              "form_width": 0,
+              "form_width_mb": 0,
+              "newl_des": "1",
+              "news_align": "center",
+              "newl_size": "small",
+              "btn_icon": false,
+              "input_cl": "#878787",
+              "border_cl": "#000000",
+              "btn_cl": "#ffffff",
+              "btn_bg_cl": "#0083c1",
+              "btn_hover_cl": "#ffffff",
+              "btn_hover_bg_cl": "#0078b2",
+              "hidden_mobile": false,
+              "mgb": 15,
+              "mgb_mb": 10
+            }
+          }
+        },
+        "block_order": [
+          "80ba7668-2222-4447-acf6-e64f40078fa3",
+          "46bf4874-8ec5-4142-8401-fc313db27782",
+          "8fe37237-5336-4c61-b82c-200f5182b597",
+          "72cea036-6bf1-4046-9513-20b839c8ae88",
+          "eece89bf-3580-499e-a104-e6fee5a386c1",
+          "4c94e3a5-b6d5-4262-8e89-12582a2d8f64",
+          "b9a1b8fa-d109-4e5e-9434-a5ed5dabe691",
+          "b7e36c45-7b4e-4e59-a144-7d37d539aeea",
+          "13b316fe-52c0-4108-8f9d-39f59ba60a2c",
+          "5b8261a7-a5bc-404b-aad8-3f338e7938b7"
+        ],
+        "settings": {
+          "sticky": false,
+          "collapse": true,
+          "border_top": false,
+          "enable_follow_on_shop": true,
+          "border_pos": "in",
+          "space_h_item": "10",
+          "space_v_item": "10",
+          "space_h_item_tb": "20",
+          "space_v_item_tb": "30",
+          "space_h_item_mb": "10",
+          "space_v_item_mb": "30",
+          "heading_fontf": "inherit",
+          "heading_fs": 18,
+          "heading_lh": 22,
+          "heading_fw": 500,
+          "heading_ls": 0,
+          "mgb": 20,
+          "mgb_mb": 20,
+          "text_fs": 14,
+          "text_fw": 400,
+          "heading_cl": "#ffffff",
+          "text_cl": "#ffffff",
+          "link_cl": "#ffffff",
+          "link_hover_cl": "#0078b2",
+          "border_cl": "#e6e6e6",
+          "layout": "t4s-container-wrap",
+          "cl_bg": "#121214",
+          "cl_bg_gradient": "",
+          "mg": ",,,",
+          "pd": "50px,,60px,",
+          "mg_tb": ",,,",
+          "pd_tb": "",
+          "mg_mb": ",,,",
+          "pd_mb": "48px,,40px,"
+        }
+      },
+      "bottom-bar": {
+        "type": "bottom-bar",
+        "blocks": {
+          "bottom-bar-0": {
+            "type": "bl_col",
+            "settings": {
+              "col_heading": "",
+              "menu": "",
+              "col_dk": "12",
+              "col_tb": "12",
+              "col_mb": "12",
+              "content_align": "t4s-text-md-center",
+              "padding_inner": "",
+              "col_heading_mobile": "",
+              "content_align_mb": "t4s-text-center",
+              "padding_inner_mb": ""
+            }
+          },
+          "bottom-bar-1": {
+            "type": "copyR",
+            "settings": {
+              "text": "© [year] First Class Uniforms. All Right Reserved",
+              "mgb": 0,
+              "mgb_mb": 0
+            }
+          }
+        },
+        "block_order": [
+          "bottom-bar-0",
+          "bottom-bar-1"
+        ],
+        "settings": {
+          "hidden_bottombar": false,
+          "border_top": false,
+          "border_pos": "in",
+          "space_h_item": "0",
+          "space_v_item": "0",
+          "space_h_item_mb": "0",
+          "space_v_item_mb": "0",
+          "heading_fontf": "inherit",
+          "heading_fs": 16,
+          "heading_lh": 22,
+          "heading_fw": 500,
+          "heading_ls": 0,
+          "mgb": 30,
+          "mgb_mb": 20,
+          "text_fs": 14,
+          "text_fw": 400,
+          "heading_cl": "#222222",
+          "text_cl": "#878787",
+          "link_cl": "#878787",
+          "link_hover_cl": "#0078b2",
+          "border_cl": "#e6e6e6",
+          "layout": "t4s-container-wrap",
+          "cl_bg": "#000000",
+          "cl_bg_gradient": "",
+          "mg": ",,,",
+          "pd": "12px,0,10px,",
+          "mg_tb": ",,,",
+          "pd_tb": "",
+          "mg_mb": ",,,",
+          "pd_mb": "18px,0,10px,"
+        }
+      },
+      "toolbar_mobile": {
+        "type": "toolbar_mobile",
+        "blocks": {
+          "toolbar_mobile-0": {
+            "type": "shop",
+            "settings": {
+              "title": "Shop",
+              "link": ""
+            }
+          },
+          "toolbar_mobile-1": {
+            "type": "wish",
+            "settings": {
+              "title": "Wishlist"
+            }
+          },
+          "toolbar_mobile-2": {
+            "type": "cart",
+            "settings": {
+              "title": "Cart"
+            }
+          },
+          "toolbar_mobile-3": {
+            "type": "account",
+            "settings": {
+              "title": "Account"
+            }
+          },
+          "toolbar_mobile-4": {
+            "type": "search",
+            "settings": {
+              "title": "Search"
+            }
+          }
+        },
+        "block_order": [
+          "toolbar_mobile-0",
+          "toolbar_mobile-1",
+          "toolbar_mobile-2",
+          "toolbar_mobile-3",
+          "toolbar_mobile-4"
+        ],
+        "settings": {
+          "enable_toolbar": true,
+          "show_txt": true,
+          "bg_color": "#ffffff",
+          "icon_color": "#222222",
+          "label_color": "#222222",
+          "count_bg_color": "#000000",
+          "count_text_color": "#ffffff"
+        }
+      },
+      "back_top": {
+        "type": "back_top",
+        "settings": {
+          "enable_backtop": true,
+          "enable_hidden_mobile": false,
+          "backtop_des": "1",
+          "enable_progress_bar": true,
+          "border_cl": "#f5f5f5",
+          "border_cl_active": "#000000"
+        }
+      },
+      "btn_config": {
+        "type": "btn_config",
+        "blocks": {
+          "btn_config-0": {
+            "type": "custom1",
+            "settings": {
+              "color_primary": "#2453d3",
+              "color_second": "#ffffff",
+              "color_primary_hover": "#000000",
+              "color_second_hover": "#ffffff"
+            }
+          },
+          "7f18f586-8ca8-4433-b97a-419550b517f5": {
+            "type": "custom2",
+            "settings": {
+              "color_primary": "#f7f7f7",
+              "color_second": "#222222",
+              "color_primary_hover": "#0048ff",
+              "color_second_hover": "#222222"
+            }
+          }
+        },
+        "block_order": [
+          "btn_config-0",
+          "7f18f586-8ca8-4433-b97a-419550b517f5"
+        ],
+        "settings": {
+          "fnt_fm_button": "--font-family-1",
+          "btn_fw": 600,
+          "btn_bdr": 40,
+          "other_radius": 0,
+          "button_effect": "default"
+        }
+      },
+      "mega-menu": {
+        "type": "mega-menu",
+        "blocks": {
+          "45fa281e-2be5-4727-bd01-942824713769": {
+            "type": "mega",
+            "settings": {
+              "id": 1
+            }
+          },
+          "02beea21-3cb9-41ce-a1ab-04ae44b7f47e": {
+            "type": "link",
+            "settings": {
+              "tt_hd": "Security",
+              "url": "",
+              "open_link": "_self",
+              "menu": "security-submenu",
+              "col": "3"
+            }
+          },
+          "95da8d7e-67f2-4ebd-b1ad-e83d518cb37e": {
+            "type": "cat",
+            "settings": {
+              "collection": "security-shirts",
+              "collection_title": "SHIRTS",
+              "collection_subtitle": "",
+              "image": "shopify:\/\/shop_images\/SECURITY-SHIRTS_7339e7cc-ee74-4796-a0c7-5364ee11cb8c.jpg",
+              "collection_des": "14",
+              "title_cl": "#222222",
+              "title_cl_hover": "#0078b2",
+              "subtitle_cl": "#878787",
+              "count_cl": "#222222",
+              "border_cl": "#e5e5e5",
+              "open_link": "_self",
+              "space_bottom": 20,
+              "space_bottom_mb": 10,
+              "border": false,
+              "item_pd": 0,
+              "item_rd": 0,
+              "img_effect": "zoom",
+              "b_effect": "plus-zoom-overlay",
+              "image_ratio": "ratio1_1",
+              "image_size": "cover",
+              "image_position": "8",
+              "collection_link": "",
+              "col": "3"
+            }
+          },
+          "fd4151f8-da6f-415a-b4a9-a732ed44bf73": {
+            "type": "cat",
+            "settings": {
+              "collection": "outerwear-1",
+              "collection_title": "OUTERWEAR",
+              "collection_subtitle": "",
+              "image": "shopify:\/\/shop_images\/SECURITY-OUTERWEAR.jpg",
+              "collection_des": "14",
+              "title_cl": "#222222",
+              "title_cl_hover": "#0078b2",
+              "subtitle_cl": "#878787",
+              "count_cl": "#222222",
+              "border_cl": "#e5e5e5",
+              "open_link": "_self",
+              "space_bottom": 20,
+              "space_bottom_mb": 10,
+              "border": false,
+              "item_pd": 0,
+              "item_rd": 0,
+              "img_effect": "zoom",
+              "b_effect": "plus-zoom-overlay",
+              "image_ratio": "ratio1_1",
+              "image_size": "cover",
+              "image_position": "8",
+              "collection_link": "",
+              "col": "3"
+            }
+          },
+          "cec6a189-3084-497a-b4a8-b391531b2503": {
+            "type": "cat",
+            "settings": {
+              "collection": "accessories-3",
+              "collection_title": "ACCESSORIES",
+              "collection_subtitle": "",
+              "image": "shopify:\/\/shop_images\/SECURITY-ACCESSORIES.jpg",
+              "collection_des": "14",
+              "title_cl": "#222222",
+              "title_cl_hover": "#0078b2",
+              "subtitle_cl": "#878787",
+              "count_cl": "#222222",
+              "border_cl": "#e5e5e5",
+              "open_link": "_self",
+              "space_bottom": 20,
+              "space_bottom_mb": 10,
+              "border": false,
+              "item_pd": 0,
+              "item_rd": 0,
+              "img_effect": "zoom",
+              "b_effect": "plus-zoom-overlay",
+              "image_ratio": "ratio1_1",
+              "image_size": "cover",
+              "image_position": "8",
+              "collection_link": "",
+              "col": "3"
+            }
+          },
+          "5bdb6eec-e820-4415-ac9b-9c6096eb20c1": {
+            "type": "mega",
+            "settings": {
+              "id": 2
+            }
+          },
+          "cc1a7875-8010-421e-b69c-efc19a6043d6": {
+            "type": "link",
+            "settings": {
+              "tt_hd": "Law Enforcement",
+              "url": "",
+              "open_link": "_self",
+              "menu": "law-enforcement-submenu",
+              "col": "3"
+            }
+          },
+          "1dd1ea4d-fdd6-4ef2-afae-be59b1278efe": {
+            "type": "cat",
+            "settings": {
+              "collection": "shirts-1",
+              "collection_title": "SHIRTS",
+              "collection_subtitle": "",
+              "image": "shopify:\/\/shop_images\/LAW-ENFORCEMENT-SHIRTS.jpg",
+              "collection_des": "14",
+              "title_cl": "#222222",
+              "title_cl_hover": "#0078b2",
+              "subtitle_cl": "#878787",
+              "count_cl": "#222222",
+              "border_cl": "#e5e5e5",
+              "open_link": "_self",
+              "space_bottom": 20,
+              "space_bottom_mb": 10,
+              "border": false,
+              "item_pd": 0,
+              "item_rd": 0,
+              "img_effect": "zoom",
+              "b_effect": "plus-zoom-overlay",
+              "image_ratio": "ratio1_1",
+              "image_size": "cover",
+              "image_position": "8",
+              "collection_link": "",
+              "col": "3"
+            }
+          },
+          "8b5be39f-bd3c-4d22-8778-adb99e5481d4": {
+            "type": "cat",
+            "settings": {
+              "collection": "outerwear-2",
+              "collection_title": "OUTERWEAR",
+              "collection_subtitle": "",
+              "image": "shopify:\/\/shop_images\/LAW-ENFORCEMENT-OUTERWEAR.jpg",
+              "collection_des": "14",
+              "title_cl": "#222222",
+              "title_cl_hover": "#0078b2",
+              "subtitle_cl": "#878787",
+              "count_cl": "#222222",
+              "border_cl": "#e5e5e5",
+              "open_link": "_self",
+              "space_bottom": 20,
+              "space_bottom_mb": 10,
+              "border": false,
+              "item_pd": 0,
+              "item_rd": 0,
+              "img_effect": "zoom",
+              "b_effect": "plus-zoom-overlay",
+              "image_ratio": "ratio1_1",
+              "image_size": "cover",
+              "image_position": "8",
+              "collection_link": "",
+              "col": "3"
+            }
+          },
+          "3a5b12c6-8189-4b46-a534-c659dc999eb1": {
+            "type": "cat",
+            "settings": {
+              "collection": "accessories-4",
+              "collection_title": "ACCESSORIES",
+              "collection_subtitle": "",
+              "image": "shopify:\/\/shop_images\/SECURITY-ACCESSORIES.jpg",
+              "collection_des": "14",
+              "title_cl": "#222222",
+              "title_cl_hover": "#0078b2",
+              "subtitle_cl": "#878787",
+              "count_cl": "#222222",
+              "border_cl": "#e5e5e5",
+              "open_link": "_self",
+              "space_bottom": 20,
+              "space_bottom_mb": 10,
+              "border": false,
+              "item_pd": 0,
+              "item_rd": 0,
+              "img_effect": "zoom",
+              "b_effect": "plus-zoom-overlay",
+              "image_ratio": "ratio1_1",
+              "image_size": "cover",
+              "image_position": "8",
+              "collection_link": "",
+              "col": "3"
+            }
+          },
+          "5952e385-42a5-4603-9be9-64b76f15ef48": {
+            "type": "mega",
+            "settings": {
+              "id": 3
+            }
+          },
+          "bbce3a8e-2df5-4e3b-8940-57fa5192fd2a": {
+            "type": "link",
+            "settings": {
+              "tt_hd": "Sheriff",
+              "url": "",
+              "open_link": "_self",
+              "menu": "sheriff-submenu",
+              "col": "3"
+            }
+          },
+          "98de1355-0ed6-45bc-8149-cd9f0a5a2a60": {
+            "type": "cat",
+            "settings": {
+              "collection": "shirts-2",
+              "collection_title": "SHIRTS",
+              "collection_subtitle": "",
+              "image": "shopify:\/\/shop_images\/SHERIFF-SHIRTS.jpg",
+              "collection_des": "14",
+              "title_cl": "#222222",
+              "title_cl_hover": "#0078b2",
+              "subtitle_cl": "#878787",
+              "count_cl": "#222222",
+              "border_cl": "#e5e5e5",
+              "open_link": "_self",
+              "space_bottom": 20,
+              "space_bottom_mb": 10,
+              "border": false,
+              "item_pd": 0,
+              "item_rd": 0,
+              "img_effect": "zoom",
+              "b_effect": "plus-zoom-overlay",
+              "image_ratio": "ratio1_1",
+              "image_size": "cover",
+              "image_position": "8",
+              "collection_link": "",
+              "col": "3"
+            }
+          },
+          "49a5dbc4-38e3-4d7f-9fe5-609c549bfd01": {
+            "type": "cat",
+            "settings": {
+              "collection": "outerwear-3",
+              "collection_title": "OUTERWEAR",
+              "collection_subtitle": "",
+              "image": "shopify:\/\/shop_images\/SHERIFF-OUTERWEAR.jpg",
+              "collection_des": "14",
+              "title_cl": "#222222",
+              "title_cl_hover": "#0078b2",
+              "subtitle_cl": "#878787",
+              "count_cl": "#222222",
+              "border_cl": "#e5e5e5",
+              "open_link": "_self",
+              "space_bottom": 20,
+              "space_bottom_mb": 10,
+              "border": false,
+              "item_pd": 0,
+              "item_rd": 0,
+              "img_effect": "zoom",
+              "b_effect": "plus-zoom-overlay",
+              "image_ratio": "ratio1_1",
+              "image_size": "cover",
+              "image_position": "8",
+              "collection_link": "",
+              "col": "3"
+            }
+          },
+          "e46e30b1-89ce-4d5e-9bf1-5e04e108e04e": {
+            "type": "cat",
+            "settings": {
+              "collection": "accessories-5",
+              "collection_title": "ACCESSORIES",
+              "collection_subtitle": "",
+              "image": "shopify:\/\/shop_images\/SECURITY-ACCESSORIES.jpg",
+              "collection_des": "14",
+              "title_cl": "#222222",
+              "title_cl_hover": "#0078b2",
+              "subtitle_cl": "#878787",
+              "count_cl": "#222222",
+              "border_cl": "#e5e5e5",
+              "open_link": "_self",
+              "space_bottom": 20,
+              "space_bottom_mb": 10,
+              "border": false,
+              "item_pd": 0,
+              "item_rd": 0,
+              "img_effect": "zoom",
+              "b_effect": "plus-zoom-overlay",
+              "image_ratio": "ratio1_1",
+              "image_size": "cover",
+              "image_position": "8",
+              "collection_link": "",
+              "col": "3"
+            }
+          },
+          "5780bee4-7996-44be-8a07-074b9a03a648": {
+            "type": "mega",
+            "settings": {
+              "id": 4
+            }
+          },
+          "dff98d4d-5563-4d87-a38c-da14f21fbd93": {
+            "type": "link",
+            "settings": {
+              "tt_hd": "Fire & EMS",
+              "url": "",
+              "open_link": "_self",
+              "menu": "fire-ems-submenu",
+              "col": "3"
+            }
+          },
+          "5ba0940e-475d-4bb0-9929-0e47f9052484": {
+            "type": "cat",
+            "settings": {
+              "collection": "shirts-3",
+              "collection_title": "SHIRTS",
+              "collection_subtitle": "",
+              "image": "shopify:\/\/shop_images\/FIRE-SHIRTS.jpg",
+              "collection_des": "14",
+              "title_cl": "#222222",
+              "title_cl_hover": "#0078b2",
+              "subtitle_cl": "#878787",
+              "count_cl": "#222222",
+              "border_cl": "#e5e5e5",
+              "open_link": "_self",
+              "space_bottom": 20,
+              "space_bottom_mb": 10,
+              "border": false,
+              "item_pd": 0,
+              "item_rd": 0,
+              "img_effect": "zoom",
+              "b_effect": "plus-zoom-overlay",
+              "image_ratio": "ratio1_1",
+              "image_size": "cover",
+              "image_position": "8",
+              "collection_link": "",
+              "col": "3"
+            }
+          },
+          "eff3bd19-87c5-4764-a4a8-f9168c6d36a9": {
+            "type": "cat",
+            "settings": {
+              "collection": "outerwear-4",
+              "collection_title": "OUTERWEAR",
+              "collection_subtitle": "",
+              "image": "shopify:\/\/shop_images\/FIRE-OUTERWEAR.jpg",
+              "collection_des": "14",
+              "title_cl": "#222222",
+              "title_cl_hover": "#0078b2",
+              "subtitle_cl": "#878787",
+              "count_cl": "#222222",
+              "border_cl": "#e5e5e5",
+              "open_link": "_self",
+              "space_bottom": 20,
+              "space_bottom_mb": 10,
+              "border": false,
+              "item_pd": 0,
+              "item_rd": 0,
+              "img_effect": "zoom",
+              "b_effect": "plus-zoom-overlay",
+              "image_ratio": "ratio1_1",
+              "image_size": "cover",
+              "image_position": "8",
+              "collection_link": "",
+              "col": "3"
+            }
+          },
+          "731b7ebe-565a-4d84-ba21-9737a60fbff5": {
+            "type": "cat",
+            "settings": {
+              "collection": "accessories-6",
+              "collection_title": "ACCESSORIES",
+              "collection_subtitle": "",
+              "image": "shopify:\/\/shop_images\/SECURITY-ACCESSORIES.jpg",
+              "collection_des": "14",
+              "title_cl": "#222222",
+              "title_cl_hover": "#0078b2",
+              "subtitle_cl": "#878787",
+              "count_cl": "#222222",
+              "border_cl": "#e5e5e5",
+              "open_link": "_self",
+              "space_bottom": 20,
+              "space_bottom_mb": 10,
+              "border": false,
+              "item_pd": 0,
+              "item_rd": 0,
+              "img_effect": "zoom",
+              "b_effect": "plus-zoom-overlay",
+              "image_ratio": "ratio1_1",
+              "image_size": "cover",
+              "image_position": "8",
+              "collection_link": "",
+              "col": "3"
+            }
+          },
+          "6746ebdb-6870-436e-9fa9-f2ad14a00639": {
+            "type": "mega",
+            "settings": {
+              "id": 5
+            }
+          },
+          "9b5e9533-ef91-46f0-b27e-4f44167d011d": {
+            "type": "cat",
+            "settings": {
+              "collection": "leather-duty-gear",
+              "collection_title": "LEATHER DUTY GEAR",
+              "collection_subtitle": "",
+              "image": "shopify:\/\/shop_images\/LEATHER-DUTY-GEAR.jpg",
+              "collection_des": "7",
+              "title_cl": "#222222",
+              "title_cl_hover": "#0078b2",
+              "subtitle_cl": "#878787",
+              "count_cl": "#222222",
+              "border_cl": "#e5e5e5",
+              "open_link": "_self",
+              "space_bottom": 20,
+              "space_bottom_mb": 10,
+              "border": false,
+              "item_pd": 0,
+              "item_rd": 0,
+              "img_effect": "zoom",
+              "b_effect": "plus-zoom-overlay",
+              "image_ratio": "ratio1_1",
+              "image_size": "cover",
+              "image_position": "8",
+              "collection_link": "",
+              "col": "4"
+            }
+          },
+          "9d886b02-48d0-417a-9d97-bd9f39692b7c": {
+            "type": "cat",
+            "settings": {
+              "collection": "nylon-duty-gear",
+              "collection_title": "NYLON DUTY GEAR",
+              "collection_subtitle": "",
+              "image": "shopify:\/\/shop_images\/NYLON-DUTY-GEAR_1feecb79-17f6-43d7-b1dc-e5bedcd1057d.jpg",
+              "collection_des": "7",
+              "title_cl": "#222222",
+              "title_cl_hover": "#0078b2",
+              "subtitle_cl": "#878787",
+              "count_cl": "#222222",
+              "border_cl": "#e5e5e5",
+              "open_link": "_self",
+              "space_bottom": 20,
+              "space_bottom_mb": 10,
+              "border": false,
+              "item_pd": 0,
+              "item_rd": 0,
+              "img_effect": "zoom",
+              "b_effect": "plus-zoom-overlay",
+              "image_ratio": "ratio1_1",
+              "image_size": "cover",
+              "image_position": "8",
+              "collection_link": "",
+              "col": "4"
+            }
+          },
+          "3bf02978-7365-4792-8701-c64ce9af9016": {
+            "type": "cat",
+            "settings": {
+              "collection": "synthetic-duty-gear",
+              "collection_title": "SYNTHETIC DUTY GEAR",
+              "collection_subtitle": "",
+              "image": "shopify:\/\/shop_images\/SYNTHETIC-DUTY-GEAR_18bdbd76-b396-4ddc-99ee-af487e9cde9f.jpg",
+              "collection_des": "7",
+              "title_cl": "#222222",
+              "title_cl_hover": "#0078b2",
+              "subtitle_cl": "#878787",
+              "count_cl": "#222222",
+              "border_cl": "#e5e5e5",
+              "open_link": "_self",
+              "space_bottom": 20,
+              "space_bottom_mb": 10,
+              "border": false,
+              "item_pd": 0,
+              "item_rd": 0,
+              "img_effect": "zoom",
+              "b_effect": "plus-zoom-overlay",
+              "image_ratio": "ratio1_1",
+              "image_size": "cover",
+              "image_position": "8",
+              "collection_link": "",
+              "col": "4"
+            }
+          }
+        },
+        "block_order": [
+          "45fa281e-2be5-4727-bd01-942824713769",
+          "02beea21-3cb9-41ce-a1ab-04ae44b7f47e",
+          "95da8d7e-67f2-4ebd-b1ad-e83d518cb37e",
+          "fd4151f8-da6f-415a-b4a9-a732ed44bf73",
+          "cec6a189-3084-497a-b4a8-b391531b2503",
+          "5bdb6eec-e820-4415-ac9b-9c6096eb20c1",
+          "cc1a7875-8010-421e-b69c-efc19a6043d6",
+          "1dd1ea4d-fdd6-4ef2-afae-be59b1278efe",
+          "8b5be39f-bd3c-4d22-8778-adb99e5481d4",
+          "3a5b12c6-8189-4b46-a534-c659dc999eb1",
+          "5952e385-42a5-4603-9be9-64b76f15ef48",
+          "bbce3a8e-2df5-4e3b-8940-57fa5192fd2a",
+          "98de1355-0ed6-45bc-8149-cd9f0a5a2a60",
+          "49a5dbc4-38e3-4d7f-9fe5-609c549bfd01",
+          "e46e30b1-89ce-4d5e-9bf1-5e04e108e04e",
+          "5780bee4-7996-44be-8a07-074b9a03a648",
+          "dff98d4d-5563-4d87-a38c-da14f21fbd93",
+          "5ba0940e-475d-4bb0-9929-0e47f9052484",
+          "eff3bd19-87c5-4764-a4a8-f9168c6d36a9",
+          "731b7ebe-565a-4d84-ba21-9737a60fbff5",
+          "6746ebdb-6870-436e-9fa9-f2ad14a00639",
+          "9b5e9533-ef91-46f0-b27e-4f44167d011d",
+          "9d886b02-48d0-417a-9d97-bd9f39692b7c",
+          "3bf02978-7365-4792-8701-c64ce9af9016"
+        ],
+        "settings": {
+          "bg": "#ffffff"
+        }
+      },
+      "mb_nav": {
+        "type": "mb_nav",
+        "blocks": {
+          "af63ab4e-678b-4cf1-aa1b-214b8c654648": {
+            "type": "menu",
+            "settings": {
+              "title": "Security",
+              "url": "",
+              "open_link": "_self",
+              "menu": "security-submenu",
+              "lb": "",
+              "lb_cl": "",
+              "icons_op": "2",
+              "icon": ""
+            }
+          },
+          "e7ad7e52-0d3d-4c71-be57-1f9a19509112": {
+            "type": "menu",
+            "settings": {
+              "title": "Law Enforcement",
+              "url": "",
+              "open_link": "_self",
+              "menu": "law-enforcement-submenu",
+              "lb": "",
+              "lb_cl": "",
+              "icons_op": "2",
+              "icon": ""
+            }
+          },
+          "b53e15f5-9c3c-46c6-b948-b0f61e4490ea": {
+            "type": "menu",
+            "settings": {
+              "title": "Sheriff",
+              "url": "",
+              "open_link": "_self",
+              "menu": "sheriff-submenu",
+              "lb": "",
+              "lb_cl": "",
+              "icons_op": "2",
+              "icon": ""
+            }
+          },
+          "ab77dec2-f3a9-435e-a25d-74f05a91436c": {
+            "type": "menu",
+            "settings": {
+              "title": "Fire & EMS",
+              "url": "",
+              "open_link": "_self",
+              "menu": "fire-ems-submenu",
+              "lb": "",
+              "lb_cl": "",
+              "icons_op": "2",
+              "icon": ""
+            }
+          },
+          "mb_nav-4": {
+            "type": "wis",
+            "disabled": true,
+            "settings": {
+            }
+          },
+          "mb_nav-5": {
+            "type": "sea",
+            "settings": {
+            }
+          },
+          "mb_nav-6": {
+            "type": "acc",
+            "settings": {
+            }
+          },
+          "mb_nav-7": {
+            "type": "help",
+            "settings": {
+              "title": "Need help?",
+              "text": "<a href=\"tel:%20+0123456789\">\n<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 32 32\" fill=\"currentColor\"><path d=\"M 8.65625 3 C 8.132813 3 7.617188 3.1875 7.1875 3.53125 L 7.125 3.5625 L 7.09375 3.59375 L 3.96875 6.8125 L 4 6.84375 C 3.035156 7.734375 2.738281 9.066406 3.15625 10.21875 C 3.160156 10.226563 3.152344 10.242188 3.15625 10.25 C 4.003906 12.675781 6.171875 17.359375 10.40625 21.59375 C 14.65625 25.84375 19.402344 27.925781 21.75 28.84375 L 21.78125 28.84375 C 22.996094 29.25 24.3125 28.960938 25.25 28.15625 L 28.40625 25 C 29.234375 24.171875 29.234375 22.734375 28.40625 21.90625 L 24.34375 17.84375 L 24.3125 17.78125 C 23.484375 16.953125 22.015625 16.953125 21.1875 17.78125 L 19.1875 19.78125 C 18.464844 19.433594 16.742188 18.542969 15.09375 16.96875 C 13.457031 15.40625 12.621094 13.609375 12.3125 12.90625 L 14.3125 10.90625 C 15.152344 10.066406 15.167969 8.667969 14.28125 7.84375 L 14.3125 7.8125 L 14.21875 7.71875 L 10.21875 3.59375 L 10.1875 3.5625 L 10.125 3.53125 C 9.695313 3.1875 9.179688 3 8.65625 3 Z M 8.65625 5 C 8.730469 5 8.804688 5.035156 8.875 5.09375 L 12.875 9.1875 L 12.96875 9.28125 C 12.960938 9.273438 13.027344 9.378906 12.90625 9.5 L 10.40625 12 L 9.9375 12.4375 L 10.15625 13.0625 C 10.15625 13.0625 11.304688 16.136719 13.71875 18.4375 L 13.9375 18.625 C 16.261719 20.746094 19 21.90625 19 21.90625 L 19.625 22.1875 L 22.59375 19.21875 C 22.765625 19.046875 22.734375 19.046875 22.90625 19.21875 L 27 23.3125 C 27.171875 23.484375 27.171875 23.421875 27 23.59375 L 23.9375 26.65625 C 23.476563 27.050781 22.988281 27.132813 22.40625 26.9375 C 20.140625 26.046875 15.738281 24.113281 11.8125 20.1875 C 7.855469 16.230469 5.789063 11.742188 5.03125 9.5625 C 4.878906 9.15625 4.988281 8.554688 5.34375 8.25 L 5.40625 8.1875 L 8.4375 5.09375 C 8.507813 5.035156 8.582031 5 8.65625 5 Z\"><\/path><\/svg> 877-701-0020<\/a>\n<br>\n<a href=\"mailto:info@fcuniforms.com\">\n<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewbox=\"0 0 32 32\" fill=\"currentColor\"><path d=\"M 3 8 L 3 26 L 29 26 L 29 8 Z M 7.3125 10 L 24.6875 10 L 16 15.78125 Z M 5 10.875 L 15.4375 17.84375 L 16 18.1875 L 16.5625 17.84375 L 27 10.875 L 27 24 L 5 24 Z\"><\/path><\/svg>\ninfo@fcuniforms.com<\/a>\n<style>.t4s-menu_infos_text a{border:0!important}<\/style>"
+            }
+          },
+          "mb_nav-8": {
+            "type": "lang",
+            "disabled": true,
+            "settings": {
+            }
+          },
+          "mb_nav-9": {
+            "type": "cur",
+            "disabled": true,
+            "settings": {
+            }
+          }
+        },
+        "block_order": [
+          "af63ab4e-678b-4cf1-aa1b-214b8c654648",
+          "e7ad7e52-0d3d-4c71-be57-1f9a19509112",
+          "b53e15f5-9c3c-46c6-b948-b0f61e4490ea",
+          "ab77dec2-f3a9-435e-a25d-74f05a91436c",
+          "mb_nav-4",
+          "mb_nav-5",
+          "mb_nav-6",
+          "mb_nav-7",
+          "mb_nav-8",
+          "mb_nav-9"
+        ],
+        "settings": {
+        }
+      },
+      "mb_cat": {
+        "type": "mb_cat",
+        "blocks": {
+          "cat_p3NLWa": {
+            "type": "cat",
+            "settings": {
+              "cat": "",
+              "title": "Vehicle Equpment",
+              "url": "",
+              "menu": "vehicle-equipment-main-menu",
+              "lb": "",
+              "lb_cl": "#e91e63",
+              "icons_op": "2",
+              "icon": ""
+            }
+          },
+          "cat_kBDA96": {
+            "type": "cat",
+            "settings": {
+              "cat": "",
+              "title": "Badges & IDs",
+              "url": "",
+              "menu": "badges-ids-main-menu",
+              "lb": "",
+              "lb_cl": "#e91e63",
+              "icons_op": "2",
+              "icon": ""
+            }
+          },
+          "cat_FpzMdT": {
+            "type": "cat",
+            "settings": {
+              "cat": "",
+              "title": "Uniforms",
+              "url": "",
+              "menu": "uniforms-main-menu",
+              "lb": "",
+              "lb_cl": "#e91e63",
+              "icons_op": "2",
+              "icon": ""
+            }
+          },
+          "cat_XRV6QH": {
+            "type": "cat",
+            "settings": {
+              "cat": "",
+              "title": "Shirts",
+              "url": "",
+              "menu": "shirts-main-menu",
+              "lb": "",
+              "lb_cl": "#e91e63",
+              "icons_op": "2",
+              "icon": ""
+            }
+          },
+          "cat_miyBfK": {
+            "type": "cat",
+            "settings": {
+              "cat": "",
+              "title": "Pants & Shorts",
+              "url": "",
+              "menu": "pants-shorts-main-menu",
+              "lb": "",
+              "lb_cl": "#e91e63",
+              "icons_op": "2",
+              "icon": ""
+            }
+          },
+          "cat_GdREdV": {
+            "type": "cat",
+            "settings": {
+              "cat": "",
+              "title": "Duty Gear",
+              "url": "",
+              "menu": "duty-gear",
+              "lb": "",
+              "lb_cl": "#e91e63",
+              "icons_op": "2",
+              "icon": ""
+            }
+          },
+          "cat_QMfGyY": {
+            "type": "cat",
+            "settings": {
+              "cat": "",
+              "title": "Personal Equpment",
+              "url": "",
+              "menu": "personal-equipment-main-menu",
+              "lb": "",
+              "lb_cl": "#e91e63",
+              "icons_op": "2",
+              "icon": ""
+            }
+          },
+          "cat_LELehE": {
+            "type": "cat",
+            "settings": {
+              "cat": "",
+              "title": "Outerwear",
+              "url": "",
+              "menu": "outerwear-main-menu",
+              "lb": "",
+              "lb_cl": "#e91e63",
+              "icons_op": "2",
+              "icon": ""
+            }
+          },
+          "cat_h9TjtR": {
+            "type": "cat",
+            "settings": {
+              "cat": "",
+              "title": "Cameras & Surveillance",
+              "url": "",
+              "menu": "cameras-surveillance",
+              "lb": "",
+              "lb_cl": "#e91e63",
+              "icons_op": "2",
+              "icon": ""
+            }
+          },
+          "cat_qVDNbd": {
+            "type": "cat",
+            "settings": {
+              "cat": "",
+              "title": "Footwear",
+              "url": "",
+              "menu": "footwear-main-menu",
+              "lb": "",
+              "lb_cl": "#e91e63",
+              "icons_op": "2",
+              "icon": ""
+            }
+          },
+          "cat_BkFk7L": {
+            "type": "cat",
+            "settings": {
+              "cat": "",
+              "title": "Flashlights",
+              "url": "",
+              "menu": "flashlights-main-menu",
+              "lb": "",
+              "lb_cl": "#e91e63",
+              "icons_op": "2",
+              "icon": ""
+            }
+          },
+          "cat_7CzmR3": {
+            "type": "cat",
+            "settings": {
+              "cat": "",
+              "title": "Body Armor",
+              "url": "",
+              "menu": "body-armor-main-menu",
+              "lb": "",
+              "lb_cl": "#e91e63",
+              "icons_op": "2",
+              "icon": ""
+            }
+          },
+          "cat_rTT9rh": {
+            "type": "cat",
+            "settings": {
+              "cat": "",
+              "title": "Radios  & Communication",
+              "url": "",
+              "menu": "radios-communication",
+              "lb": "",
+              "lb_cl": "#e91e63",
+              "icons_op": "2",
+              "icon": ""
+            }
+          }
+        },
+        "block_order": [
+          "cat_p3NLWa",
+          "cat_kBDA96",
+          "cat_FpzMdT",
+          "cat_XRV6QH",
+          "cat_miyBfK",
+          "cat_GdREdV",
+          "cat_QMfGyY",
+          "cat_LELehE",
+          "cat_h9TjtR",
+          "cat_qVDNbd",
+          "cat_BkFk7L",
+          "cat_7CzmR3",
+          "cat_rTT9rh"
+        ],
+        "settings": {
+        }
+      },
+      "mini_cart": {
+        "type": "mini_cart",
+        "blocks": {
+          "mini_cart-0": {
+            "type": "price",
+            "settings": {
+            }
+          },
+          "mini_cart-1": {
+            "type": "tax",
+            "settings": {
+            }
+          },
+          "mini_cart-2": {
+            "type": "agree",
+            "disabled": true,
+            "settings": {
+            }
+          },
+          "mini_cart-3": {
+            "type": "btnc",
+            "settings": {
+              "btn_icon": false,
+              "button_style": "default",
+              "btn_cl": "dark",
+              "button_effect": "default"
+            }
+          },
+          "mini_cart-4": {
+            "type": "btnck",
+            "settings": {
+              "btn_icon": false,
+              "button_style": "default",
+              "btn_cl": "primary",
+              "button_effect": "default"
+            }
+          },
+          "mini_cart-5": {
+            "type": "img",
+            "disabled": true,
+            "settings": {
+              "svg": "amazon_payments,american_express,apple_pay,bitcoin,dankort,diners_club,discover,dogecoin,dwolla,forbrugsforeningen,interac,google_pay,jcb,klarna,klarna-pay-later,litecoin,maestro,master,paypal,shopify_pay,sofort,visa",
+              "height": 30
+            }
+          },
+          "mini_cart-6": {
+            "type": "btn",
+            "settings": {
+              "title": "Return To Shop",
+              "url": "",
+              "btn_icon": false,
+              "button_style": "default",
+              "btn_cl": "primary",
+              "button_effect": "fade"
+            }
+          }
+        },
+        "block_order": [
+          "mini_cart-0",
+          "mini_cart-1",
+          "mini_cart-2",
+          "mini_cart-3",
+          "mini_cart-4",
+          "mini_cart-5",
+          "mini_cart-6"
+        ],
+        "settings": {
+          "style": "1",
+          "pos": "2",
+          "enable_pr": true,
+          "enable_calc_ship": true,
+          "enable_note": true,
+          "enable_rates": true,
+          "enable_discount": true,
+          "enable_gift_wrap": true,
+          "ship_df_country": "United States"
+        }
+      },
+      "slider_config": {
+        "type": "slider_config",
+        "settings": {
+          "btn_vi": "hover",
+          "btn_owl": "default",
+          "btn_shape": "none",
+          "btn_size": "small",
+          "dot_owl": "default",
+          "dots_round": true,
+          "dots_space": 10
+        }
+      },
+      "search-hidden": {
+        "type": "search-hidden",
+        "settings": {
+        }
+      },
+      "login-sidebar": {
+        "type": "login-sidebar",
+        "settings": {
+          "content_align": "start",
+          "btn_width": "full",
+          "button_style": "default",
+          "btns_size": "medium",
+          "btns_cl": "primary",
+          "button_effect": "default"
+        }
+      },
+      "main-qv": {
+        "type": "main-qv",
+        "blocks": {
+          "main-qv-0": {
+            "type": "title",
+            "settings": {
+              "txt_tr_pr": "none",
+              "fnt_df_pr": "1",
+              "size_pr": 16,
+              "fw_pr": 600,
+              "lh_pr": 0,
+              "ls_pr": 0,
+              "pr_title_color": "#222222",
+              "pr_title_color_hover": "#56cfe1"
+            }
+          },
+          "main-qv-1": {
+            "type": "price_review",
+            "settings": {
+              "price": "1",
+              "type_sale": "0",
+              "tax_ship": true,
+              "rating": true,
+              "review_liquid": "",
+              "size_price_pr": 22,
+              "fw_price_pr": 400,
+              "price_color": "#ec0101",
+              "price_sale_color": "#ec0101"
+            }
+          },
+          "main-qv-2": {
+            "type": "description",
+            "settings": {
+              "des": "2",
+              "text": "",
+              "length": 31
+            }
+          },
+          "main-qv-3": {
+            "type": "form",
+            "settings": {
+              "selector_mode": "block",
+              "color_mode": "color",
+              "enable_fit_ratio_img": false,
+              "color_size": "medium",
+              "show_qty": true,
+              "enable_wishlist": true,
+              "enable_compare": true,
+              "btn_atc_full": false,
+              "pr_btn_round": 40,
+              "ani": "none",
+              "time": 6,
+              "btn_txt": "3",
+              "btn_icon": false,
+              "button_style": "default",
+              "button_color": "dark",
+              "button_effect": "fade",
+              "wishlist_color": "#222222",
+              "wishlist_color_hover": "#56cfe1",
+              "wishlist_color_active": "#e81e1e",
+              "compare_color": "#222222",
+              "compare_color_hover": "#56cfe1",
+              "compare_color_active": "#222222",
+              "show_dynamic_checkout": false,
+              "btn_txt2": "3",
+              "button_color_payment": "dark",
+              "show_gift_card_recipient": true,
+              "product_list": [
+
+              ],
+              "show_product_current": true,
+              "qty_val": "0",
+              "advance_label": "Choose style",
+              "advance_pr_list": [
+
+              ]
+            }
+          },
+          "main-qv-4": {
+            "type": "size_delivery_ask",
+            "settings": {
+              "size_chart": "3",
+              "pos_sizeg": "1",
+              "sc_type": "1",
+              "page": "",
+              "size_ck": "",
+              "delivery": false,
+              "page_dr": "",
+              "ask": false,
+              "phone": true
+            }
+          },
+          "main-qv-5": {
+            "type": "meta",
+            "settings": {
+              "show_options": false,
+              "show_vendor": false,
+              "show_type": false,
+              "show_sku": true,
+              "show_barcode": false,
+              "show_available": true,
+              "show_category": false,
+              "show_tags": false
+            }
+          },
+          "main-qv-6": {
+            "type": "social",
+            "disabled": true,
+            "settings": {
+              "socials_align": "start",
+              "social_mode": "1",
+              "social_style": "3",
+              "social_size": "medium",
+              "bd_radius": 0,
+              "use_color_set": false,
+              "icon_cl": "#878787",
+              "bg_cl": "#222222",
+              "space_h_item": "5",
+              "space_v_item": "5",
+              "space_h_item_mb": "2",
+              "space_v_item_mb": "2"
+            }
+          }
+        },
+        "block_order": [
+          "main-qv-0",
+          "main-qv-1",
+          "main-qv-2",
+          "main-qv-3",
+          "main-qv-4",
+          "main-qv-5",
+          "main-qv-6"
+        ],
+        "settings": {
+          "demo_pr": "",
+          "image_ratio": "ratio1_1",
+          "image_size": "contain",
+          "image_position": "8",
+          "enable_video_looping": false,
+          "enable_video_muting": true,
+          "enable_video_autoplaying": true,
+          "eff": "fade",
+          "nav_btn": true,
+          "btn_vi": "hover",
+          "btn_owl": "outline",
+          "btn_shape": "round",
+          "btn_cl": "primary",
+          "btn_size": "small",
+          "btn_hidden_mobile": false,
+          "nav_dot": false,
+          "dot_owl": "default",
+          "dots_cl": "dark",
+          "dots_round": true,
+          "dots_space": 10,
+          "dots_hidden_mobile": false
+        }
+      },
+      "facets": {
+        "type": "facets",
+        "settings": {
+          "style_color_filter": "Color, color, Colour , colour",
+          "style_tag_filter": ""
+        }
+      },
+      "header-vertical": {
+        "type": "header-vertical",
+        "blocks": {
+          "header-vertical-0": {
+            "type": "mega",
+            "settings": {
+              "title": "mega",
+              "url": "",
+              "open_link": "_self",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "#00badb",
+              "pos_sub": "right-start",
+              "wid": "cus",
+              "cus_wid": 1200,
+              "id": 1,
+              "r_s_h_item": "30",
+              "r_s_v_item": "30"
+            }
+          },
+          "header-vertical-1": {
+            "type": "mega",
+            "settings": {
+              "title": "mega",
+              "url": "",
+              "open_link": "_self",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "#00badb",
+              "pos_sub": "right-start",
+              "wid": "cus",
+              "cus_wid": 1200,
+              "id": 1,
+              "r_s_h_item": "30",
+              "r_s_v_item": "30"
+            }
+          },
+          "header-vertical-2": {
+            "type": "base",
+            "settings": {
+              "title": "base",
+              "url": "\/",
+              "open_link": "_self",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": ""
+            }
+          }
+        },
+        "block_order": [
+          "header-vertical-0",
+          "header-vertical-1",
+          "header-vertical-2"
+        ],
+        "settings": {
+          "show_language": true,
+          "show_currency": true,
+          "arrow": true,
+          "bgnav": "#ffffff",
+          "opnav": 100,
+          "clnav": "#222222",
+          "clnav_hover": "#56cfe1",
+          "h_icon": "kalles",
+          "hover_icon": "2",
+          "show_search": true,
+          "show_acc": true,
+          "show_wis": true,
+          "cart_des": "1",
+          "bg_hc": "#000000",
+          "cl_hc": "#ffffff",
+          "source": "2",
+          "txt": "<p>Welcome to our store!<\/p>",
+          "enable_active": false,
+          "h_navmb": 62,
+          "fm_nav": "1",
+          "fs_nav": 14,
+          "fw_nav": 500,
+          "ls_nav": 0.2
+        }
+      },
+      "header-categories-menu": {
+        "type": "header-categories-menu",
+        "blocks": {
+          "a84ace19-7b5d-4ab8-a5be-6b4c3ccd5a89": {
+            "type": "mega",
+            "settings": {
+              "title": "SECURITY",
+              "url": "shopify:\/\/collections\/security",
+              "open_link": "_self",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "#01bad4",
+              "pos_sub": "bottom",
+              "wid": "cus",
+              "cus_wid": 1200,
+              "id": 1,
+              "r_s_h_item": "20",
+              "r_s_v_item": "30"
+            }
+          },
+          "580a7897-25df-497c-aa15-ce4640142dba": {
+            "type": "mega",
+            "settings": {
+              "title": "LAW ENFORCEMENT",
+              "url": "shopify:\/\/collections\/law-enforcement",
+              "open_link": "_self",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "#00badb",
+              "pos_sub": "bottom",
+              "wid": "cus",
+              "cus_wid": 1200,
+              "id": 2,
+              "r_s_h_item": "20",
+              "r_s_v_item": "30"
+            }
+          },
+          "c0e82bda-7d5a-4e90-a684-2e87a23303fb": {
+            "type": "mega",
+            "settings": {
+              "title": "SHERIFF",
+              "url": "shopify:\/\/collections\/sheriff",
+              "open_link": "_self",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "#00badb",
+              "pos_sub": "bottom",
+              "wid": "cus",
+              "cus_wid": 1200,
+              "id": 3,
+              "r_s_h_item": "20",
+              "r_s_v_item": "30"
+            }
+          },
+          "e893c5dc-bf0c-47d2-a19f-9d34df0d41bd": {
+            "type": "mega",
+            "settings": {
+              "title": "FIRE & EMS",
+              "url": "shopify:\/\/collections\/fire-ems",
+              "open_link": "_self",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "#00badb",
+              "pos_sub": "bottom",
+              "wid": "cus",
+              "cus_wid": 1200,
+              "id": 4,
+              "r_s_h_item": "30",
+              "r_s_v_item": "30"
+            }
+          },
+          "93c61514-8c14-4452-b17d-18c92236e286": {
+            "type": "mega",
+            "settings": {
+              "title": "DUTY GEAR",
+              "url": "shopify:\/\/collections\/duty-gear",
+              "open_link": "_self",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "#00badb",
+              "pos_sub": "bottom",
+              "wid": "cus",
+              "cus_wid": 1200,
+              "id": 5,
+              "r_s_h_item": "30",
+              "r_s_v_item": "30"
+            }
+          }
+        },
+        "block_order": [
+          "a84ace19-7b5d-4ab8-a5be-6b4c3ccd5a89",
+          "580a7897-25df-497c-aa15-ce4640142dba",
+          "c0e82bda-7d5a-4e90-a684-2e87a23303fb",
+          "e893c5dc-bf0c-47d2-a19f-9d34df0d41bd",
+          "93c61514-8c14-4452-b17d-18c92236e286"
+        ],
+        "custom_css": [
+          ".t4s-section-header [data-header-height2] .t4s-navigation {padding-left: 8%;}"
+        ],
+        "settings": {
+          "full_header": false,
+          "height": 100,
+          "frm_sea_mw": 600,
+          "height2": 50,
+          "arrow": false,
+          "border": false,
+          "border_cate": false,
+          "header_design": "2",
+          "align": "start",
+          "hover": "hover_sideup",
+          "enable_active": false,
+          "h_navmb": 62,
+          "bgnav": "#e8e8e8",
+          "opnav": 100,
+          "clnav": "#000000",
+          "clnav_hover": "#000000",
+          "bgsea": "#fafafa",
+          "clsea": "#0078b2",
+          "bgnav2": "#0078b2",
+          "clnav2": "#ffffff",
+          "bgcategory": "#0078b2",
+          "h_icon": "kalles",
+          "hover_icon": "2",
+          "show_search": true,
+          "show_acc": true,
+          "show_wis": false,
+          "cart_des": "2",
+          "bg_hc": "#0078b2",
+          "cl_hc": "#ffffff",
+          "sticky_header": true,
+          "scroll_header": true,
+          "bgnavst": "#ffffff",
+          "opnavst": 100,
+          "clnavst": "#222222",
+          "clnavst_hover": "#0078b2",
+          "bgseavst": "#fafafa",
+          "clseast": "#0078b2",
+          "transparent_header": false,
+          "space_transparent_header": false,
+          "bgnavtr": "#000000",
+          "opnavtr": 40,
+          "clnavtr": "#ffffff",
+          "clnavtr_hover": "#ffffff",
+          "bgseatr": "#fafafa",
+          "clseatr": "#0078b2",
+          "fm_nav": "1",
+          "fs_nav": 14,
+          "fw_nav": 500,
+          "ls_nav": 0,
+          "txt_cat": "ALL CATEGORIES",
+          "text": "",
+          "shop_cat": true
+        }
+      },
+      "header-categories": {
+        "type": "header-categories",
+        "blocks": {
+          "74ce278f-6c1d-466d-a415-fddb2377e6a3": {
+            "type": "lv0_drop",
+            "settings": {
+              "title": "Vehicle Equipment",
+              "url": "shopify:\/\/collections\/vehicle-equipment",
+              "open_link": "_self",
+              "menu": "vehicle-equipment-main-menu",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "",
+              "pos_sub": "right-start"
+            }
+          },
+          "be5d425a-72fb-46d0-8d82-acddf476da73": {
+            "type": "lv0_drop",
+            "settings": {
+              "title": "Badges & IDs",
+              "url": "shopify:\/\/collections\/badges-ids",
+              "open_link": "_self",
+              "menu": "badges-ids-main-menu",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "",
+              "pos_sub": "right-start"
+            }
+          },
+          "cdac1e4d-1eb7-4fa8-b09c-7022747820da": {
+            "type": "lv0_drop",
+            "settings": {
+              "title": "Uniforms",
+              "url": "shopify:\/\/collections\/uniforms",
+              "open_link": "_self",
+              "menu": "uniforms-main-menu",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "",
+              "pos_sub": "right-start"
+            }
+          },
+          "af67a742-4e10-486d-b2aa-a6909ff372f9": {
+            "type": "lv0_drop",
+            "settings": {
+              "title": "Shirts",
+              "url": "shopify:\/\/collections\/shirts",
+              "open_link": "_self",
+              "menu": "shirts-main-menu",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "",
+              "pos_sub": "right-start"
+            }
+          },
+          "03f64223-a4b1-4a5f-9845-c0448829a966": {
+            "type": "lv0_drop",
+            "settings": {
+              "title": "Pants & Shorts",
+              "url": "shopify:\/\/collections\/pants-shorts",
+              "open_link": "_self",
+              "menu": "pants-shorts-main-menu",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "",
+              "pos_sub": "right-start"
+            }
+          },
+          "0b5ed00d-daea-492e-ae85-789c62288ebb": {
+            "type": "lv0_drop",
+            "settings": {
+              "title": "Duty Gear",
+              "url": "shopify:\/\/collections\/duty-gear",
+              "open_link": "_self",
+              "menu": "duty-gear",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "",
+              "pos_sub": "right-start"
+            }
+          },
+          "c24f9472-0b99-4191-8c9d-461519782dcf": {
+            "type": "lv0_drop",
+            "settings": {
+              "title": "Personal Equipment",
+              "url": "shopify:\/\/collections\/accessories",
+              "open_link": "_self",
+              "menu": "personal-equipment-main-menu",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "",
+              "pos_sub": "right-start"
+            }
+          },
+          "cdc6d6ae-9947-4848-b1b5-cc4c05a2f28e": {
+            "type": "lv0_drop",
+            "settings": {
+              "title": "Outerwear",
+              "url": "shopify:\/\/collections\/outerwear",
+              "open_link": "_self",
+              "menu": "outerwear-main-menu",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "",
+              "pos_sub": "right-start"
+            }
+          },
+          "64af6d11-0ab3-4452-a190-be42805b3ab6": {
+            "type": "lv0_drop",
+            "settings": {
+              "title": "Cameras & Surveillance",
+              "url": "shopify:\/\/collections\/cameras-surveillance",
+              "open_link": "_self",
+              "menu": "cameras-surveillance",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "",
+              "pos_sub": "right-start"
+            }
+          },
+          "lv0_drop_w444kd": {
+            "type": "lv0_drop",
+            "settings": {
+              "title": "Footwear",
+              "url": "shopify:\/\/collections\/footwear",
+              "open_link": "_self",
+              "menu": "footwear-main-menu",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "",
+              "pos_sub": "right-start"
+            }
+          },
+          "lv0_drop_JDw6gk": {
+            "type": "lv0_drop",
+            "settings": {
+              "title": "Flashlights",
+              "url": "shopify:\/\/collections\/flashlights",
+              "open_link": "_self",
+              "menu": "flashlights-main-menu",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "",
+              "pos_sub": "right-start"
+            }
+          },
+          "lv0_drop_FqC7RU": {
+            "type": "lv0_drop",
+            "settings": {
+              "title": "Body Armor",
+              "url": "shopify:\/\/collections\/body-armor",
+              "open_link": "_self",
+              "menu": "body-armor-main-menu",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "",
+              "pos_sub": "right-start"
+            }
+          },
+          "lv0_drop_B7PDJT": {
+            "type": "lv0_drop",
+            "settings": {
+              "title": "Radios & Communication",
+              "url": "shopify:\/\/collections\/radios",
+              "open_link": "_self",
+              "menu": "radios-communication",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "",
+              "pos_sub": "right-start"
+            }
+          }
+        },
+        "block_order": [
+          "74ce278f-6c1d-466d-a415-fddb2377e6a3",
+          "be5d425a-72fb-46d0-8d82-acddf476da73",
+          "cdac1e4d-1eb7-4fa8-b09c-7022747820da",
+          "af67a742-4e10-486d-b2aa-a6909ff372f9",
+          "03f64223-a4b1-4a5f-9845-c0448829a966",
+          "0b5ed00d-daea-492e-ae85-789c62288ebb",
+          "c24f9472-0b99-4191-8c9d-461519782dcf",
+          "cdc6d6ae-9947-4848-b1b5-cc4c05a2f28e",
+          "64af6d11-0ab3-4452-a190-be42805b3ab6",
+          "lv0_drop_w444kd",
+          "lv0_drop_JDw6gk",
+          "lv0_drop_FqC7RU",
+          "lv0_drop_B7PDJT"
+        ],
+        "settings": {
+          "arrow": true
+        }
+      },
+      "t4s_custom_color": {
+        "type": "t4s_custom_color",
+        "blocks": {
+          "8b253705-b47e-4342-a657-9c388fec7850": {
+            "type": "lb_menu",
+            "settings": {
+              "title": "New",
+              "color": "#2453d3",
+              "cl_gradient": "",
+              "color_txt": "#ffffff"
+            }
+          },
+          "418ed3b8-5e19-44dc-bc6e-126b5b9c2fdd": {
+            "type": "lb_menu",
+            "settings": {
+              "title": "Hot",
+              "color": "#f90c0c",
+              "cl_gradient": "",
+              "color_txt": "#ffffff"
+            }
+          },
+          "bg_color_FFKaaJ": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Nickel",
+              "color": "#b0b0b0",
+              "cl_gradient": "",
+              "color_img": false
+            }
+          },
+          "bg_color_jeRLTz": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Brass",
+              "color": "#b5a642",
+              "cl_gradient": "",
+              "color_img": false
+            }
+          },
+          "bg_color_Q9YG4P": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Melonite Finish",
+              "color": "#444444",
+              "cl_gradient": "",
+              "color_img": false
+            }
+          },
+          "bg_color_G3jbFA": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Nickel Finish",
+              "color": "#cdcdcd",
+              "cl_gradient": "",
+              "color_img": false
+            }
+          },
+          "bg_color_7Di3Lr": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Coyote",
+              "color": "#ae8449",
+              "cl_gradient": "",
+              "color_img": false
+            }
+          },
+          "bg_color_CKpyTj": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Gold on Black",
+              "color": "",
+              "cl_gradient": "linear-gradient(90deg, rgba(255, 198, 0, 1) 50%, rgba(0, 0, 0, 1) 51%)",
+              "color_img": false
+            }
+          },
+          "bg_color_pNFaDn": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Gold on Navy Blue",
+              "color": "",
+              "cl_gradient": "linear-gradient(90deg, rgba(255, 198, 0, 1) 50%, rgba(0, 0, 128, 1) 51%)",
+              "color_img": false
+            }
+          },
+          "bg_color_mAdKCc": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Gold on Royal Blue",
+              "color": "",
+              "cl_gradient": "linear-gradient(90deg, rgba(255, 198, 0, 1) 50%, rgba(5, 4, 170, 1) 51%)",
+              "color_img": false
+            }
+          },
+          "bg_color_wKDDGx": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Royal Blue on White",
+              "color": "",
+              "cl_gradient": "linear-gradient(90deg, rgba(5, 4, 170, 1) 50%, rgba(255, 255, 255, 1) 51%)",
+              "color_img": false
+            }
+          },
+          "bg_color_BaKMem": {
+            "type": "bg_color",
+            "settings": {
+              "title": "White\/Black",
+              "color": "",
+              "cl_gradient": "linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 1) 51%)",
+              "color_img": false
+            }
+          },
+          "bg_color_4D3iYA": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Royal Blue\/White",
+              "color": "",
+              "cl_gradient": "linear-gradient(90deg, rgba(5, 4, 170, 1) 50%, rgba(255, 255, 255, 1) 51%)",
+              "color_img": false
+            }
+          },
+          "bg_color_GpqBUi": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Navy Blue\/Yellow",
+              "color": "",
+              "cl_gradient": "linear-gradient(90deg, rgba(0, 0, 128, 1) 50%, rgba(255, 224, 0, 0.85) 51%)",
+              "color_img": false
+            }
+          },
+          "bg_color_bEUxpH": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Yellow\/Black",
+              "color": "",
+              "cl_gradient": "linear-gradient(90deg, rgba(255, 224, 0, 1) 50%, rgba(0, 0, 0, 1) 51%)",
+              "color_img": false
+            }
+          },
+          "bg_color_xEDMj3": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Royal Blue\/Gold",
+              "color": "",
+              "cl_gradient": "linear-gradient(90deg, rgba(5, 4, 170, 1) 50%, rgba(255, 198, 0, 1) 51%)",
+              "color_img": false
+            }
+          },
+          "bg_color_Xb7Eea": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Gold on Brown",
+              "color": "",
+              "cl_gradient": "linear-gradient(90deg, rgba(255, 198, 0, 1) 50%, rgba(59, 39, 12, 1) 51%)",
+              "color_img": false
+            }
+          },
+          "bg_color_Y8TgUk": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Sky Blue with Black ID",
+              "color": "",
+              "cl_gradient": "",
+              "color_img": true,
+              "color_jpg": "shopify:\/\/shop_images\/Sky-with-Black-ID.png"
+            }
+          },
+          "bg_color_D6YR6h": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Black Snap",
+              "color": "#1e1e1e",
+              "cl_gradient": "",
+              "color_img": false
+            }
+          },
+          "bg_color_iw6NJP": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Gold Snap",
+              "color": "#c39f1e",
+              "cl_gradient": "",
+              "color_img": false
+            }
+          },
+          "bg_color_NDiYic": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Nickel Snap",
+              "color": "#c6c6bd",
+              "cl_gradient": "",
+              "color_img": false
+            }
+          },
+          "bg_color_jLb9qW": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Heather Gray with Black ID",
+              "color": "",
+              "cl_gradient": "",
+              "color_img": true,
+              "color_jpg": "shopify:\/\/shop_images\/Heather-Gray-and-Black-ID.png"
+            }
+          },
+          "bg_color_67nc6A": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Sand with Black ID",
+              "color": "",
+              "cl_gradient": "",
+              "color_img": true,
+              "color_jpg": "shopify:\/\/shop_images\/Sand-w-Black-ID.png"
+            }
+          },
+          "bg_color_ERVMwm": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Red with Black ID",
+              "color": "",
+              "cl_gradient": "",
+              "color_img": true,
+              "color_jpg": "shopify:\/\/shop_images\/Red-w-Black-ID.png"
+            }
+          },
+          "bg_color_MBHCdV": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Red and White",
+              "color": "",
+              "cl_gradient": "linear-gradient(90deg, rgba(226, 0, 0, 1) 50%, rgba(255, 255, 255, 1) 51%)",
+              "color_img": false
+            }
+          },
+          "bg_color_n8kYrQ": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Amber and Red",
+              "color": "",
+              "cl_gradient": "linear-gradient(90deg, rgba(255, 198, 0, 1) 50%, rgba(226, 0, 0, 1) 51%)",
+              "color_img": false
+            }
+          },
+          "bg_color_efJEEX": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Amber and Blue",
+              "color": "",
+              "cl_gradient": "linear-gradient(90deg, rgba(255, 198, 0, 1) 50%, rgba(5, 4, 170, 1) 51%)",
+              "color_img": false
+            }
+          },
+          "bg_color_tqdyYz": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Amber and Clear",
+              "color": "",
+              "cl_gradient": "linear-gradient(90deg, rgba(255, 198, 0, 1) 50%, rgba(255, 255, 255, 1) 51%)",
+              "color_img": false
+            }
+          },
+          "bg_color_7z9U88": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Blue and Green",
+              "color": "",
+              "cl_gradient": "linear-gradient(90deg, rgba(5, 4, 170, 1) 50%, rgba(23, 147, 57, 1) 51%)",
+              "color_img": false
+            }
+          },
+          "bg_color_chpnKU": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Clear and Blue",
+              "color": "",
+              "cl_gradient": "linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(5, 4, 170, 1) 51%)",
+              "color_img": false
+            }
+          },
+          "bg_color_L4xxdD": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Clear and Green",
+              "color": "",
+              "cl_gradient": "linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(23, 147, 57, 1) 51%)",
+              "color_img": false
+            }
+          },
+          "bg_color_aHtQYV": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Clear and Red",
+              "color": "",
+              "cl_gradient": "linear-gradient(90deg, rgba(255, 255, 255, 1) 50%, rgba(226, 0, 0, 1) 51%)",
+              "color_img": false
+            }
+          },
+          "bg_color_MULJkK": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Navy Blue with Stripes",
+              "color": "",
+              "cl_gradient": "linear-gradient(90deg, rgba(0, 0, 128, 1) 27%, rgba(255, 255, 255, 1) 29%, rgba(226, 0, 0, 1) 31%, rgba(0, 0, 128, 1) 32%, rgba(0, 0, 128, 1) 72%, rgba(255, 255, 255, 1) 75%, rgba(226, 0, 0, 1) 76%, rgba(0, 0, 128, 1) 79%)",
+              "color_img": false
+            }
+          },
+          "bg_color_tbkcJx": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Black with Burgundy Stripes",
+              "color": "",
+              "cl_gradient": "linear-gradient(90deg, rgba(0, 0, 0, 1) 17%, rgba(128, 0, 32, 1) 19%, rgba(128, 6, 17, 1) 40%, rgba(0, 0, 0, 1) 45%, rgba(0, 0, 0, 1) 55%, rgba(128, 12, 12, 1) 59%, rgba(128, 18, 18, 1) 79%, rgba(0, 0, 0, 1) 81%)",
+              "color_img": false
+            }
+          },
+          "bg_color_CUhhTD": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Burgundy with Stripes",
+              "color": "",
+              "cl_gradient": "linear-gradient(90deg, rgba(128, 12, 12, 1) 23%, rgba(255, 255, 255, 1) 24%, rgba(255, 255, 255, 1) 37%, rgba(128, 6, 17, 1) 39%, rgba(128, 12, 12, 1) 61%, rgba(255, 255, 255, 1) 64%, rgba(255, 255, 255, 1) 78%, rgba(128, 0, 32, 1) 81%)",
+              "color_img": false
+            }
+          },
+          "bg_color_qVeymY": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Midnight Navy",
+              "color": "#11274d",
+              "cl_gradient": "",
+              "color_img": false
+            }
+          },
+          "bg_color_RcmhiF": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Heather Green",
+              "color": "#5d745c",
+              "cl_gradient": "",
+              "color_img": false
+            }
+          },
+          "bg_color_cDpgAV": {
+            "type": "bg_color",
+            "settings": {
+              "title": "Safety Green and Black",
+              "color": "",
+              "cl_gradient": "linear-gradient(90deg, rgba(78, 255, 0, 1) 50%, rgba(0, 0, 0, 1) 51%)",
+              "color_img": false
+            }
+          }
+        },
+        "block_order": [
+          "8b253705-b47e-4342-a657-9c388fec7850",
+          "418ed3b8-5e19-44dc-bc6e-126b5b9c2fdd",
+          "bg_color_FFKaaJ",
+          "bg_color_jeRLTz",
+          "bg_color_Q9YG4P",
+          "bg_color_G3jbFA",
+          "bg_color_7Di3Lr",
+          "bg_color_CKpyTj",
+          "bg_color_pNFaDn",
+          "bg_color_mAdKCc",
+          "bg_color_wKDDGx",
+          "bg_color_BaKMem",
+          "bg_color_4D3iYA",
+          "bg_color_GpqBUi",
+          "bg_color_bEUxpH",
+          "bg_color_xEDMj3",
+          "bg_color_Xb7Eea",
+          "bg_color_Y8TgUk",
+          "bg_color_D6YR6h",
+          "bg_color_iw6NJP",
+          "bg_color_NDiYic",
+          "bg_color_jLb9qW",
+          "bg_color_67nc6A",
+          "bg_color_ERVMwm",
+          "bg_color_MBHCdV",
+          "bg_color_n8kYrQ",
+          "bg_color_efJEEX",
+          "bg_color_tqdyYz",
+          "bg_color_7z9U88",
+          "bg_color_chpnKU",
+          "bg_color_L4xxdD",
+          "bg_color_aHtQYV",
+          "bg_color_MULJkK",
+          "bg_color_tbkcJx",
+          "bg_color_CUhhTD",
+          "bg_color_qVeymY",
+          "bg_color_RcmhiF",
+          "bg_color_cDpgAV"
+        ],
+        "settings": {
+        }
+      },
+      "popups": {
+        "type": "popups",
+        "settings": {
+        }
+      },
+      "main-qs": {
+        "type": "main-qs",
+        "blocks": {
+          "main-qs-0": {
+            "type": "title",
+            "settings": {
+              "txt_tr_pr": "none",
+              "fnt_df_pr": "1",
+              "size_pr": 16,
+              "fw_pr": 600,
+              "lh_pr": 0,
+              "ls_pr": 0,
+              "pr_title_color": "#222222",
+              "pr_title_color_hover": "#56cfe1"
+            }
+          },
+          "main-qs-1": {
+            "type": "price",
+            "settings": {
+              "price": "0",
+              "type_sale": "0",
+              "size_price_pr": 22,
+              "fw_price_pr": 400,
+              "price_color": "#696969",
+              "price_sale_color": "#ec0101"
+            }
+          },
+          "main-qs-2": {
+            "type": "form",
+            "settings": {
+              "selector_mode": "block",
+              "color_mode": "color",
+              "enable_fit_ratio_img": false,
+              "color_size": "medium",
+              "show_qty": true,
+              "enable_wishlist": true,
+              "enable_compare": true,
+              "pr_btn_round": 40,
+              "ani": "none",
+              "time": 6,
+              "btn_txt": "3",
+              "btn_icon": false,
+              "button_style": "default",
+              "button_color": "dark",
+              "button_effect": "fade",
+              "wishlist_color": "#222222",
+              "wishlist_color_hover": "#56cfe1",
+              "wishlist_color_active": "#e81e1e",
+              "compare_color": "#222222",
+              "compare_color_hover": "#56cfe1",
+              "compare_color_active": "#222222",
+              "show_dynamic_checkout": false,
+              "btn_txt2": "3",
+              "button_color_payment": "dark"
+            }
+          }
+        },
+        "block_order": [
+          "main-qs-0",
+          "main-qs-1",
+          "main-qs-2"
+        ],
+        "settings": {
+          "demo_pr": "sv10-sv28-sv29"
+        }
+      },
+      "heading-template": {
+        "type": "heading-template",
+        "blocks": {
+          "heading-template-0": {
+            "type": "1",
+            "settings": {
+              "heading": "",
+              "fontf": "inherit",
+              "text_cl": "#fff",
+              "text_fs": 20,
+              "text_lh": 0,
+              "text_fw": 400,
+              "text_ls": 0,
+              "font_italic": false,
+              "font_uppercase": false,
+              "text_shadow": false,
+              "text_mgb": 0,
+              "hidden_mobile": false,
+              "text_fs_mb": 20,
+              "text_lh_mb": 0,
+              "text_ls_mb": 0,
+              "text_mgb_mobile": 0
+            }
+          }
+        },
+        "block_order": [
+          "heading-template-0"
+        ],
+        "settings": {
+          "use_specify_image": true,
+          "parallax": false,
+          "color": "#000",
+          "overlay": 54,
+          "padding": 50,
+          "paddingmb": 50,
+          "mg_b": 50,
+          "mg_bmb": 50,
+          "content_align": "t4s-text-center",
+          "bg_pos": "center center",
+          "bg_repeat": "no-repeat",
+          "bg_size": "cover",
+          "use_cus_css": false,
+          "code_cus_css": ""
+        }
+      },
+      "main-wishlist": {
+        "type": "main-wishlist",
+        "blocks": {
+          "main-wishlist-0": {
+            "type": "layout",
+            "settings": {
+            }
+          }
+        },
+        "block_order": [
+          "main-wishlist-0"
+        ],
+        "settings": {
+          "product_des": "1",
+          "show_vendor": false,
+          "use_cdt": false,
+          "image_ratio": "rationt",
+          "image_size": "cover",
+          "image_position": "8",
+          "content_align": "default",
+          "limit": 12,
+          "enable_listing": true,
+          "enable_listing_default": false,
+          "col_dk": "4",
+          "col_tb": "2",
+          "col_mb": "2",
+          "space_h_item": "30",
+          "space_v_item": "30",
+          "space_h_item_mb": "10",
+          "space_v_item_mb": "10",
+          "layout_des": "1",
+          "use_pagination": "default",
+          "enable_bar_lm": true,
+          "btn_icon": false,
+          "button_style": "default",
+          "btns_size": "large",
+          "btns_cl": "dark",
+          "button_effect": "default",
+          "btn_pos": "t4s-text-center",
+          "layout": "t4s-container-wrap",
+          "cl_bg": "",
+          "cl_bg_gradient": "",
+          "mg": ",,50px,",
+          "pd": "",
+          "mg_mb": ",,30px,",
+          "pd_mb": ""
+        }
+      },
+      "extras": {
+        "type": "extras",
+        "settings": {
+        }
+      },
+      "facets_tags": {
+        "type": "facets_tags",
+        "settings": {
+        }
+      },
+      "header-inline": {
+        "type": "header-inline",
+        "blocks": {
+          "header-inline-0": {
+            "type": "mega",
+            "settings": {
+              "title": "mega",
+              "url": "",
+              "open_link": "_self",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "#00BADB",
+              "pos_sub": "bottom",
+              "wid": "cus",
+              "cus_wid": 1200,
+              "id": 1,
+              "enable_packery": true,
+              "r_s_h_item": "20",
+              "r_s_v_item": "30"
+            }
+          },
+          "header-inline-1": {
+            "type": "mega",
+            "settings": {
+              "title": "mega",
+              "url": "",
+              "open_link": "_self",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "#00BADB",
+              "pos_sub": "bottom",
+              "wid": "cus",
+              "cus_wid": 1200,
+              "id": 1,
+              "enable_packery": true,
+              "r_s_h_item": "20",
+              "r_s_v_item": "30"
+            }
+          },
+          "header-inline-2": {
+            "type": "base",
+            "settings": {
+              "title": "base",
+              "url": "\/",
+              "open_link": "_self",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": ""
+            }
+          }
+        },
+        "block_order": [
+          "header-inline-0",
+          "header-inline-1",
+          "header-inline-2"
+        ],
+        "settings": {
+          "layout": "logo_left",
+          "full_header": true,
+          "height": 62,
+          "arrow": false,
+          "align": "center",
+          "hover": "hover_sideup",
+          "enable_active": false,
+          "h_navmb": 62,
+          "bgnav": "#ffffff",
+          "opnav": 100,
+          "clnav": "#222222",
+          "clnav_hover": "#56cfe1",
+          "h_icon": "kalles",
+          "hover_icon": "2",
+          "show_search": true,
+          "show_acc": true,
+          "show_wis": true,
+          "cart_des": "1",
+          "bg_hc": "#000000",
+          "cl_hc": "#ffffff",
+          "sticky_header": true,
+          "scroll_header": true,
+          "bgnavst": "#ffffff",
+          "opnavst": 100,
+          "clnavst": "#222222",
+          "clnavst_hover": "#56cfe1",
+          "transparent_header": false,
+          "space_transparent_header": false,
+          "bgnavtr": "#000000",
+          "opnavtr": 40,
+          "clnavtr": "#ffffff",
+          "clnavtr_hover": "#ffffff",
+          "fm_nav": "1",
+          "fs_nav": 14,
+          "fw_nav": 400,
+          "ls_nav": 0
+        }
+      },
+      "header-sidebar": {
+        "type": "header-sidebar",
+        "settings": {
+          "layout": "menu_left",
+          "full_header": true,
+          "height": 62,
+          "frm_sea_mw": 600,
+          "bgnav": "#ffffff",
+          "opnav": 100,
+          "clnav": "#222222",
+          "clnav_hover": "#56cfe1",
+          "clsea": "#56cfe1",
+          "h_icon": "kalles",
+          "hover_icon": "2",
+          "show_search": true,
+          "show_acc": true,
+          "show_wis": true,
+          "cart_des": "1",
+          "bg_hc": "#000000",
+          "cl_hc": "#ffffff",
+          "sticky_header": true,
+          "scroll_header": true,
+          "bgnavst": "#ffffff",
+          "opnavst": 100,
+          "clnavst": "#222222",
+          "clnavst_hover": "#56cfe1",
+          "clseast": "#56cfe1",
+          "transparent_header": false,
+          "space_transparent_header": false,
+          "bgnavtr": "#000000",
+          "opnavtr": 40,
+          "clnavtr": "#ffffff",
+          "clnavtr_hover": "#ffffff",
+          "clseatr": "#56cfe1",
+          "source": "2",
+          "txt": "<p>Welcome to our store!<\/p>"
+        }
+      },
+      "header-bottom": {
+        "type": "header-bottom",
+        "blocks": {
+          "header-bottom-0": {
+            "type": "mega",
+            "settings": {
+              "title": "mega",
+              "url": "",
+              "open_link": "_self",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "#00BADB",
+              "pos_sub": "bottom",
+              "wid": "cus",
+              "cus_wid": 1200,
+              "id": 1,
+              "enable_packery": true,
+              "r_s_h_item": "30",
+              "r_s_v_item": "30"
+            }
+          },
+          "header-bottom-1": {
+            "type": "mega",
+            "settings": {
+              "title": "mega",
+              "url": "",
+              "open_link": "_self",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": "#00BADB",
+              "pos_sub": "bottom",
+              "wid": "cus",
+              "cus_wid": 1200,
+              "id": 1,
+              "enable_packery": true,
+              "r_s_h_item": "30",
+              "r_s_v_item": "30"
+            }
+          },
+          "header-bottom-2": {
+            "type": "base",
+            "settings": {
+              "title": "base",
+              "url": "\/",
+              "open_link": "_self",
+              "icon": "",
+              "cus_cl": false,
+              "cl": "#ec0101",
+              "lb": "",
+              "lb_cl": ""
+            }
+          }
+        },
+        "block_order": [
+          "header-bottom-0",
+          "header-bottom-1",
+          "header-bottom-2"
+        ],
+        "settings": {
+          "full_header": false,
+          "height": 90,
+          "height2": 50,
+          "arrow": false,
+          "border": true,
+          "align": "center",
+          "hover": "hover_sideup",
+          "enable_active": false,
+          "h_navmb": 62,
+          "bgnav": "#ffffff",
+          "opnav": 100,
+          "clnav": "#222222",
+          "clnav_hover": "#56cfe1",
+          "h_icon": "kalles",
+          "hover_icon": "2",
+          "show_search": true,
+          "show_acc": true,
+          "show_wis": true,
+          "cart_des": "1",
+          "bg_hc": "#000000",
+          "cl_hc": "#ffffff",
+          "sticky_header": true,
+          "scroll_header": true,
+          "bgnavst": "#ffffff",
+          "opnavst": 100,
+          "clnavst": "#222222",
+          "clnavst_hover": "#56cfe1",
+          "transparent_header": false,
+          "space_transparent_header": false,
+          "bgnavtr": "#000000",
+          "opnavtr": 40,
+          "clnavtr": "#ffffff",
+          "clnavtr_hover": "#ffffff",
+          "source": "2",
+          "txt": "<p>Welcome to our store!<\/p>",
+          "fm_nav": "1",
+          "fs_nav": 14,
+          "fw_nav": 400,
+          "ls_nav": 0
+        }
+      }
+    },
+    "content_for_index": [
+
+    ],
+    "blocks": {
+      "16420725565331586169": {
+        "type": "shopify:\/\/apps\/amazon-reviews-by-appio\/blocks\/integration\/569167b3-e5d6-4314-9866-f51281b506d7",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "18209738915288330680": {
+        "type": "shopify:\/\/apps\/wholesale-all-in-one\/blocks\/wholesale-all-in-one\/5a3d95fb-5647-47d5-8445-d5858f91ff9d",
+        "disabled": false,
+        "settings": {
+          "wsaio_app_access_token": "kalles_wsaiouvh6qz",
+          "wsaio_main_js_file": "",
+          "wsaio_main_liquid_file": "",
+          "wsaio_modules_liquid_file": "",
+          "wsaio_addons_liquid_file": "",
+          "wsaio_custom_css_file": ""
+        }
+      }
+    }
+  }
+}

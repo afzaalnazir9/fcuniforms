@@ -1,0 +1,1101 @@
+<input type="hidden" name="properties[_Main Product]" value="{{ product.url | url_encode }}">
+
+<div class="line-item-property__field">
+  <label>
+    <span>Color:</span>
+  </label>
+  <div>
+    {% assign badgeColors = product.metafields.custom.custom_details.value.badges %}
+    
+    {% for property in badgeColors -%}
+      <label for="badge-color-{{ property.title | handle }}">
+        <input
+          type="radio"
+          name="properties[Badge Color]"
+          value="{{ property.title }}"
+          id="badge-color-{{ property.title | handle }}"
+          data-target="{{ property.title | handle }}"
+          class="property-badge-color"
+          {% if forloop.index == 1 %}
+            checked
+          {% endif %}
+          required
+        >
+        <span>{{ property.title }}</span>
+      </label>
+    {%- endfor %}
+  </div>
+</div>
+
+<div class="line-item-property__field">
+  <label>
+    <span>Size:</span>
+  </label>
+  <div>
+    <label for="badge-full-size">
+      <input
+        type="radio"
+        name="properties[Badge Size]"
+        value="Full Size"
+        id="badge-full-size"
+        class="property-badge-size"
+        required
+        checked
+      >
+      <span>Full Size</span>
+    </label>
+    <label for="badge-miniature">
+      <input
+        type="radio"
+        name="properties[Badge Size]"
+        value="Miniature"
+        id="badge-miniature"
+        class="property-badge-size"
+      >
+      <span>Miniature</span>
+    </label>
+  </div>
+</div>
+
+<div class="line-item-property__field">
+  <label>Font:</label>
+  <select
+    id="badge-font-family"
+    name="properties[Font]"
+    class="font-impact"
+  >
+    <option value="Impact" class="font-impact" data-font="font-impact">Impact</option>
+    <option value="Times New Roman" class="font-times-roman" data-font="font-times-roman">Times New Roman</option>
+  </select>
+</div>
+
+<div class="line-item-property__field">
+  <label>Text Color:</label>
+  <select
+    id="badge-font-color"
+    name="properties[Font Color]"
+  >
+    <option value="Black" class="color-black">Black</option>
+    <option value="Blue" class="color-blue">Blue</option>
+    <option value="Red" class="color-red">Red</option>
+    <option value="Green" class="color-green">Green</option>
+  </select>
+</div>
+
+<div class="line-item-property__field">
+  <label>Curvature:</label>
+  <select
+    id="badge-curvature"
+    name="properties[Curvature]"
+  >
+    <option value="Curved">Curved</option>
+    <option value="Flat">Flat</option>
+  </select>
+</div>
+
+{% assign svgDefsPaths = product.metafields.custom.custom_details.value['svg-defs-paths'] %}
+{% for property in svgDefsPaths -%}
+  {% if forloop.index != svgDefsPaths.size %}
+    <div class="line-item-property__field">
+      <label for="badge-panel-{{ forloop.index }}">Panel {{ forloop.index }}:</label>
+      <input
+        type="text"
+        id="badge-panel-{{ forloop.index }}"
+        name="properties[Panel {{ forloop.index }}]"
+        data-target="text-panel{{ forloop.index }}"
+        class="badge-text-panel"
+        autocomplete="off"
+        maxlength="128"
+        required
+        oninput="this.value = this.value.toUpperCase()"
+      >
+      <a href="#" class="panel-add-star">Add Star</a>
+    </div>
+  {% else %}
+    <div class="line-item-property__field badge-last-panel-holder">
+      <label for="badge-last-panel">Panel {{ forloop.index }}:</label>
+      <div>
+        <label for="badge-last-panel-text">
+          <input
+            type="radio"
+            name="properties[Panel{{ forloop.index }} Type]"
+            value="Text"
+            id="badge-last-panel-text"
+            class="property-last-badge-panel"
+            required
+            checked
+          >
+          <span>Text</span>
+        </label>
+        <label for="badge-last-panel-number">
+          <input
+            type="radio"
+            name="properties[Panel{{ forloop.index }} Type]"
+            value="Number"
+            id="badge-last-panel-number"
+            class="property-last-badge-panel"
+          >
+          <span>Number</span>
+        </label>
+        <div class="number-details-holder hidden">
+          <label for="badge-last-panel-same-number">
+            <input
+              type="radio"
+              name="properties[Panel{{ forloop.index }} Number Details]"
+              value="Same"
+              id="badge-last-panel-same-number"
+              class="property-badge-last-panel-number-details"
+              required
+              checked
+            >
+            <span>Same Number</span>
+          </label>
+          <label for="badge-last-panel-consecutive-number">
+            <input
+              type="radio"
+              name="properties[Panel{{ forloop.index }} Number Details]"
+              value="Consecutive"
+              id="badge-last-panel-consecutive-number"
+              class="property-badge-last-panel-number-details"
+            >
+            <span>Consecutive</span>
+          </label>
+          <label for="badge-last-panel-manual-number">
+            <input
+              type="radio"
+              name="properties[Panel{{ forloop.index }} Number Details]"
+              value="Manually Entered"
+              id="badge-last-panel-manual-number"
+              class="property-badge-last-panel-number-details"
+            >
+            <span>Manually</span>
+          </label>
+        </div>
+        <div class="last-panel-consecutive-numbers-holder hidden">
+          <input
+            type="number"
+            id="consecutive-number-start"
+            placeholder="Start Number"
+            autocomplete="off"
+            name="startNumber"
+            required
+          >
+          <input
+            type="number"
+            id="consecutive-number-end"
+            placeholder="End Number"
+            autocomplete="off"
+            name="endNumber"
+            required
+          >
+        </div>
+        <div class="last-panel-manual-numbers-holder hidden">
+          <textarea
+            id="manual-number-input"
+            name="manual-number-input"
+            placeholder="Example: 10, 17, 23, 114, 55"
+            required
+          ></textarea>
+        </div>
+        <input
+          type="text"
+          id="badge-last-panel"
+          name="properties[Panel {{ forloop.index }}]"
+          data-target="text-panel-last"
+          class="badge-text-panel"
+          placeholder="Enter Text"
+          autocomplete="off"
+          maxlength="128"
+          oninput="this.value = this.value.toUpperCase()"
+        >
+      </div>
+    </div>
+  {% endif %}
+{%- endfor %}
+
+<div class="line-item-property__field">
+  <label for="seal-style">Seal Style:</label>
+  <input
+    type="text"
+    id="seal-style"
+    name="properties[Seal Style]"
+    readonly
+    required
+  >
+
+  <modal-opener data-modal="#PopupModal-select-seal">
+    <button
+      id="selectSeal-popup"
+      type="button"
+    >
+      Select
+    </button>
+  </modal-opener>
+</div>
+
+<div class="line-item-property__field">
+  <label for="backing-attachment">Attachment:</label>
+  <input
+    type="text"
+    id="backing-attachment"
+    name="properties[Backing Attachment]"
+    readonly
+    required
+  >
+
+  <modal-opener data-modal="#PopupModal-backing-attachment">
+    <button
+      id="BackingAttachment-popup"
+      type="button"
+    >
+      Select
+    </button>
+  </modal-opener>
+</div>
+
+<input
+  type="file"
+  id="custom-seal"
+  name="properties[Custom Seal URL]"
+  class="hidden"
+>
+
+<input
+  type="text"
+  id="per-item-price"
+  name="properties[Per Item Price]"
+  class="hidden"
+>
+
+<input
+  type="text"
+  id="custom-seal-price"
+  name="properties[Custom Seal Price]"
+  class="hidden"
+>
+
+<div class="line-item-property__field">
+  <label for="instructions">Instructions:</label>
+  <textarea
+    id="instructions"
+    name="properties[Instructions]"
+  ></textarea>
+</div>
+
+<modal-dialog id="PopupModal-select-seal" class="product-popup-modal">
+  <div
+    role="dialog"
+    aria-modal="true"
+    class="product-popup-modal__content"
+    tabindex="-1"
+  >
+    <button
+      id="ModalClose-select-seal"
+      type="button"
+      class="product-popup-modal__toggle"
+      aria-label="{{ 'accessibility.close' | t }}"
+    >
+      {% render 'icon-close' %}
+    </button>
+    <div class="product-popup-modal__content-info">
+      <h2 class="mb-2">Select Seal</h2>
+      <div class="tabs-holder">
+        <div class="tabs-titles-holder">
+          <div class="tab-title active" data-target="emt">
+            <img src="{{ "EMT_FirstAid.png" | file_img_url }}" loading="lazy" width="50" height="50">
+            <div>EMT</div>
+          </div>
+          <div class="tab-title" data-target="fd-ranks">
+            <img src="{{ "FD_Ranks_Silver1.png" | file_img_url }}" loading="lazy" width="50" height="50">
+            <div>FDranks</div>
+          </div>
+          <div class="tab-title" data-target="fireman">
+            <img src="{{ "Fire_Truck.png" | file_img_url }}" loading="lazy" width="50" height="50">
+            <div>Fireman</div>
+          </div>
+          <div class="tab-title" data-target="most-popular">
+            <img src="{{ "Gold-Scale_Black.png" | file_img_url }}" loading="lazy" width="50" height="50">
+            <div>Most Popular</div>
+          </div>
+          <div class="tab-title" data-target="state-seals">
+            <img src="{{ "california.png" | file_img_url }}" loading="lazy" width="50" height="50">
+            <div>State Seals</div>
+          </div>
+          <div class="tab-title" data-target="flags">
+            <img src="{{ "United-Nations.png" | file_img_url }}" loading="lazy" width="50" height="50">
+            <div>Flags</div>
+          </div>
+          <div class="tab-title" data-target="schools">
+            <img src="{{ "StarDavid.png" | file_img_url }}" loading="lazy" width="50" height="50">
+            <div>Schools</div>
+          </div>
+          <div class="tab-title" data-target="custom-seal">
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+            <div>Custom Seal</div>
+          </div>
+        </div>
+        <div class="tab-content-holder">
+          <div class="tab-content-item-holder select-seal emt active">
+            <div class="item" data-badge-name="EMT (First Aid)">
+              <img src="{{ "EMT_FirstAid.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">EMT (First Aid)</div>
+            </div>
+            <div class="item" data-badge-name="EMT (Blue1)">
+              <img src="{{ "EMT_Blue1.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">EMT (Blue1)</div>
+            </div>
+            <div class="item" data-badge-name="EMT (Silver)">
+              <img src="{{ "EMT_Silver.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">EMT (Silver)</div>
+            </div>
+            <div class="item" data-badge-name="EMT (Blue2)">
+              <img src="{{ "EMT_Blue2.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">EMT (Blue2)</div>
+            </div>
+            <div class="item" data-badge-name="Cross (First Aid)">
+              <img src="{{ "EMT_FirstAid.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Cross (First Aid)</div>
+            </div>
+            <div class="item" data-badge-name="Cross (Rescue)">
+              <img src="{{ "Cross_Rescue.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Cross (Rescue)</div>
+            </div>
+            <div class="item" data-badge-name="EMT (Emergency)">
+              <img src="{{ "EMT_Emergency.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">EMT (Emergency)</div>
+            </div>
+          </div>
+          <div class="tab-content-item-holder select-seal fd-ranks">
+            <div class="item" data-badge-name="FD Ranks (Silver1)">
+              <img src="{{ "FD_Ranks_Silver1.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">FD Ranks (Silver1)</div>
+            </div>
+            <div class="item" data-badge-name="FD Ranks (Silver2)">
+              <img src="{{ "FD_Ranks_Silver2.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">FD Ranks (Silver2)</div>
+            </div>
+            <div class="item" data-badge-name="FD Ranks (Silver3)">
+              <img src="{{ "FD_Ranks_Silver3.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">FD Ranks (Silver3)</div>
+            </div>
+            <div class="item" data-badge-name="FD Ranks (Silver4)">
+              <img src="{{ "FD_Ranks_Silver4.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">FD Ranks (Silver4)</div>
+            </div>
+            <div class="item" data-badge-name="FD Ranks (Silver5)">
+              <img src="{{ "FD_Ranks_Silver5.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">FD Ranks (Silver5)</div>
+            </div>
+            <div class="item" data-badge-name="FD Ranks (Blue1)">
+              <img src="{{ "FD_Ranks_Blue1.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">FD Ranks (Blue1)</div>
+            </div>
+            <div class="item" data-badge-name="FD Ranks (Blue2)">
+              <img src="{{ "FD_Ranks_Blue2.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">FD Ranks (Blue2)</div>
+            </div>
+            <div class="item" data-badge-name="FD Ranks (Blue3)">
+              <img src="{{ "FD_Ranks_Blue3.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">FD Ranks (Blue3)</div>
+            </div>
+            <div class="item" data-badge-name="FD Ranks (Blue4)">
+              <img src="{{ "FD_Ranks_Blue4.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">FD Ranks (Blue4)</div>
+            </div>
+            <div class="item" data-badge-name="FD Ranks (Blue5)">
+              <img src="{{ "FD_Ranks_Blue5.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">FD Ranks (Blue5)</div>
+            </div>
+            <div class="item" data-badge-name="FD Ranks (Blue6)">
+              <img src="{{ "FD_Ranks_Blue6.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">FD Ranks (Blue6)</div>
+            </div>
+            <div class="item" data-badge-name="FD Ranks (Blue7)">
+              <img src="{{ "FD_Ranks_Blue7.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">FD Ranks (Blue7)</div>
+            </div>
+            <div class="item" data-badge-name="FD Ranks (Blue8)">
+              <img src="{{ "FD_Ranks_Blue8.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">FD Ranks (Blue8)</div>
+            </div>
+            <div class="item" data-badge-name="FD Ranks (Blue9)">
+              <img src="{{ "FD_Ranks_Blue9.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">FD Ranks (Blue9)</div>
+            </div>
+            <div class="item" data-badge-name="FD Ranks (Gold 1)">
+              <img src="{{ "FD_Ranks_Gold1.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">FD Ranks (Gold 1)</div>
+            </div>
+            <div class="item" data-badge-name="FD Ranks (Gold 2)">
+              <img src="{{ "FD_Ranks_Gold2.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">FD Ranks (Gold 2)</div>
+            </div>
+            <div class="item" data-badge-name="FD Ranks (Gold 3)">
+              <img src="{{ "FD_Ranks_Gold3.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">FD Ranks (Gold 3)</div>
+            </div>
+            <div class="item" data-badge-name="FD Ranks (Red 1)">
+              <img src="{{ "FD_Ranks_Red1.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">FD Ranks (Red 1)</div>
+            </div>
+            <div class="item" data-badge-name="FD Ranks (Red 2)">
+              <img src="{{ "FD_Ranks_Red2.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">FD Ranks (Red 2)</div>
+            </div>
+            <div class="item" data-badge-name="FD Ranks (Red 3)">
+              <img src="{{ "FD_Ranks_Red3.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">FD Ranks (Red 3)</div>
+            </div>
+            <div class="item" data-badge-name="FD Ranks (Red 4)">
+              <img src="{{ "FD_Ranks_Red4.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">FD Ranks (Red 4)</div>
+            </div>
+            <div class="item" data-badge-name="FD Ranks (Red 5)">
+              <img src="{{ "FD_Ranks_Red5.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">FD Ranks (Red 5)</div>
+            </div>
+            <div class="item" data-badge-name="FD Ranks (Red 6)">
+              <img src="{{ "FD_Ranks_Red6.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">FD Ranks (Red 6)</div>
+            </div>
+            <div class="item" data-badge-name="FD Ranks (Red 7)">
+              <img src="{{ "FD_Ranks_Red7.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">FD Ranks (Red 7)</div>
+            </div>
+            <div class="item" data-badge-name="FD Ranks (Red 8)">
+              <img src="{{ "FD_Ranks_Red8.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">FD Ranks (Red 8)</div>
+            </div>
+            <div class="item" data-badge-name="FD Ranks (Red 9)">
+              <img src="{{ "FD_Ranks_Red9.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">FD Ranks (Red 9)</div>
+            </div>
+          </div>
+          <div class="tab-content-item-holder select-seal fireman">
+            <div class="item" data-badge-name="Fire Truck">
+              <img src="{{ "Fire_Truck.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Fire Truck</div>
+            </div>
+            <div class="item" data-badge-name="Fireman">
+              <img src="{{ "Fireman.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Fireman</div>
+            </div>
+            <div class="item" data-badge-name="Fireman (Blue1)">
+              <img src="{{ "Fireman_Blue1.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Fireman (Blue1)</div>
+            </div>
+            <div class="item" data-badge-name="Fireman (Blue2)">
+              <img src="{{ "Fireman_Blue2.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Fireman (Blue2)</div>
+            </div>
+            <div class="item" data-badge-name="Fireman (Blue3)">
+              <img src="{{ "Fireman_Blue3.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Fireman (Blue3)</div>
+            </div>
+            <div class="item" data-badge-name="Fireman (Gold)">
+              <img src="{{ "Fireman_Gold.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Fireman (Gold)</div>
+            </div>
+            <div class="item" data-badge-name="Fireman (Red1)">
+              <img src="{{ "Fireman_Red1.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Fireman (Red1)</div>
+            </div>
+            <div class="item" data-badge-name="Fireman (Red2)">
+              <img src="{{ "Fireman_Red2.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Fireman (Red2)</div>
+            </div>
+            <div class="item" data-badge-name="Fireman (Red3)">
+              <img src="{{ "Fireman_Red3.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Fireman (Red3)</div>
+            </div>
+            <div class="item" data-badge-name="Fireman (Silver1)">
+              <img src="{{ "Fireman_Silver1.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Fireman (Silver1)</div>
+            </div>
+            <div class="item" data-badge-name="Fireman (Silver2)">
+              <img src="{{ "Fireman_Silver2.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Fireman (Silver2)</div>
+            </div>
+            <div class="item" data-badge-name="Fireman (Silver3)">
+              <img src="{{ "Fireman_Silver2.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Fireman (Silver3)</div>
+            </div>
+            <div class="item" data-badge-name="Fireman (Volunteer)">
+              <img src="{{ "Fireman_Silver2.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Fireman (Volunteer)</div>
+            </div>
+          </div>
+          <div class="tab-content-item-holder select-seal most-popular">
+            <div class="item" data-badge-name="Silver Star (Blue)">
+              <img src="{{ "Silver-Star_Blue.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Silver Star (Blue)</div>
+            </div>
+            <div class="item" data-badge-name="Silver Scale (Black)">
+              <img src="{{ "Silver-Scale_Black.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Silver Scale (Black)</div>
+            </div>
+            <div class="item" data-badge-name="Silver Scale (All Silver)">
+              <img src="{{ "Silver-Scale_All-Silver.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Silver Scale (All Silver)</div>
+            </div>
+            <div class="item" data-badge-name="Pride Eagle (Silver)">
+              <img src="{{ "Pride-Eagle_Silver.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Pride Eagle (Silver)</div>
+            </div>
+            <div class="item" data-badge-name="Pride Eagle (Gold)">
+              <img src="{{ "Pride-Eagle_Gold.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Pride Eagle (Gold)</div>
+            </div>
+            <div class="item" data-badge-name="Liberty Bell (Silver)">
+              <img src="{{ "Liberty-Bell_Silver.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Liberty Bell (Silver)</div>
+            </div>
+            <div class="item" data-badge-name="Liberty Bell (Gold)">
+              <img src="{{ "Liberty-Bell_Gold.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Liberty Bell (Gold)</div>
+            </div>
+            <div class="item" data-badge-name="Gold Star">
+              <img src="{{ "Gold-Star.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Gold Star</div>
+            </div>
+            <div class="item" data-badge-name="Gold Star (Blue)">
+              <img src="{{ "Gold-Star_Blue.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Gold Star (Blue)</div>
+            </div>
+            <div class="item" data-badge-name="Gold Scale">
+              <img src="{{ "Gold-Scale.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Gold Scale</div>
+            </div>
+            <div class="item" data-badge-name="Gold Star (Black)">
+              <img src="{{ "Gold-Star_Black.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Gold Star (Black)</div>
+            </div>
+            <div class="item" data-badge-name="US Eagle All Gold">
+              <img src="{{ "US-Eagle-All-Gold.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">US Eagle All Gold</div>
+            </div>
+            <div class="item" data-badge-name="Gold Scale (Blue)">
+              <img src="{{ "Gold-Scale_Blue.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Gold Scale (Blue)</div>
+            </div>
+            <div class="item" data-badge-name="Gold Scale (Black)">
+              <img src="{{ "Gold-Scale_Black.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Gold Scale (Black)</div>
+            </div>
+            <div class="item" data-badge-name="Globe">
+              <img src="{{ "Globe.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Globe</div>
+            </div>
+            <div class="item" data-badge-name="Flag">
+              <img src="{{ "Flag.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Flag</div>
+            </div>
+            <div class="item" data-badge-name="US Eagle (Silver)">
+              <img src="{{ "US-Eagle_Silver.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">US Eagle (Silver)</div>
+            </div>
+            <div class="item" data-badge-name="US Eagle (Gold)">
+              <img src="{{ "US-Eagle_Gold.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">US Eagle (Gold)</div>
+            </div>
+            <div class="item" data-badge-name="US Coat of Arms (Blue)">
+              <img src="{{ "US-Coat-of-Arms_Blue.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">US Coat of Arms (Blue)</div>
+            </div>
+            <div class="item" data-badge-name="US Coat of Arms (Black)">
+              <img src="{{ "US-Coat-of-Arms_Black.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">US Coat of Arms (Black)</div>
+            </div>
+            <div class="item" data-badge-name="Silver Star">
+              <img src="{{ "Silver-Star.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Silver Star</div>
+            </div>
+          </div>
+          <div class="tab-content-item-holder select-seal state-seals">
+            <div class="item" data-badge-name="Alabama">
+              <img src="{{ "alabama.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Alabama</div>
+            </div>
+            <div class="item" data-badge-name="Alaska">
+              <img src="{{ "alaska.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Alaska</div>
+            </div>
+            <div class="item" data-badge-name="Arizona">
+              <img src="{{ "arizona.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Arizona</div>
+            </div>
+            <div class="item" data-badge-name="Arkansas">
+              <img src="{{ "arkansas.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Arkansas</div>
+            </div>
+            <div class="item" data-badge-name="California">
+              <img src="{{ "california.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">California</div>
+            </div>
+            <div class="item" data-badge-name="Colorado">
+              <img src="{{ "colorado.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Colorado</div>
+            </div>
+            <div class="item" data-badge-name="Commonwealth Pennsylvania">
+              <img src="{{ "commonwealth-pennsylvania.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Commonwealth Pennsylvania</div>
+            </div>
+            <div class="item" data-badge-name="Commonwealth Virginia">
+              <img src="{{ "commonwealth-virginia.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Commonwealth Virginia</div>
+            </div>
+            <div class="item" data-badge-name="Connecticut">
+              <img src="{{ "connecticut.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Connecticut</div>
+            </div>
+            <div class="item" data-badge-name="Delaware">
+              <img src="{{ "delaware.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Delaware</div>
+            </div>
+            <div class="item" data-badge-name="Florida">
+              <img src="{{ "florida.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Florida</div>
+            </div>
+            <div class="item" data-badge-name="Georgia">
+              <img src="{{ "georgia.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Georgia</div>
+            </div>
+            <div class="item" data-badge-name="Hawaii">
+              <img src="{{ "hawaii.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Hawaii</div>
+            </div>
+            <div class="item" data-badge-name="Idaho">
+              <img src="{{ "idaho.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Idaho</div>
+            </div>
+            <div class="item" data-badge-name="Illinois">
+              <img src="{{ "illinois.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Illinois</div>
+            </div>
+            <div class="item" data-badge-name="Indiana">
+              <img src="{{ "indiana.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Indiana</div>
+            </div>
+            <div class="item" data-badge-name="Iowa">
+              <img src="{{ "iowa.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Iowa</div>
+            </div>
+            <div class="item" data-badge-name="Kansas">
+              <img src="{{ "kansas.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Kansas</div>
+            </div>
+            <div class="item" data-badge-name="Kentucky">
+              <img src="{{ "kentucky.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Kentucky</div>
+            </div>
+            <div class="item" data-badge-name="Louisiana">
+              <img src="{{ "louisiana.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Louisiana</div>
+            </div>
+            <div class="item" data-badge-name="Maine">
+              <img src="{{ "maine.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Maine</div>
+            </div>
+            <div class="item" data-badge-name="Maryland">
+              <img src="{{ "maryland.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Maryland</div>
+            </div>
+            <div class="item" data-badge-name="Massachusetts">
+              <img src="{{ "massachusetts.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Massachusetts</div>
+            </div>
+            <div class="item" data-badge-name="Michigan">
+              <img src="{{ "michigan.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Michigan</div>
+            </div>
+            <div class="item" data-badge-name="Minnesota">
+              <img src="{{ "minnesota.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Minnesota</div>
+            </div>
+            <div class="item" data-badge-name="Mississippi">
+              <img src="{{ "mississippi.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Mississippi</div>
+            </div>
+            <div class="item" data-badge-name="Missouri">
+              <img src="{{ "missouri.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Missouri</div>
+            </div>
+            <div class="item" data-badge-name="Montana">
+              <img src="{{ "montana.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Montana</div>
+            </div>
+            <div class="item" data-badge-name="Nebraska">
+              <img src="{{ "nebraska.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Nebraska</div>
+            </div>
+            <div class="item" data-badge-name="Nevada">
+              <img src="{{ "nevada.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Nevada</div>
+            </div>
+            <div class="item" data-badge-name="New Hampshire">
+              <img src="{{ "new-hampshire.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">New Hampshire</div>
+            </div>
+            <div class="item" data-badge-name="New Jersey">
+              <img src="{{ "new-jersey.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">New Jersey</div>
+            </div>
+            <div class="item" data-badge-name="New Mexico">
+              <img src="{{ "new-mexico.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">New Mexico</div>
+            </div>
+            <div class="item" data-badge-name="New York">
+              <img src="{{ "new-york.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">New York</div>
+            </div>
+            <div class="item" data-badge-name="North Carolina">
+              <img src="{{ "north-carolina.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">North Carolina</div>
+            </div>
+            <div class="item" data-badge-name="North Dakota">
+              <img src="{{ "north-dakota.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">North Dakota</div>
+            </div>
+            <div class="item" data-badge-name="Ohio">
+              <img src="{{ "ohio.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Ohio</div>
+            </div>
+            <div class="item" data-badge-name="Oklahoma">
+              <img src="{{ "oklahoma.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Oklahoma</div>
+            </div>
+            <div class="item" data-badge-name="Oregon">
+              <img src="{{ "oregon.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Oregon</div>
+            </div>
+            <div class="item" data-badge-name="Pennsylvania">
+              <img src="{{ "pennsylvania.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Pennsylvania</div>
+            </div>
+            <div class="item" data-badge-name="Rhode Island">
+              <img src="{{ "rhode-island.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Rhode Island</div>
+            </div>
+            <div class="item" data-badge-name="South Carolina">
+              <img src="{{ "south-carolina.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">South Carolina</div>
+            </div>
+            <div class="item" data-badge-name="South Dakota">
+              <img src="{{ "south-dakota.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">South Dakota</div>
+            </div>
+            <div class="item" data-badge-name="Tennessee">
+              <img src="{{ "tennessee.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Tennessee</div>
+            </div>
+            <div class="item" data-badge-name="Texas (Blue)">
+              <img src="{{ "texas-blue.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Texas (Blue)</div>
+            </div>
+            <div class="item" data-badge-name="Texas (Red)">
+              <img src="{{ "texas-red.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Texas (Red)</div>
+            </div>
+            <div class="item" data-badge-name="Utah">
+              <img src="{{ "utah.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Utah</div>
+            </div>
+            <div class="item" data-badge-name="Vermont">
+              <img src="{{ "vermont.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Vermont</div>
+            </div>
+            <div class="item" data-badge-name="Virginia">
+              <img src="{{ "virginia.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Virginia</div>
+            </div>
+            <div class="item" data-badge-name="Washington">
+              <img src="{{ "washington.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Washington</div>
+            </div>
+            <div class="item" data-badge-name="Washington DC">
+              <img src="{{ "washington-dc.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Washington DC</div>
+            </div>
+            <div class="item" data-badge-name="West Virginia">
+              <img src="{{ "west-virginia.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">West Virginia</div>
+            </div>
+            <div class="item" data-badge-name="Wisconsin">
+              <img src="{{ "wisconsin.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Wisconsin</div>
+            </div>
+            <div class="item" data-badge-name="Wyoming">
+              <img src="{{ "wyoming.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Wyoming</div>
+            </div>
+          </div>
+          <div class="tab-content-item-holder select-seal flags">
+            <div class="item" data-badge-name="Argentina">
+              <img src="{{ "argentina.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Argentina</div>
+            </div>
+            <div class="item" data-badge-name="Australia">
+              <img src="{{ "australia.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Australia</div>
+            </div>
+            <div class="item" data-badge-name="Austria">
+              <img src="{{ "austria.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Austria</div>
+            </div>
+            <div class="item" data-badge-name="Belgium">
+              <img src="{{ "belgium.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Belgium</div>
+            </div>
+            <div class="item" data-badge-name="Brazil">
+              <img src="{{ "brazil.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Brazil</div>
+            </div>
+            <div class="item" data-badge-name="Canada">
+              <img src="{{ "canada.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Canada</div>
+            </div>
+            <div class="item" data-badge-name="Costa Rica">
+              <img src="{{ "costa-rica.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Costa Rica</div>
+            </div>
+            <div class="item" data-badge-name="Denmark">
+              <img src="{{ "denmark.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Denmark</div>
+            </div>
+            <div class="item" data-badge-name="Dominican Republic">
+              <img src="{{ "dominican-republic.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Dominican Republic</div>
+            </div>
+            <div class="item" data-badge-name="Ecuador">
+              <img src="{{ "ecuador.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Ecuador</div>
+            </div>
+            <div class="item" data-badge-name="El Salvador">
+              <img src="{{ "el-salvador.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">El Salvador</div>
+            </div>
+            <div class="item" data-badge-name="European Union">
+              <img src="{{ "european-union.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">European Union</div>
+            </div>
+            <div class="item" data-badge-name="France">
+              <img src="{{ "france.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">France</div>
+            </div>
+            <div class="item" data-badge-name="Germany">
+              <img src="{{ "germany.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Germany</div>
+            </div>
+            <div class="item" data-badge-name="Greece">
+              <img src="{{ "greece.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Greece</div>
+            </div>
+            <div class="item" data-badge-name="Hungary">
+              <img src="{{ "hungary.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Hungary</div>
+            </div>
+            <div class="item" data-badge-name="Ireland">
+              <img src="{{ "ireland.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Ireland</div>
+            </div>
+            <div class="item" data-badge-name="Israel">
+              <img src="{{ "israel.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Israel</div>
+            </div>
+            <div class="item" data-badge-name="Italy">
+              <img src="{{ "italy.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Italy</div>
+            </div>
+            <div class="item" data-badge-name="Japan">
+              <img src="{{ "japan.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Japan</div>
+            </div>
+            <div class="item" data-badge-name="Kuwait">
+              <img src="{{ "kuwait.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Kuwait</div>
+            </div>
+            <div class="item" data-badge-name="Mexico">
+              <img src="{{ "mexico.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Mexico</div>
+            </div>
+            <div class="item" data-badge-name="Netherlands">
+              <img src="{{ "netherlands.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Netherlands</div>
+            </div>
+            <div class="item" data-badge-name="New Zealand">
+              <img src="{{ "new-zealand.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">New Zealand</div>
+            </div>
+            <div class="item" data-badge-name="Norway">
+              <img src="{{ "norway.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Norway</div>
+            </div>
+            <div class="item" data-badge-name="Peru">
+              <img src="{{ "peru.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Peru</div>
+            </div>
+            <div class="item" data-badge-name="Poland">
+              <img src="{{ "poland.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Poland</div>
+            </div>
+            <div class="item" data-badge-name="Portugal">
+              <img src="{{ "portugal.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Portugal</div>
+            </div>
+            <div class="item" data-badge-name="Puerto Rico">
+              <img src="{{ "puerto-rico.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Puerto Rico</div>
+            </div>
+            <div class="item" data-badge-name="Romania">
+              <img src="{{ "romania.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Romania</div>
+            </div>
+            <div class="item" data-badge-name="Russia">
+              <img src="{{ "russia.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Russia</div>
+            </div>
+            <div class="item" data-badge-name="Saudi Arabia">
+              <img src="{{ "saudi-arabia.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Saudi Arabia</div>
+            </div>
+            <div class="item" data-badge-name="Scotland">
+              <img src="{{ "scotland.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Scotland</div>
+            </div>
+            <div class="item" data-badge-name="South Africa">
+              <img src="{{ "south-africa.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">South Africa</div>
+            </div>
+            <div class="item" data-badge-name="South Korea">
+              <img src="{{ "south-korea.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">South Korea</div>
+            </div>
+            <div class="item" data-badge-name="Spain">
+              <img src="{{ "spain.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Spain</div>
+            </div>
+            <div class="item" data-badge-name="Sweden">
+              <img src="{{ "sweden.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Sweden</div>
+            </div>
+            <div class="item" data-badge-name="Switzerland">
+              <img src="{{ "switzerland.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Switzerland</div>
+            </div>
+            <div class="item" data-badge-name="Turkey">
+              <img src="{{ "turkey.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Turkey</div>
+            </div>
+            <div class="item" data-badge-name="UK">
+              <img src="{{ "UK.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">UK</div>
+            </div>
+            <div class="item" data-badge-name="United Arab Emirates">
+              <img src="{{ "united-arab-emirates.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">United Arab Emirates</div>
+            </div>
+            <div class="item" data-badge-name="United Nations">
+              <img src="{{ "United-Nations.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">United Nations</div>
+            </div>
+            <div class="item" data-badge-name="United States Of America">
+              <img src="{{ "united-states-of-america.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">United States Of America</div>
+            </div>
+            <div class="item" data-badge-name="USSR">
+              <img src="{{ "ussr.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">USSR</div>
+            </div>
+            <div class="item" data-badge-name="US Virgin Islands">
+              <img src="{{ "us-virgin-islands.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">US Virgin Islands</div>
+            </div>
+          </div>
+          <div class="tab-content-item-holder select-seal schools">
+            <div class="item" data-badge-name="Bible Cross Seal">
+              <img src="{{ "BibleCrossSeal.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Bible Cross Seal</div>
+            </div>
+            <div class="item" data-badge-name="Crescent Star">
+              <img src="{{ "CrescentStar.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Crescent Star</div>
+            </div>
+            <div class="item" data-badge-name="Cross Seal (Gold)">
+              <img src="{{ "CrossSealGold.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Cross Seal (Gold)</div>
+            </div>
+            <div class="item" data-badge-name="Cross Seal (Silver)">
+              <img src="{{ "CrossSealSilver.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Cross Seal (Silver)</div>
+            </div>
+            <div class="item" data-badge-name="Prayer Hands">
+              <img src="{{ "PrayerHands.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Prayer Hands</div>
+            </div>
+            <div class="item" data-badge-name="Star David">
+              <img src="{{ "StarDavid.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Star David</div>
+            </div>
+            <div class="item" data-badge-name="Steeple">
+              <img src="{{ "Steeple.png" | file_img_url }}" loading="lazy" width="100" height="100">
+              <div class="badge-name">Steeple</div>
+            </div>
+          </div>
+          <div class="tab-content-item-holder select-seal custom-seal">
+            <div>
+              <label for="custom-seal">
+                <i class="fa-solid fa-cloud-arrow-up"></i><br>
+                <span>Click Here to Upload</span>
+                <div class="custom-seal-details"></div>
+              </label>
+              <ul>
+                <li>Turnaround time 14-16 weeks</li>
+                <li>Custom seal costs $500 mold fee with a minimum order of 100 badges</li>
+                <li>1 Year Warrenty</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</modal-dialog>
+
+<modal-dialog id="PopupModal-backing-attachment" class="product-popup-modal">
+  <div
+    role="dialog"
+    aria-modal="true"
+    class="product-popup-modal__content"
+    tabindex="-1"
+  >
+    <button
+      id="ModalClose-select-backing-attachment"
+      type="button"
+      class="product-popup-modal__toggle"
+      aria-label="{{ 'accessibility.close' | t }}"
+    >
+      {% render 'icon-close' %}
+    </button>
+    <div class="product-popup-modal__content-info">
+      <h2 class="mb-2">Select Backing Attachment</h2>
+      <div class="backing-attachment-holder">
+        <div class="item" data-backing-attachment="Pin & Safety Catch">
+          <img src="{{ "badge_pin.png" | file_img_url }}" loading="lazy" width="150" height="auto">
+          <div class="badge-name">Pin & Safety Catch</div>
+        </div>
+        <div class="item" data-backing-attachment="Belt Clip">
+          <img src="{{ "badge_clip.png" | file_img_url }}" loading="lazy" width="150" height="auto">
+          <div class="badge-name">Belt Clip</div>
+        </div>
+        <div class="item" data-backing-attachment="Screw & Clutch">
+          <img src="{{ "badge_screw.png" | file_img_url }}" loading="lazy" width="150" height="auto">
+          <div class="badge-name">Screw & Clutch</div>
+        </div>
+        <div class="item" data-backing-attachment="Permanent Mount - No Attachment / Flat">
+          <img src="{{ "badge_permanent.png" | file_img_url }}" loading="lazy" width="150" height="auto">
+          <div class="badge-name">Permanent Mount - No Attachment / Flat</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</modal-dialog>

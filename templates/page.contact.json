@@ -1,0 +1,101 @@
+{
+  "sections": {
+    "heading": {
+      "type": "heading-template",
+      "disabled": true,
+      "settings": {
+        "heading_fullwidth": false,
+        "use_specify_image": true,
+        "parallax": false,
+        "color": "#000000",
+        "overlay": 54,
+        "padding": 50,
+        "paddingmb": 50,
+        "mg_b": 50,
+        "mg_bmb": 50,
+        "content_align": "t4s-text-center",
+        "bg_pos": "center center",
+        "bg_repeat": "no-repeat",
+        "bg_size": "cover",
+        "use_cus_css": false,
+        "code_cus_css": ".SectionID {\nbackground-color:red\n}"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": "60px,,60px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": ""
+      }
+    },
+    "1648884254eae8e0bd": {
+      "type": "contact-form",
+      "blocks": {
+        "1648884254cd155bea-0": {
+          "type": "bl_form",
+          "settings": {
+            "heading": "CONTACT US",
+            "enable_phone": true,
+            "enable_full_btn": true,
+            "button_style": "outline",
+            "btn_size": "medium",
+            "btn_cl": "dark"
+          }
+        },
+        "1648884254cd155bea-1": {
+          "type": "bl_info",
+          "settings": {
+            "heading": "CONTACT INFORMATION",
+            "text": "<p>Please contact us if you have any questions so we can assist you right away.<\/p><p><i class=\"las la-home fs__16\"><\/i> \n 8928 Fullbright Ave, Chatsworth, CA 91311<\/p><p><i class=\"las la-phone fs__16\"><\/i> 877-701-0020<\/p><p><i class=\"las la-envelope fs__16\"><\/i> \n info@fcuniforms.com<\/p><i class=\"las la-clock fs__16\"><\/i> Mon - Fri \/ 9:00AM - 5:00PM"
+          }
+        }
+      },
+      "block_order": [
+        "1648884254cd155bea-0",
+        "1648884254cd155bea-1"
+      ],
+      "settings": {
+        "enable_map": true,
+        "map": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d5547.575304479247!2d-118.578913307068!3d34.233025983219946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c29c9c548541a5%3A0x3837978a82ea30bf!2sFirst%20Class%20Uniform%20Inc!5e0!3m2!1sen!2sus!4v1704239033007!5m2!1sen!2sus\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"><\/iframe>",
+        "layout": "t4s-container-wrap",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": "50px,,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ".SectionID {\nbackground-color:red\n}"
+      }
+    },
+    "sidebar-page": {
+      "type": "sidebar-page",
+      "disabled": true,
+      "settings": {
+        "enable_drawer": true,
+        "space": 50,
+        "size": "medium",
+        "br_style": "none",
+        "brcolor": "#222222",
+        "sidebar_bdr": 5,
+        "sidebar_pd": 10
+      }
+    }
+  },
+  "order": [
+    "heading",
+    "main",
+    "1648884254eae8e0bd",
+    "sidebar-page"
+  ]
+}

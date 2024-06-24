@@ -1,0 +1,1 @@
+console.log("B2B hooks"),window.bssB2BHooks=window.bssB2BHooks||{actions:{},filters:{}},window.BSS_B2B=window.BSS_B2B||{},window.BSS_B2B.addAction=(o,B)=>{window.bssB2BHooks.actions[o]=B},window.BSS_B2B.addFilter=(o,B)=>{window.bssB2BHooks.filters[o]=B};

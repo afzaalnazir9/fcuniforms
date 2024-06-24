@@ -1,0 +1,697 @@
+{
+  "sections": {
+    "heading": {
+      "type": "heading-template",
+      "blocks": {
+        "19597bfc-5c00-4420-aec0-d72dde32a1e7": {
+          "type": "1",
+          "settings": {
+            "heading": "About us",
+            "fontf": "inherit",
+            "text_cl": "#ffffff",
+            "text_fs": 38,
+            "text_lh": 20,
+            "text_fw": 500,
+            "text_ls": 0,
+            "font_italic": false,
+            "font_uppercase": false,
+            "text_shadow": false,
+            "text_mgb": 3,
+            "hidden_mobile": false,
+            "text_fs_mb": 20,
+            "text_lh_mb": 20,
+            "text_ls_mb": 0,
+            "text_mgb_mobile": 5
+          }
+        },
+        "c1ab6fbb-940f-4eb4-b374-ce3370b4382f": {
+          "type": "2",
+          "disabled": true,
+          "settings": {
+            "content": "",
+            "fontf": "inherit",
+            "text_cl": "#ffffff",
+            "text_fs": 14,
+            "text_lh": 24,
+            "text_fw": 400,
+            "text_ls": 0,
+            "font_italic": false,
+            "font_uppercase": false,
+            "text_shadow": false,
+            "text_mgb": 0,
+            "hidden_mobile": false,
+            "text_fs_mb": 14,
+            "text_lh_mb": 24,
+            "text_ls_mb": 0,
+            "text_mgb_mobile": 0
+          }
+        }
+      },
+      "block_order": [
+        "19597bfc-5c00-4420-aec0-d72dde32a1e7",
+        "c1ab6fbb-940f-4eb4-b374-ce3370b4382f"
+      ],
+      "settings": {
+        "heading_fullwidth": false,
+        "image": "shopify:\/\/shop_images\/TACTICAL-BOOTS-SLIDER-IMAGE.jpg",
+        "use_specify_image": false,
+        "parallax": false,
+        "color": "#000000",
+        "overlay": 54,
+        "padding": 50,
+        "paddingmb": 50,
+        "mg_b": 60,
+        "mg_bmb": 30,
+        "content_align": "t4s-text-center",
+        "bg_pos": "center top",
+        "bg_repeat": "no-repeat",
+        "bg_size": "cover",
+        "use_cus_css": false,
+        "code_cus_css": ".SectionID {\nbackground-color:red\n}"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "layout": "t4s-se-container",
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": "",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": ""
+      }
+    },
+    "sidebar-page": {
+      "type": "sidebar-page",
+      "blocks": {
+        "f69681ed-b75e-42de-be58-fdf73b3b7e08": {
+          "type": "blog_cate",
+          "settings": {
+            "title": "Blog categories",
+            "cat_link_list": "",
+            "count": true
+          }
+        }
+      },
+      "block_order": [
+        "f69681ed-b75e-42de-be58-fdf73b3b7e08"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_drawer": false,
+        "space": 50,
+        "size": "medium",
+        "br_style": "none",
+        "brcolor": "#222222",
+        "sidebar_bdr": 5,
+        "sidebar_pd": 10
+      }
+    },
+    "124ef719-3326-4286-a338-5fcab28502aa": {
+      "type": "accordion",
+      "blocks": {
+        "template--18367276319008__124ef719-3326-4286-a338-5fcab28502aa-167968125138164600-0": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "I forgot my password",
+            "content": "<p>To reset your password, please click on the <span style=\"text-decoration:underline\">Forgot your password?<\/span> link under the login<\/p>"
+          }
+        },
+        "template--18367276319008__124ef719-3326-4286-a338-5fcab28502aa-167968125138164600-1": {
+          "type": "accor_item",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "title": "Changing your password",
+            "content": "<p>To update your password, click on \"ACCOUNT\" and then \"My Account\" on the top of the page. Once you enter your email address and password, you may change your password under \"Contact Information\"<\/p>"
+          }
+        },
+        "template--18367276319008__124ef719-3326-4286-a338-5fcab28502aa-167968125138164600-2": {
+          "type": "accor_item",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "title": "Changing your email",
+            "content": "<p>To update your email address, click on \"ACCOUNT\" and then \"My Account\" on the top of the page. Once you enter your email address and password, you may change your email address by clicking \"Edit\" under \"Contact    Information\"<\/p>"
+          }
+        },
+        "4f10858a-a2d8-4050-9e92-2e44d0b71866": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Saving a new address",
+            "content": "<p>To update your address, click on \"ACCOUNT\" and then \"My Account\" on the top of the page. Once you enter your email address and password, you may change your address under \"Address Book\"<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18367276319008__124ef719-3326-4286-a338-5fcab28502aa-167968125138164600-0",
+        "template--18367276319008__124ef719-3326-4286-a338-5fcab28502aa-167968125138164600-1",
+        "template--18367276319008__124ef719-3326-4286-a338-5fcab28502aa-167968125138164600-2",
+        "4f10858a-a2d8-4050-9e92-2e44d0b71866"
+      ],
+      "custom_css": [
+        ".t4s-section-des .t4s-subtitle {font-size: 17px;}"
+      ],
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "Account",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "accor_des": "1",
+        "title_cl": "#222222",
+        "bg_title_cl": "#f6f6f8",
+        "title_active_cl": "#000000",
+        "bg_title_active_cl": "#f6f6f8",
+        "content_cl": "#878787",
+        "bg_content_cl": "#ffffff",
+        "content_align": "t4s-text-start",
+        "auto_active": true,
+        "layout": "t4s-container-wrap",
+        "custom_width": 1000,
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
+    },
+    "f0427311-6ecc-4fee-98d5-7880c44bacf8": {
+      "type": "accordion",
+      "blocks": {
+        "template--18367276319008__f0427311-6ecc-4fee-98d5-7880c44bacf8-167968125138164600-0": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Tracking an order",
+            "content": "<p>A tracking number will be emailed to you when your order ships out. If you do not receive the email, please check your spam folder, and if you still cannot find it, please call our customer service.<\/p>"
+          }
+        },
+        "template--18367276319008__f0427311-6ecc-4fee-98d5-7880c44bacf8-167968125138164600-1": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Size Chart",
+            "content": "<p>To view a size chart of standard shirts, jackets, hats, gloves, shoes and more, please go the following link:<\/p><p><a href=\"\/pages\/sizing\" title=\"Sizing\">First Class Size Chart<\/a><\/p>"
+          }
+        },
+        "template--18367276319008__f0427311-6ecc-4fee-98d5-7880c44bacf8-167968125138164600-2": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Proof of Employment",
+            "content": "<p>Some of the items we sell are restricted to people of certain occupation (such as police, security guards, etc). If an item’s description states that it requires Proof of Employment (“P.O.E.”), then you must fax or email us valid proof of employment. Please include your order number and account email address. Call our customer service department for more details.<\/p>"
+          }
+        },
+        "a9b6169c-ab49-483b-bdfa-2be041799598": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Out-of-Stock Items",
+            "content": "<p>Out-of-Stock items may come back in stock at varying times dependent on our vendors. In some cases an item you ordered may end up out-of-stock before we can ship you your order (usually due to high volume of orders during sales and clearance). If this happens we will give you a call.<\/p>"
+          }
+        },
+        "f4a9abee-962e-425e-a3cd-0d8463bf72fc": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Backorders",
+            "content": "<p>We will not charge you on backordered items until they ship from our warehouse. We will call you first if an item you backordered comes back in stock.<\/p>"
+          }
+        },
+        "c6db8707-cde5-47e1-ab98-41a800130d64": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Canceling an order",
+            "content": "<p>If it has been less than 4 hours and the order has not shipped, it can still be canceled if you call our customer service. If any alterations or customizations have already been completed, the order cannot be canceled.<\/p>"
+          }
+        },
+        "fe015465-277c-4a53-b1f9-60e99acc9326": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Modifying an order",
+            "content": "<p>If it has been less than 4 hours and the order has not shipped, it can still be modified if you call our customer service. If any alterations or customizations have already been completed, the order cannot be modified.<\/p>"
+          }
+        },
+        "8635a336-72e7-4322-9230-6295e7ef93b7": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Order processing time",
+            "content": "<p>Orders are processed in the order that they were placed. Orders which have expedited shipping (3rd Day Air, 2nd Day Air, etc) are the only exception to this rule. Non expedited orders usually ship out within 1 to 2 business days, and expedited order ship within 1 business day.<\/p>"
+          }
+        },
+        "5a384c2b-141d-41ef-8785-51ef6e19a558": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Ordering by phone",
+            "content": "<p>You can call us and one of our sales representatives will be able to take your order over the phone. Item numbers must be provided during a phone order to ensure accuracy and avoid incorrect items.<\/p>"
+          }
+        },
+        "505ccac3-6209-488e-8a08-1142950228c5": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Sales tax",
+            "content": "<p>Tax is applied to orders shipping to California at a rate of 9.75%. Out of state orders do not have sales tax.<\/p>"
+          }
+        },
+        "4e48581b-cf10-49b5-8f21-4426080a3d66": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Payment methods",
+            "content": "<p>First Class Uniforms accepts all major credit cards, money order, money transfer, and company checks. For international orders, we only accept money transfers and cashier’s checks.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18367276319008__f0427311-6ecc-4fee-98d5-7880c44bacf8-167968125138164600-0",
+        "template--18367276319008__f0427311-6ecc-4fee-98d5-7880c44bacf8-167968125138164600-1",
+        "template--18367276319008__f0427311-6ecc-4fee-98d5-7880c44bacf8-167968125138164600-2",
+        "a9b6169c-ab49-483b-bdfa-2be041799598",
+        "f4a9abee-962e-425e-a3cd-0d8463bf72fc",
+        "c6db8707-cde5-47e1-ab98-41a800130d64",
+        "fe015465-277c-4a53-b1f9-60e99acc9326",
+        "8635a336-72e7-4322-9230-6295e7ef93b7",
+        "5a384c2b-141d-41ef-8785-51ef6e19a558",
+        "505ccac3-6209-488e-8a08-1142950228c5",
+        "4e48581b-cf10-49b5-8f21-4426080a3d66"
+      ],
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "Ordering",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "accor_des": "1",
+        "title_cl": "#222222",
+        "bg_title_cl": "#f6f6f8",
+        "title_active_cl": "#000000",
+        "bg_title_active_cl": "#f6f6f8",
+        "content_cl": "#878787",
+        "bg_content_cl": "#ffffff",
+        "content_align": "t4s-text-start",
+        "auto_active": true,
+        "layout": "t4s-container-wrap",
+        "custom_width": 1000,
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
+    },
+    "dcb84239-c9ff-4d26-baa0-e0d7fbd07bd1": {
+      "type": "accordion",
+      "blocks": {
+        "template--18367276319008__dcb84239-c9ff-4d26-baa0-e0d7fbd07bd1-167968125138164600-0": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Calculate shipping cost",
+            "content": "<p>We offer Free Shipping for all retail orders over $100.<\/p>"
+          }
+        },
+        "template--18367276319008__dcb84239-c9ff-4d26-baa0-e0d7fbd07bd1-167968125138164600-1": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Shipping time",
+            "content": "<p>Orders are processed and shipped Monday - Friday from 8:00AM to 5:00PM Pacific Standard Time. All expedited orders must be made before 12:00 noon Pacific Standard Time for the order to be shipped out same day. All expedited orders must ship to a physical address (no PO boxes). Orders that have alterations or customization are subject to ship within 1 to 2 business days.<\/p>"
+          }
+        },
+        "template--18367276319008__dcb84239-c9ff-4d26-baa0-e0d7fbd07bd1-167968125138164600-2": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Track an order",
+            "content": "<p>To track your phone or fax order, please call the First Class Uniforms customer service line at 877-701-0020.<\/p>"
+          }
+        },
+        "b1611844-f5d1-47ba-b32c-0004de163769": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "International shipping",
+            "content": "<p>All international shipping inquiries can be emailed to <a href=\"mailto:Info@fcuniforms.com\" title=\"mailto:Info@fcuniforms.com\">Info@fcuniforms.com<\/a> or you may call for an estimate.<\/p>"
+          }
+        },
+        "67e3270d-d2b3-4f8a-b452-576d7d3cb2f7": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Missing items from order",
+            "content": "<p>In the event that there are items missing from your order, please call our customer service immediately to receive assistance. Please keep all packaging and receipts which came with the order.<\/p>"
+          }
+        },
+        "a87d85db-b33d-4e99-aaca-480c285d072f": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "PO Boxes",
+            "content": "<p>UPS can only ship to physical addresses. If UPS delivery is requested for your order and a PO Box address is specified, we may call you to request an alternate address or alternate carrier. Orders shipped with USPS can be delivered to a physical address or PO Box.<\/p>"
+          }
+        },
+        "17527757-ce48-4be6-b64e-36d8f057593a": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Signature requirements",
+            "content": "<p>We may require signature upon delivery for orders with high-value or replacement items. If you will not be available to sign for your shipment, the carrier will leave a delivery notice at your order after the first delivery attempt. You can sign a release authorization and select your preferred delivery locations, such as a front or back door, immediate neighbor, building manager, etc. on this form. The carrier will generally make three delivery attempts before your package is returned to us. You may also request that the carrier hold your package at the carrier’s local office. Just call the number on the delivery notice and let them know you would like your shipment held for pickup. To pickup your shipment you will need two forms of identification, usually a government-issued ID and a second ID with your name on it (credit card, social security, etc.)<\/p>"
+          }
+        },
+        "00b46e77-6f63-4bb5-ac63-0b9350ca7492": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Shipping methods",
+            "content": "<p>All orders are shipped either UPS Ground or USPS First Class\/Ground Advantage unless otherwise specified and should be received within three to six business days (<strong>Monday to Friday<\/strong>) when shipped within the contiguous USA. Upon the customer’s request, we can also ship your order by USPS. If your order weight is less than one pound, we may ship First Class USPS to save you money.  Items that are oversized\/overweight are subject to additional shipping charges. We may contact you by e-mail or phone with exact shipping charges.<\/p>"
+          }
+        },
+        "6880cfac-388c-4773-9825-31ed93573e43": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Refused deliveries",
+            "content": "<p>If the contents of the package are unacceptably damaged upon delivery, the delivery must be refused. If you wish to return your order, please accept the package and contact customer service.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18367276319008__dcb84239-c9ff-4d26-baa0-e0d7fbd07bd1-167968125138164600-0",
+        "template--18367276319008__dcb84239-c9ff-4d26-baa0-e0d7fbd07bd1-167968125138164600-1",
+        "template--18367276319008__dcb84239-c9ff-4d26-baa0-e0d7fbd07bd1-167968125138164600-2",
+        "b1611844-f5d1-47ba-b32c-0004de163769",
+        "67e3270d-d2b3-4f8a-b452-576d7d3cb2f7",
+        "a87d85db-b33d-4e99-aaca-480c285d072f",
+        "17527757-ce48-4be6-b64e-36d8f057593a",
+        "00b46e77-6f63-4bb5-ac63-0b9350ca7492",
+        "6880cfac-388c-4773-9825-31ed93573e43"
+      ],
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "Shipping",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "accor_des": "1",
+        "title_cl": "#222222",
+        "bg_title_cl": "#f6f6f8",
+        "title_active_cl": "#000000",
+        "bg_title_active_cl": "#f6f6f8",
+        "content_cl": "#878787",
+        "bg_content_cl": "#ffffff",
+        "content_align": "t4s-text-start",
+        "auto_active": true,
+        "layout": "t4s-container-wrap",
+        "custom_width": 1000,
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
+    },
+    "0e02b5e0-8a3d-42ad-adc1-203511bb88fb": {
+      "type": "accordion",
+      "blocks": {
+        "template--18367276319008__0e02b5e0-8a3d-42ad-adc1-203511bb88fb-167968125138164600-0": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Customization quotes",
+            "content": "<p>For customization quotes or pricing please call us and ask for the related department. For custom uniforms or badges, ask for the Art Department. For customized light bars ask for the Light Bar Department.<\/p>"
+          }
+        },
+        "template--18367276319008__0e02b5e0-8a3d-42ad-adc1-203511bb88fb-167968125138164600-1": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Bulk orders",
+            "content": "<p>Bulk orders may take longer to process and ship. Occasionally, third party freight companies will be used for better shipping quotes. The delivery transit time differs for freight companies and depends upon the customer’s choice of carrier. Discounts may be possible for bulk orders, but will only be approved on a case-by-case basis. Please call for more information.<\/p>"
+          }
+        },
+        "template--18367276319008__0e02b5e0-8a3d-42ad-adc1-203511bb88fb-167968125138164600-2": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Different price than advertised",
+            "content": "<p>Items are subject to price change at any time and without notice. Online prices tend to differ from over the phone due to online sales. Please check and confirm the price of any item when placing an order over the phone.<\/p>"
+          }
+        },
+        "c6325d5d-a334-4579-9fd3-0761c3823eea": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Restricted items",
+            "content": "<p>Some of our items are restricted in some regions and for certain occupation. Below is a list of key example (this does not constitute a complete list and you should always check your local laws and product description on any items you are not sure about):<\/p><p>-       Body Armor can only be sold to Law Enforcement Officers and Security Guards<\/p><p>-       Customers in California can only purchase batons after showing\/faxing\/emailing a baton permit card and picture ID<\/p><p>-       Some states have restrictions on the purchase and possession of stun guns and pepper spray (please check your local laws)<\/p><p>-       International customers cannot purchase handcuffs, pepper spray, or stun guns<\/p>"
+          }
+        },
+        "dcd4eb65-b7ca-495d-8040-bb41e7c6f97f": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Discontinued\/Closeout items",
+            "content": "<p>Closeout items are available in limited quantities, and may become out-of-stock quickly. If you place an order and the item runs out-of-stock before your order is processed, we will give you a call informing you. Closeout items cannot be returned or exchanged unless otherwise stated. Items can be discontinued at any time and without notice and will be removed from the website.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18367276319008__0e02b5e0-8a3d-42ad-adc1-203511bb88fb-167968125138164600-0",
+        "template--18367276319008__0e02b5e0-8a3d-42ad-adc1-203511bb88fb-167968125138164600-1",
+        "template--18367276319008__0e02b5e0-8a3d-42ad-adc1-203511bb88fb-167968125138164600-2",
+        "c6325d5d-a334-4579-9fd3-0761c3823eea",
+        "dcd4eb65-b7ca-495d-8040-bb41e7c6f97f"
+      ],
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "Pricing and Promos",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "accor_des": "1",
+        "title_cl": "#222222",
+        "bg_title_cl": "#f6f6f8",
+        "title_active_cl": "#000000",
+        "bg_title_active_cl": "#f6f6f8",
+        "content_cl": "#878787",
+        "bg_content_cl": "#ffffff",
+        "content_align": "t4s-text-start",
+        "auto_active": true,
+        "layout": "t4s-container-wrap",
+        "custom_width": 1000,
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
+    },
+    "fe846025-82cb-4d7e-9b61-35c8b0a0a19f": {
+      "type": "accordion",
+      "blocks": {
+        "template--18367276319008__fe846025-82cb-4d7e-9b61-35c8b0a0a19f-167968125138164600-0": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Report technical issues",
+            "content": "<p>To report technical issues or problems please send a short description of the issue that you experienced using the Contact Us form.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18367276319008__fe846025-82cb-4d7e-9b61-35c8b0a0a19f-167968125138164600-0"
+      ],
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "Website",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "accor_des": "1",
+        "title_cl": "#222222",
+        "bg_title_cl": "#f6f6f8",
+        "title_active_cl": "#000000",
+        "bg_title_active_cl": "#f6f6f8",
+        "content_cl": "#878787",
+        "bg_content_cl": "#ffffff",
+        "content_align": "t4s-text-start",
+        "auto_active": true,
+        "layout": "t4s-container-wrap",
+        "custom_width": 1000,
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
+    },
+    "505eced6-9944-4055-b7b1-836e081e46c2": {
+      "type": "accordion",
+      "blocks": {
+        "template--18367276319008__505eced6-9944-4055-b7b1-836e081e46c2-167968125138164600-0": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Return Shipping",
+            "content": "<p>The shipping cost on any return or exchange is non-refundable. You may send packages back through any shipping carrier of your choice.<\/p>"
+          }
+        },
+        "template--18367276319008__505eced6-9944-4055-b7b1-836e081e46c2-167968125138164600-1": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "How to return an order",
+            "content": "<p>A Return Authorization Number (RMA) must be obtained for any return so order is not rejected at our facility upon arrival. Please contact us before shipping any items back to our location.<\/p>"
+          }
+        },
+        "template--18367276319008__505eced6-9944-4055-b7b1-836e081e46c2-167968125138164600-2": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Dropping off a return",
+            "content": "<p>An RMA number must be obtained for all returns. Please contact us for assistance.<\/p>"
+          }
+        },
+        "e2c4e7ce-2dbc-46df-afed-2f011252f152": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Return Address",
+            "content": "<p>All returns or exchanges should be sent to:<\/p><p>First Class Uniforms Returns Dept<\/p><p>20701 Nordhoff St.<\/p><p>Chatsworth, CA 91311<\/p>"
+          }
+        },
+        "3d459606-89d7-4b0c-a23c-2f0c17b2abb3": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Return policy",
+            "content": "<p>An order can be returned up to 30 days after you receive the shipment. Returns must be authorized before being sent (call customer service), and they can only be accepted with the original packaging, with all items in working condition, and any accessories included. Orders with tailoring or customization cannot be returned.<\/p>"
+          }
+        },
+        "2c028a43-173a-468b-8824-d05f40874aa0": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Exchange policy",
+            "content": "<p>An order can be exchanged up to 30 days after you receive the shipment. Exchanges must be authorized before being sent (call customer service), and they can only be accepted with the original packaging, with all items in working condition, and any accessories included. Orders with tailoring or customization cannot be returned.<\/p>"
+          }
+        },
+        "9fe42b7d-7e45-4c31-a2fb-7324bd00e0ab": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Returning a customized or tailored item",
+            "content": "<p>All tailored or customized items are non-refundable and non-exchangeable.<\/p>"
+          }
+        },
+        "8152bb0f-d1af-4f32-a3cb-ddea75e6514e": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Missing items from order",
+            "content": "<p>In the event that there are items missing from your order, please call our customer service immediately to receive assistance. Please keep all packaging and receipts which came with the order.<\/p>"
+          }
+        },
+        "8e29d5a6-5a37-47f5-a431-395142427342": {
+          "type": "accor_item",
+          "settings": {
+            "icon": "none",
+            "title": "Refund processing time",
+            "content": "<p>Refunds may take up to 7 business days to process at major banks.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18367276319008__505eced6-9944-4055-b7b1-836e081e46c2-167968125138164600-0",
+        "template--18367276319008__505eced6-9944-4055-b7b1-836e081e46c2-167968125138164600-1",
+        "template--18367276319008__505eced6-9944-4055-b7b1-836e081e46c2-167968125138164600-2",
+        "e2c4e7ce-2dbc-46df-afed-2f011252f152",
+        "3d459606-89d7-4b0c-a23c-2f0c17b2abb3",
+        "2c028a43-173a-468b-8824-d05f40874aa0",
+        "9fe42b7d-7e45-4c31-a2fb-7324bd00e0ab",
+        "8152bb0f-d1af-4f32-a3cb-ddea75e6514e",
+        "8e29d5a6-5a37-47f5-a431-395142427342"
+      ],
+      "settings": {
+        "design_heading": "1",
+        "heading_align": "t4s-text-center",
+        "top_heading": "Returns",
+        "icon_heading": "las la-gem",
+        "top_subheading": "",
+        "tophead_mb": 30,
+        "accor_des": "1",
+        "title_cl": "#222222",
+        "bg_title_cl": "#f6f6f8",
+        "title_active_cl": "#000000",
+        "bg_title_active_cl": "#f6f6f8",
+        "content_cl": "#878787",
+        "bg_content_cl": "#ffffff",
+        "content_align": "t4s-text-start",
+        "auto_active": true,
+        "layout": "t4s-container-wrap",
+        "custom_width": 1000,
+        "cl_bg": "",
+        "cl_bg_gradient": "",
+        "mg": ",,50px,",
+        "pd": "",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": ",,30px,",
+        "pd_mb": "",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
+    }
+  },
+  "order": [
+    "heading",
+    "main",
+    "sidebar-page",
+    "124ef719-3326-4286-a338-5fcab28502aa",
+    "f0427311-6ecc-4fee-98d5-7880c44bacf8",
+    "dcb84239-c9ff-4d26-baa0-e0d7fbd07bd1",
+    "0e02b5e0-8a3d-42ad-adc1-203511bb88fb",
+    "fe846025-82cb-4d7e-9b61-35c8b0a0a19f",
+    "505eced6-9944-4055-b7b1-836e081e46c2"
+  ]
+}

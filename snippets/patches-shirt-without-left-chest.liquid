@@ -1,0 +1,82 @@
+<style>
+  .hidden { display: none!important; }
+
+  .product__info-container variant-radios fieldset legend{margin-bottom:1rem!important;font-size:18px;color:#000}.product__info-container variant-radios fieldset legend>span{margin-right:17px;font-size:13px;color:#646464}.u4a-single-product .product__description{padding:5rem 0;font-size:14px}.product-recommendations .product-recommendations__heading{font-size:20px;color:#ff2d37;text-align:center;font-weight:400}.bold_option_element *:focus-visible,.line-item-property__field *:focus-visible{outline:none;outline-offset:0;box-shadow:none}.bold_option_element select,.line-item-property__field select{display:block;padding:5px 26px 5px 5px;margin-top:5px;border:1px solid #e5e5e5;text-indent:1px;border-radius:3px;color:#666;font-size:14px;width:400px;max-width:100%}.bold_option_element textarea,.line-item-property__field textarea{width:400px;max-width:100%;min-height:120px;border:1px solid #e5e5e5}.bold_option:not(:empty){margin-bottom:20px}div.line-item-property__field{margin:-0.5rem 0 3rem 0}div.line-item-property__field label,div.line-item-property__field.u4a-select-patch-holder>div{margin-bottom:1rem;font-size:18px;color:#000}div.line-item-property__field.u4a-select-patch-holder>div>span{border-bottom:1px dotted black}div.line-item-property__field.u4a-select-patch-holder input[type=radio]{position:absolute;width:0;height:0;visibility:hidden;opacity:0}div.line-item-property__field.u4a-select-patch-holder label img{object-fit:contain;border:1px solid rgb(218,218,218)}div.line-item-property__field.u4a-select-patch-holder label img:hover{border:2px solid #ff2d37}div.line-item-property__field.u4a-select-patch-holder input[type=radio]:checked~img{border:2px solid #ff2d37}div.line-item-property__field input[type=radio]+label{margin-bottom:0;color:#121212bf;font-size:16px}.line-item-property__field label.error{color:#e02b27!important;font-size:1.2rem!important}.line-item-property__field select.error{border-color:#ed8380}div.line-item-property__field.u4a-select-patch-holder{position:relative}div.line-item-property__field.u4a-select-patch-holder label.error{position:absolute;top:7px;right:0}.expedited-shipping{position:relative;padding-bottom:18px}.expedited-shipping label.error{position:absolute;bottom:0}.u4a-patch-value{font-size:13px!important;color:#686868!important}
+</style>
+
+<input type="hidden" id="u4aAdditionalPrice" name="properties[Additional Price]" value="">
+<input id="u4aProductUrl" type="hidden" name="properties[_Main Product]" value="{{ product.url | url_encode }}">
+
+<div class="line-item-property__field addPatches">
+  <label>Add Patches to Shirt?</label><br>
+  <select
+    id="add-patches-to-shirt"
+    name="properties[Add Patches to Shirt?]"
+  >
+    <option value="Yes">Yes</option>
+    <option value="" selected>No</option>
+  </select>
+</div>
+
+<div class="line-item-property__field patchesLevel1 hidden">
+  <label>Add Patches on Chest?</label><br>
+  <select
+    id="add-patches-on-chest"
+    name="properties[Add Patches on Chest?]"
+    required
+  >
+    <option value="" data-amount="0">-- Please Select --</option>
+    <option value="No" data-amount="0">No</option>
+    <option value="Right Chest + $1.99" data-amount="1.99" data-target="right-chest-patch">Right Chest + $1.99</option>
+  </select>
+</div>
+
+{% render 'right-chest-patch' %}
+
+<div class="line-item-property__field patchesLevel1 hidden">
+  <label>Add Patches on Shoulders?</label><br>
+  <select
+    id="add-patches-on-shoulders"
+    name="properties[Add Patches on Shoulders?]"
+    required
+  >
+    <option value="" data-amount="0">-- Please Select --</option>
+    <option value="No" data-amount="0">No</option>
+    <option value="Left Shoulder Only + $1.99" data-amount="1.99" data-target="left-shoulder-patch">
+      Left Shoulder Only + $1.99
+    </option>
+    <option value="Right Shoulder Only +$1.99" data-amount="1.99" data-target="right-shoulder-patch">
+      Right Shoulder Only + $1.99
+    </option>
+    <option value="Left and Right Shoulder + $3.98" data-amount="3.98" data-target="left-right-shoulder-patch">
+      Left and Right Shoulder + $3.98
+    </option>
+  </select>
+</div>
+
+{% render 'left-shoulder-patch' %}
+{% render 'right-shoulder-patch' %}
+
+<div class="line-item-property__field patchesLevel1 hidden">
+  <label for="additional-info-for-tailoring">Additional Info for Tailoring</label>
+  <br>
+  <textarea
+    id="additional-info-for-tailoring"
+    name="properties[Additional Info for Tailoring]"
+  ></textarea>
+</div>
+
+<div class="line-item-property__field patchesLevel1 hidden expedited-shipping">
+  <div>Tailoring Requires An Additional 1-2 Business Days to Process</div>
+  <input
+    type="radio"
+    style="-webkit-appearance: radio"
+    name="properties[Tailoring Requires An Additional 1-2 Business Days to Process]"
+    value="Expedited Shipping Not Available for Tailoring"
+    id="tailoring-requires-additional-days"
+    required
+  >
+  <label for="tailoring-requires-additional-days">Expedited Shipping Not Available for Tailoring</label>
+</div>
+
+<div id="custom-patches-image-container" class="hidden"></div>
