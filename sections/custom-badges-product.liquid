@@ -1,3 +1,182 @@
+  <style>
+        
+        .popup {
+            display: none; 
+            position: fixed; 
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4); 
+            padding-top: 60px;
+        }
+        
+    
+        .popup-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+    
+        
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+       .product-item-list {
+        padding: 0;
+            }
+        .product-item-list li.product-item {
+        display: inline-block;
+        list-style: none;
+        border: 1px solid;
+        margin: 5px;
+        background-color: #000033 !important;
+        padding-bottom: 15px;
+        width: 18%;
+        }
+        @media (min-width: 1200px) {
+         .product-item-list li.product-item {
+                    width: 18%;
+                }
+        }
+        @media (min-width: 992px) and (max-width: 1199px) {
+         .product-item-list li.product-item {
+            width: 23%;
+        }
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+        .product-item-list li.product-item {
+            width: 30%;
+        }
+        }
+        @media (max-width: 480px) {
+        .product-item-list li.product-item {
+            width: 100%;
+        }
+        }
+        .product-img{
+        width:100%
+        }
+        .product-item-list li.product-item .name {
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 16px;
+        margin-top: 10px;
+        font-weight: bold;
+        }
+        .product-item-list li.product-item p.lowestPrice {
+        color: red;
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        }
+        .product-item-list li.product-item .color {
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 14px;
+        margin: 0;
+        }
+        .product-item-list li.product-item .dimensions {
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 14px;
+        margin: 0;
+        }
+        .product-item a {
+            text-decoration: none;
+        }
+        .modal-title {
+        border-bottom: 1px solid #c1c1c1;
+        font-weight: 300;
+        padding-bottom: 10px;
+        font-size: 26px;
+        margin-bottom: 0;
+        min-height: 1em;
+        word-wrap: break-word;
+        width: fit-content;
+        }
+        pre {
+        overflow: auto;
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: transparent;
+        text-align: center;
+        white-space: pre;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        color: white;
+        }
+    </style>
+<!-- Button to open the popup -->
+<button onclick="openPopup()">LOAD NEW BADGE</button>
+<div id="myPopup" class="popup">
+    <div class="popup-content">      
+        <span class="close" onclick="closePopup()">&times;</span>
+        <p class="modal-title">Select a product to customize.</p>
+        {% assign targetCollectionId = product.collections[0].handle %}
+
+        <ul class="product-item-list">  
+          {% for product in collections[targetCollectionId].products %}
+
+            {% assign badgesDetail = product.metafields.custom.custom_details.value.badges %}
+   
+
+            <li class="product-item">
+                <a href="{{ product.url }}" data-product-id="{{ product.id }}">
+                    <div class="product-info">
+                        <div class="img">
+                        <img class="product-img" src="{{ product.featured_image | img_url }}" alt="PB-01">
+                        </div>
+                        <div class="name">{{ product.title }}</div>
+                  
+                      <div class="color">{{ badgesDetail.first.title }}</div>
+                      <div class="dimensions">{{ product.metafields.custom.badge_full_size_dimensions }}</div>
+                    
+                        <p class="lowestPrice">As Low As {{ product.price | money }}</p>
+                    </div>
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+</div>
+
+<script>
+
+function openPopup() {
+    document.getElementById("myPopup").style.display = "block";
+}
+
+function closePopup() {
+    document.getElementById("myPopup").style.display = "none";
+}
+
+window.onload = function() {
+    openPopup();
+};
+
+window.onclick = function(event) {
+    var popup = document.getElementById("myPopup");
+    if (event.target == popup) {
+        closePopup();
+    }
+};
+</script>
+
 <section
   id="MainProduct-{{ section.id }}"
   class="u4a-single-product u4a-custom-badge page-width"
@@ -38,6 +217,7 @@
             </defs>
 
             {% assign badgesDetails = product.metafields.custom.custom_details.value.badges %}
+           
             {% for property in badgesDetails -%}
               <image class="custom-badge-image {{ property.title | handle }} {% if forloop.index != 1 %}hidden{% endif %}" x="0" y="0" width="100%" height="100%" xlink:href="{{ property.actual_image }}" />
             {%- endfor %}
@@ -51,7 +231,6 @@
                 {% endif %}
                </text>
              {%- endfor %}
-
             {% assign sealPosition = product.metafields.custom.custom_details.value.seal_position %}
             <foreignObject x="{{ sealPosition.x }}" y="{{ sealPosition.y }}" width="{{ sealPosition.width }}" height="{{ sealPosition.height }}">
               <img class="custom-badge-seal-style hidden" width="{{ sealPosition.width }}" height="{{ sealPosition.height }}" src="" loading="lazy" />
@@ -197,7 +376,7 @@
               <div class="form-footer">
                 <div class="product-form__input product-form__quantity">
                   <label class="form__label" for="Quantity-{{ section.id }}">
-                    {{ 'products.product.quantity.label' | t }}
+                    Quantity
                   </label>
 
                   <quantity-input class="quantity">
@@ -240,7 +419,7 @@
                         {{ 'products.product.sold_out' | t }}
                       {%- endif -%}
                     </span>
-                    <div class="loading-overlay__spinner hidden">
+                    <!-- <div class="loading-overlay__spinner hidden">
                       <svg
                         aria-hidden="true"
                         focusable="false"
@@ -251,7 +430,7 @@
                       >
                         <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
                       </svg>
-                    </div>
+                    </div> -->
                   </button>
                 </div>
 
@@ -300,21 +479,23 @@
 
                 <div class="badge-price">
                   <div class="custom-seal-price hidden" data-price="0"></div>
-                  <div class="price-per-quantity">
+                  <div class="price-per-quantity"       data-price="{{ product.price | money }}">
                     Price Per Unit: $<span>
-                      {{- badgesDetails.first.quantity_pricing.first.full_price -}}
+                      {% comment %} {{- badgesDetails.first.quantity_pricing.first.full_price -}} {% endcomment %}
+                      {{ product.price | money_without_currency }}
                     </span>
                     USD
                   </div>
-                  <div
+                   <div
                     class="total-price"
-                    data-price="{{- badgesDetails.first.quantity_pricing.first.full_price -}}"
+                    data-price="{{ product.price | money }}"
                   >
                     Total: $<span>
-                      {{- badgesDetails.first.quantity_pricing.first.full_price -}}
+                      {% comment %} {{- badgesDetails.first.quantity_pricing.first.full_price -}} {% endcomment %}
+                      {{ product.price | money_without_currency }}
                     </span>
                     USD
-                  </div>
+                  </div> 
                 </div>
               </div>
             {%- endform -%}
@@ -384,6 +565,64 @@
   <script src="{{ 'u4a-custom-badges.js' | asset_url }}" defer="defer"></script>
 </section>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var minusButton = document.querySelector('button[name="minus"]');
+    var plusButton = document.querySelector('button[name="plus"]');
+    var quantityInput = document.querySelector('input[name="quantity"]');
+    var pricePerQuantityElement = document.querySelector('.price-per-quantity');
+    var totalPriceElement = document.querySelector('.total-price');
+    let dataPrice = pricePerQuantityElement.getAttribute('data-price')
+    let pricePerUnit = dataPrice; 
+    if(dataPrice.indexOf('$') != -1) {
+      pricePerUnit = parseFloat(dataPrice.split("$")[1]);
+    }
+
+  
+    function updateTotalPrice() {
+      const sealPrice = $(document).find('#custom-seal-price').val();
+
+      let totalPrice;
+      var quantity = parseInt(quantityInput.value, 10);
+      if (sealPrice) {
+        totalPrice = ((quantity * pricePerUnit) + 500).toFixed(2);
+      } else {
+        totalPrice = (quantity * pricePerUnit).toFixed(2);
+      }
+      totalPriceElement.querySelector('span').textContent = `${totalPrice}`;
+      totalPriceElement.setAttribute('data-price', totalPrice);
+    }
+  
+    function decreaseQuantity() {
+      var currentValue = parseInt(quantityInput.value, 10);
+      if (currentValue > 1) {
+        quantityInput.value = currentValue - 1;
+        updateTotalPrice();
+      }
+    }
+  
+    function increaseQuantity() {
+      var currentValue = parseInt(quantityInput.value, 10);
+      quantityInput.value = currentValue + 1;
+      updateTotalPrice();
+    }
+  
+    minusButton.addEventListener('click', function() {
+      decreaseQuantity();
+    });
+  
+    plusButton.addEventListener('click', function() {
+      increaseQuantity();
+    });
+  
+    quantityInput.addEventListener('input', function(e) {
+      var newValue = parseInt(e.target.value, 10);
+      if (isNaN(newValue) || newValue < 1) {
+        e.target.value = 1;
+      }
+      updateTotalPrice();
+    });
+  });</script>
 
 
 {% schema %}
